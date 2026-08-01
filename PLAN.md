@@ -888,3 +888,73 @@ Il2CppDumper, an asset extractor.
 - No packer/obfuscator was detected on `libil2cpp.so`'s ELF header, but that's
   only the outer header — worth a quick sanity check once Il2CppDumper actually
   runs against it before assuming Phase 9 will be easy if it's ever needed.
+
+## 7. Part A — real boot chain (EntryScene → LoadingScene → TitleScene)
+
+This branch (`part-a-boot-chain`) is one of three parallel work streams split
+off after the Dungeon.unity boot chain worked with placeholder scaffolding —
+see `part-c-dungeon-transition`'s PLAN.md for the full rationale/contract
+between branches. This branch's job: get the *real* game flow working instead
+of jumping straight into Dungeon.unity.
+
+- [x] **Found the real bootstrap.** `GameInitController.cs`
+  (`Assets/Scripts/Assembly-CSharp/`) on a `GameInitController` GameObject in
+  `EntryScene.unity`, with a `gameInitPrefab` field pointing at
+  `Assets/Resources/guiprefabs/GameInit.prefab`. That prefab is the real
+  persistent-manager bundle: `UnityMainThreadDispatcher`, `Localization`
+  (I2), `MainCharInstanceCache`, debug tools (`Reporter`/`HUDFPS`/
+  `DebugLogOptions`), ad/analytics glue (`AdController`/
+  `AppsFlyerController`/`SDKManager` — left inert, not reconnected to real
+  networks), and — important correction to an earlier assumption —
+  **`EntryContext`/`EntryContextView` are *not* dead code.** They're nested
+  inside this prefab as a child GameObject, which is why grepping their
+  script GUID directly against `EntryScene.unity` found nothing (AssetRipper
+  scene grep only catches objects placed directly in the scene, not ones
+  living inside a `Resources` prefab that gets instantiated at runtime — good
+  lesson for anyone doing similar archaeology elsewhere in this project).
+- [x] Implemented `GameInitController` (Awake → singleton +
+  `DontDestroyOnLoad` + `Instantiate(gameInitPrefab)` → `FinishInit` →
+  `LoadSceneStart()` loads `LoadingScene`), fixed `SignalContext`'s
+  constructors (same missing-`base(...)`-chain bug `DungeonSignalContext` had
+  before being fixed), and wired `EntryContext`/`EntryContextView` the same
+  way as `DungeonContext`/`DungeonContextView`. `GoToTitleScene()` changed
+  `private` → `public` (documented deviation) so `LoadingSceneView` can call
+  back into the persistent singleton once its progress sequence finishes.
+- [x] Implemented `LoadingSceneView` — found via grepping `LoadingScene.
+  unity`'s script GUIDs (same technique used for `UserButtonInputLayout`
+  earlier). Real class has substantial interstitial-ads/countdown logic
+  (`EnableInterstitialAds`/`CountdownToShowInterstitialAds`/
+  `SendMetricIntersAdsShow`) left as no-ops per this project's "don't
+  reconnect ad SDKs" convention, plus a 3D character-preview-during-loading
+  feature (`LoadingSceneCharacterControl`) not implemented (visual nicety,
+  not a blocker). What *is* implemented: a real ~1.5s simulated progress bar
+  (nothing left to actually preload — everything's already in one Unity
+  project) that calls `GameInitController.instance.GoToTitleScene()` on
+  completion.
+- [x] Implemented `TitleSceneView` + its base class `BasePopup` (also fully
+  stub — a shared popup-animation framework with scale-tweening/panel-depth-
+  caching/tutorial-whitelist logic used by presumably many popups throughout
+  the game; only implemented the minimal visibility + back-button contract
+  subclasses actually need, not the tween polish). Flow: tap the click area →
+  reveals login choice buttons → **only Guest login actually works** (Google/
+  Facebook OAuth isn't reimplemented — no backend to authenticate against,
+  shows an error instead) → `SceneManager.LoadScene("Main")`.
+- [x] **Verified via automated batchmode Play-mode smoke test**
+  (`Assets/Editor/SmokeTestBootChain.cs`, same pattern as `SmokeTestDungeon.cs`):
+  opens `EntryScene.unity`, enters Play mode, confirms the log shows
+  `EntryScene` → `LoadingScene` → `TitleScene` scene loads in order with
+  **zero exceptions**, twice (once before, once after adding
+  `TitleSceneView`/`BasePopup`).
+- **Not yet done:** `Main.unity` (what `GoToMain` loads) hasn't been
+  investigated at all — that's presumably either a hub scene of its own or a
+  quick pass-through to `SelectionScene` (Part B's territory). Also
+  unconfirmed: whether `LoadingScene.unity`/`SelectionScene.unity`/
+  `TitleScene.unity` each needing their own local `UICamera` (as opposed to
+  one persistent one) is intentional per-scene design or something that
+  should be normalized — didn't need to touch this to get the boot chain
+  working, since each of those scenes already has its own camera as real
+  scene data.
+- **Next:** interactive confirmation (open `EntryScene.unity`, press Play)
+  that Title screen actually looks reasonable and Guest login visibly
+  transitions to `Main.unity` — batchmode can't verify visuals, same
+  limitation as everywhere else in this project.

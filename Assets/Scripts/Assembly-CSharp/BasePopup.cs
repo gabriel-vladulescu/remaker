@@ -190,8 +190,15 @@ public abstract class BasePopup : View
 
 	private static readonly HashSet<int> tutorialIdsWhitelist;
 
+	// Minimal implementation: the real game does a scale-tween show/hide
+	// animation (smoothTween/animationCurve/TweenScale), panel-depth
+	// caching, and a tutorial-ID whitelist system here. None of that is
+	// needed for the popup to function - just to look polished - so this
+	// only handles visibility and the back-button contract subclasses
+	// actually depend on (EnableBack/ExecuteBack).
 	protected override void Start()
 	{
+		panel = GetComponentInParent<UIPanel>();
 	}
 
 	protected new virtual void Awake()
@@ -236,18 +243,25 @@ public abstract class BasePopup : View
 
 	protected virtual void BackPopup(GameObject o)
 	{
+		OnListenBack();
 	}
 
 	public virtual void Hide()
 	{
+		NGUITools.SetActive(gameObject, false);
 	}
 
 	public void Hide(GameObject o)
 	{
+		Hide();
 	}
 
 	protected void OnListenBack()
 	{
+		if (CanBack())
+		{
+			ExecuteBack();
+		}
 	}
 
 	protected virtual void ExecuteBack()
@@ -256,7 +270,7 @@ public abstract class BasePopup : View
 
 	protected bool CanBack()
 	{
-		return false;
+		return EnableBack();
 	}
 
 	protected abstract bool EnableBack();

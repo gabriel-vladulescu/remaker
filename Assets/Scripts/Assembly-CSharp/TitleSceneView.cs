@@ -94,22 +94,65 @@ public class TitleSceneView : BasePopup
 
 	protected new void Awake()
 	{
+		base.Awake();
 	}
 
 	private void ClickBack()
 	{
+		OnListenBack();
 	}
 
 	private void InstantiateBar()
 	{
 	}
 
+	// Real Google/Facebook OAuth login is not reimplemented here (no
+	// backend to authenticate against) - only Guest login actually
+	// proceeds. Awake/Start-time flow: show "tap to play", tapping reveals
+	// the login choices, Guest is the only one wired to LoginSuccess.
 	protected override void OnEnable()
 	{
+		base.OnEnable();
+		finishInit = true;
+		EnableWgLogin(false);
+		EnableTapToPlay(true);
+
+		if (clickArea != null)
+		{
+			UIEventListener.Get(clickArea).onClick -= OnClickAreaClicked;
+			UIEventListener.Get(clickArea).onClick += OnClickAreaClicked;
+		}
+		if (btn_loginGuest != null)
+		{
+			UIEventListener.Get(btn_loginGuest).onClick -= LoginGuest;
+			UIEventListener.Get(btn_loginGuest).onClick += LoginGuest;
+		}
+		if (btn_loginGoogle != null)
+		{
+			UIEventListener.Get(btn_loginGoogle).onClick -= LoginGoogle;
+			UIEventListener.Get(btn_loginGoogle).onClick += LoginGoogle;
+		}
+		if (btn_loginFacebook != null)
+		{
+			UIEventListener.Get(btn_loginFacebook).onClick -= LoginFacebook;
+			UIEventListener.Get(btn_loginFacebook).onClick += LoginFacebook;
+		}
+	}
+
+	private void OnClickAreaClicked(GameObject o)
+	{
+		if (!hasStartTapToplay)
+		{
+			return;
+		}
+		hasStartTapToplay = false;
+		EnableTapToPlay(false);
+		EnableWgLogin(true);
 	}
 
 	protected override void OnDestroy()
 	{
+		base.OnDestroy();
 	}
 
 	protected override bool EnableBack()
@@ -133,6 +176,7 @@ public class TitleSceneView : BasePopup
 
 	private void GoToMain(GameObject o)
 	{
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
 	}
 
 	private void FinishInit()
@@ -149,22 +193,40 @@ public class TitleSceneView : BasePopup
 
 	private void EnableTapToPlay(bool enable)
 	{
+		hasStartTapToplay = enable;
+		if (clickArea != null)
+		{
+			NGUITools.SetActive(clickArea, enable);
+		}
+		if (lb_text != null)
+		{
+			NGUITools.SetActive(lb_text.gameObject, enable);
+		}
 	}
 
 	private void EnableWgLogin(bool enable)
 	{
+		if (wg_loginMethod != null)
+		{
+			NGUITools.SetActive(wg_loginMethod, enable);
+		}
 	}
 
 	private void LoginError(string msg)
 	{
+		UnityEngine.Debug.LogError("[TitleSceneView] Login error: " + msg);
+		EnableWgLogin(true);
 	}
 
 	private void LoginSuccess()
 	{
+		EnableWgLogin(false);
+		GoToMain(null);
 	}
 
 	public void Relogin(GameObject o)
 	{
+		EnableWgLogin(true);
 	}
 
 	private void Init()
@@ -173,13 +235,16 @@ public class TitleSceneView : BasePopup
 
 	private void LoginGuest(GameObject o)
 	{
+		LoginSuccess();
 	}
 
 	private void LoginFacebook(GameObject o)
 	{
+		LoginError("Facebook login is not available in this build.");
 	}
 
 	private void LoginGoogle(GameObject o)
 	{
+		LoginError("Google login is not available in this build.");
 	}
 }

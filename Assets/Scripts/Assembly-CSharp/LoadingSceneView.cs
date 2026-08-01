@@ -108,29 +108,61 @@ public class LoadingSceneView : MonoBehaviour
 
 	public LoadingModeType LoadingModeType { get; set; }
 
+	// Interstitial-ads fields/methods below (interstitialAdsEnable,
+	// EnableInterstitialAds, CountdownToShowInterstitialAds,
+	// SendMetricIntersAdsShow, adsCountdownProgresssBar,
+	// interstitialCountdownLabel) are intentionally left as no-ops - not
+	// reconnecting real ad SDKs, consistent with the rest of this project.
+	private bool progressBarPaused;
+
 	private void Awake()
 	{
 	}
 
 	public void ForceDestroy()
 	{
+		Destroy(gameObject);
 	}
 
 	private void OnDestroy()
 	{
 	}
 
+	// Self-contained default so opening LoadingScene.unity directly (e.g.
+	// for testing) still boots into TitleScene, not just when reached via
+	// GameInitController's real flow.
 	private void OnEnable()
 	{
+		Active(LoadingSceneType.NoneDisplay, LoadingModeType.Normal);
 	}
 
 	public bool IsFinishAds()
 	{
-		return false;
+		return true;
 	}
 
 	public void Active(LoadingSceneType loadingSceneType, LoadingModeType loadingModeType)
 	{
+		LoadingModeType = loadingModeType;
+
+		bool showModel = loadingSceneType == LoadingSceneType.Model;
+		bool showStatic = loadingSceneType == LoadingSceneType.Static;
+
+		if (container3d != null)
+		{
+			NGUITools.SetActive(container3d, showModel);
+		}
+		if (staticContainer != null)
+		{
+			NGUITools.SetActive(staticContainer, showStatic);
+		}
+		if (titleContainer != null)
+		{
+			NGUITools.SetActive(titleContainer, true);
+		}
+
+		UpdateProgressBar(0f);
+		StartCoroutine(BootSequence());
 	}
 
 	public void EnableInterstitialAds()
@@ -147,24 +179,65 @@ public class LoadingSceneView : MonoBehaviour
 
 	public void PauseDefaultProgressBar()
 	{
+		progressBarPaused = true;
 	}
 
 	public void ContinueDefaultProgressBar()
 	{
+		progressBarPaused = false;
+	}
+
+	// The real game presumably preloads assets/config here; there's nothing
+	// left to preload in this reimplementation (everything's already in the
+	// one Unity project), so this is a fixed-duration simulated progress bar
+	// purely so the loading screen doesn't just flash and vanish.
+	private const float BootDurationSeconds = 1.5f;
+
+	private IEnumerator BootSequence()
+	{
+		yield return Countdown(BootDurationSeconds, delegate(float elapsed)
+		{
+			UpdateProgressBar(Mathf.Clamp01(elapsed / BootDurationSeconds));
+		});
+
+		UpdateProgressBar(1f);
+
+		if (GameInitController.instance != null)
+		{
+			GameInitController.instance.GoToTitleScene();
+		}
 	}
 
 	[IteratorStateMachine(typeof(_003CCountdown_003Ed__35))]
 	private IEnumerator Countdown(float seconds, Action<float> tick)
 	{
-		return null;
+		float elapsed = 0f;
+		while (elapsed < seconds)
+		{
+			while (progressBarPaused)
+			{
+				yield return null;
+			}
+			elapsed += Time.deltaTime;
+			tick?.Invoke(Mathf.Min(elapsed, seconds));
+			yield return null;
+		}
 	}
 
 	public void EnableTip()
 	{
+		if (lb_tip != null)
+		{
+			NGUITools.SetActive(lb_tip.gameObject, true);
+		}
 	}
 
 	public void UpdateProgressBar(float progress)
 	{
+		if (ProgressBar != null)
+		{
+			ProgressBar.value = progress;
+		}
 	}
 
 	private void OnGUI()
