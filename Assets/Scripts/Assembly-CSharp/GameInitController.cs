@@ -1,4 +1,5 @@
 using System;
+using Assets.Scripts.Ssar.Main;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,6 +23,7 @@ public class GameInitController : MonoBehaviour
 
 		instance = this;
 		DontDestroyOnLoad(gameObject);
+		gameObject.AddComponent<MainSceneBootstrap>();
 		Init(FinishInit);
 	}
 

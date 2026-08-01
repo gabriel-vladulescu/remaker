@@ -201,8 +201,16 @@ public class MainScenePopup : BasePopup
 
 	private float time;
 
+	// Minimal implementation: this hub screen genuinely has ~40 buttons
+	// covering shop/events/notifications/daily-login/pets/mastery/rune/
+	// craft/piggy-bank/etc, almost all monetization- or event-adjacent and
+	// out of scope. Only btn_adventure (-> Adventure(), the actual "go
+	// play" button) is wired; everything else is left inert on purpose so
+	// the hub is visible and navigable without pretending those systems
+	// exist.
 	protected override void Awake()
 	{
+		base.Awake();
 	}
 
 	private void SendShopClickObject(string nameItem)
@@ -251,6 +259,14 @@ public class MainScenePopup : BasePopup
 
 	protected override void OnEnable()
 	{
+		base.OnEnable();
+		Show();
+
+		if (btn_adventure != null)
+		{
+			UIEventListener.Get(btn_adventure).onClick -= Adventure;
+			UIEventListener.Get(btn_adventure).onClick += Adventure;
+		}
 	}
 
 	private void Event(GameObject go)
@@ -360,6 +376,7 @@ public class MainScenePopup : BasePopup
 
 	public void Show()
 	{
+		NGUITools.SetActive(gameObject, true);
 	}
 
 	private void SortPackages()
@@ -394,8 +411,14 @@ public class MainScenePopup : BasePopup
 	{
 	}
 
+	// The real handoff point: from here the real game presumably goes
+	// through character/stage selection (SelectionScene, a separate branch
+	// of this reconstruction) before actually starting a dungeon. Loads
+	// SelectionScene directly; DungeonSelection's defaults mean a dungeon
+	// can still be started even before that scene's own UI is wired up.
 	private void Adventure(GameObject o)
 	{
+		UnityEngine.SceneManagement.SceneManager.LoadScene(Assets.Scripts.Utils.SceneName.SELECTION_SCENE);
 	}
 
 	private void Challenge(GameObject o)

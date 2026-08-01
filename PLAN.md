@@ -945,16 +945,72 @@ of jumping straight into Dungeon.unity.
   `EntryScene` → `LoadingScene` → `TitleScene` scene loads in order with
   **zero exceptions**, twice (once before, once after adding
   `TitleSceneView`/`BasePopup`).
-- **Not yet done:** `Main.unity` (what `GoToMain` loads) hasn't been
-  investigated at all — that's presumably either a hub scene of its own or a
-  quick pass-through to `SelectionScene` (Part B's territory). Also
-  unconfirmed: whether `LoadingScene.unity`/`SelectionScene.unity`/
-  `TitleScene.unity` each needing their own local `UICamera` (as opposed to
-  one persistent one) is intentional per-scene design or something that
-  should be normalized — didn't need to touch this to get the boot chain
-  working, since each of those scenes already has its own camera as real
-  scene data.
+- **Update: `Main.unity` investigated and wired through to `SelectionScene`.**
+  `Main` turned out to be the game's full home hub — shop, ~15+ event/
+  notification systems (Xmas, Anniversary, Demon Invasion, Seven Days
+  Campaign, flash sales, daily login/quest, piggy banks, etc.), mastery,
+  rune, pet, craft, cosmetic gallery. `MainScenePopup.cs` alone declares
+  ~40 button `GameObject` fields and a matching `Condition`-based
+  feature-unlock system per button. **Deliberately not reimplemented** —
+  almost all of it is monetization/event-adjacent and out of scope. Only
+  `btn_adventure` (the actual "go play" button, click handler already named
+  `Adventure()` in the decompiled stub) is wired, loading `SelectionScene`.
+  Everything else is left inert on purpose.
+  - `Main.unity` itself has no scene-specific controller placed in it at all
+    (just `UIPanel`/`UIRoot`/`TouchEffects`/`Reporter` debug tools) — same
+    situation `Dungeon.unity` was in. The real trigger for the hub UI is
+    `CheckAndLoadMainSceneCmd`, a substantial async asset-preload pipeline
+    (preloads the main character model, daily-login/equipment/skill-manager
+    popups) — not reimplemented. Instead, a new `MainSceneBootstrap` (not
+    part of the original game) listens for `SceneManager.sceneLoaded` and
+    instantiates `Resources/guiprefabs/main/MainScenePopup.prefab` directly
+    whenever the active scene is `"Main"`.
+  - `MainScenePopup`/`MainScenePopupMediator` implemented minimally (base
+    visibility + the one button), same "strip unbound `[Inject]` signals"
+    fix as `UserButtonInputLayoutMediator` needed
+    (`OnBuyFirstTopUpPackageSuccessSignal` etc. aren't bound anywhere since
+    the shop/IAP system isn't reimplemented).
+  - `EntryContext.mapBindings()` now binds
+    `mediationBinder.Bind<MainScenePopup>().To<MainScenePopupMediator>()` —
+    this works because `EntryContext` (created once in `EntryScene`) is
+    StrangeIoC's `Context.firstContext` for the entire app lifetime, since
+    `GameInitController`'s `DontDestroyOnLoad` carries the whole
+    `GameInit.prefab` hierarchy (including `EntryContext`) across every
+    subsequent scene load. Any view instantiated in any later scene that
+    auto-registers (the `View.Start()`/`OnEnable()` pattern) resolves
+    against this one context.
+- [x] **Verified the entire boot chain end-to-end with real simulated
+  clicks**, not just scene-load waiting. `Assets/Editor/SmokeTestFullFlow.cs`
+  (not part of the original game) drives: open `EntryScene.unity` → Play →
+  wait for `TitleScene` → `UICamera.Notify(clickArea, "OnClick", null)` (tap
+  to play) → `UICamera.Notify(btn_loginGuest, ...)` → wait for `Main` →
+  `UICamera.Notify(btn_adventure, ...)` → wait for `SelectionScene`. This
+  exercises NGUI's actual `SendMessage`-based click dispatch (`UICamera.Notify`
+  is what NGUI itself calls internally), not a shortcut. **Result: reaches
+  `SelectionScene` with zero exceptions.**
+  - Real gotcha hit building this: the driver initially lived as
+    `EditorApplication.update`-subscribed static state in the Editor script,
+    which silently stopped working — entering Play mode triggers a Unity
+    domain reload that wipes editor-side static subscriptions made
+    beforehand. Fixed by using `SessionState` (survives domain reload,
+    unlike plain static fields) as a flag checked by a
+    `[RuntimeInitializeOnLoadMethod]` hook, which spawns a real runtime
+    `MonoBehaviour` driver instead — that survives scene loads via
+    `DontDestroyOnLoad` and isn't affected by the reload since it's created
+    fresh, in the already-reloaded domain, after Play mode has begun.
+  - Second gotcha: initially tried `GameObject.Find("btn_loginGuest")` etc.,
+    which failed even though the button was correctly active - the `public
+    GameObject btn_loginGuest` field name has no relationship to the actual
+    GameObject's name in the scene hierarchy (they're independent; the field
+    just holds whatever was dragged into the Inspector slot). Fixed by
+    finding the owning component (`FindObjectOfType<TitleSceneView>()`) and
+    reading its field directly instead of guessing scene-hierarchy names.
+- **Confirmed real chain, end to end:** `EntryScene` → `LoadingScene` →
+  `TitleScene` → (tap to play → guest login) → `Main` → (adventure) →
+  `SelectionScene`. This is what "Part A" set out to do; `SelectionScene`
+  onward is Part B's territory (character/dungeon selection, equipment,
+  costumes) and the `DungeonSelection`/dungeon-transition contract Part C
+  already built.
 - **Next:** interactive confirmation (open `EntryScene.unity`, press Play)
-  that Title screen actually looks reasonable and Guest login visibly
-  transitions to `Main.unity` — batchmode can't verify visuals, same
-  limitation as everywhere else in this project.
+  that everything actually looks reasonable — batchmode/simulated clicks
+  can't verify visuals, same limitation as everywhere else in this project.
