@@ -1005,12 +1005,55 @@ of jumping straight into Dungeon.unity.
     just holds whatever was dragged into the Inspector slot). Fixed by
     finding the owning component (`FindObjectOfType<TitleSceneView>()`) and
     reading its field directly instead of guessing scene-hierarchy names.
-- **Confirmed real chain, end to end:** `EntryScene` → `LoadingScene` →
-  `TitleScene` → (tap to play → guest login) → `Main` → (adventure) →
-  `SelectionScene`. This is what "Part A" set out to do; `SelectionScene`
-  onward is Part B's territory (character/dungeon selection, equipment,
-  costumes) and the `DungeonSelection`/dungeon-transition contract Part C
-  already built.
+- **Confirmed real chain, end to end (first pass):** `EntryScene` →
+  `LoadingScene` → `TitleScene` → (tap to play → guest login) → `Main` →
+  (adventure) → `SelectionScene`. `SelectionScene` onward is Part B's
+  territory (character/dungeon selection, equipment, costumes) and the
+  `DungeonSelection`/dungeon-transition contract Part C already built.
+
+**Update: fixed the scene topology + added the missing splash/polish, based
+on your interactive test against the real game.** Your description of the
+real boot sequence (ZonMob logo → "Tap to Play" with a fade animation → tap
+→ bottom loading bar with a "Tip" message → lobby) caught a real structural
+mistake, not just a polish gap:
+
+- [x] **`LoadingScene` was in the wrong place in the flow.** Had it between
+  `EntryScene` and `TitleScene`; it actually belongs between `TitleScene`
+  (after login) and `Main`. Confirmed by re-reading `CheckAndLoadMainSceneCmd`
+  ("Part A" section above) — its asset-preload list is main character model,
+  daily-login popup, equipment popup, skill-manager popup — all Main-scene
+  concerns, nothing Title-scene needs. Fixed: `GameInitController.
+  LoadSceneStart()` now goes straight to `TitleScene`;
+  `TitleSceneView.GoToMain()` now loads `LoadingScene` (not `Main` directly);
+  `LoadingSceneView`'s boot-complete step now loads `Main` (not back to
+  `TitleScene`). New flow: `Entry` → `Title` → (login) → `Loading` → `Main`.
+- [x] **Added `ZonMobSplash`** (not part of the original game) — shows
+  `Resources/logo/zonmob_logo_white.png` full-screen for ~1.5s before
+  `GameInitController` proceeds with `Init()`. No prefab/material/scene
+  statically references that texture anywhere in the project, so the real
+  splash mechanism isn't recoverable from decompiled data; this is a
+  reasonable stand-in using `OnGUI` (simplest option — needs to render before
+  any `UICamera`/`UIRoot` exists yet).
+- [x] **Wired the real "Tap to Play" fade animation.** `TitleSceneView` had
+  a real `TweenAlpha` field that was never used (previous pass just did a
+  hard `SetActive`). Now configured as `Style.PingPong` /
+  `Method.EaseInOut`, alpha 0.3↔1.0 over 1s — a proper breathing fade loop,
+  using NGUI's own tweening system (already restored, no new code needed
+  beyond configuring it).
+- [x] **Wired real loading-tip text.** Found `Resources/config/
+  LoadingTipConfig.json` (references 30 `LOADING_TIP_N` localization keys)
+  and their English text in `Resources/I2Languages.asset`. Only 4 of the 30
+  keys actually have real content in *any* language (the rest are empty —
+  looks unfinished on the original devs' end, not an extraction gap).
+  Hardcoded those 4 real strings into `LoadingSceneView` (full I2
+  Localization system wiring — language selection, `LocalizationManager`,
+  etc. — is a separate, not-yet-attempted task); one is picked at random and
+  shown via `lb_tip` each time `LoadingScene` boots.
+- [x] **Re-verified via the same click-driven smoke test** (no changes
+  needed to the test itself — it polls for scene names rather than assuming
+  single-hop transitions, so the new `Title→Loading→Main` path was already
+  covered). **Zero exceptions, reaches `SelectionScene` successfully.**
 - **Next:** interactive confirmation (open `EntryScene.unity`, press Play)
-  that everything actually looks reasonable — batchmode/simulated clicks
-  can't verify visuals, same limitation as everywhere else in this project.
+  that the splash/fade/tip additions actually look right, and that
+  `Main`'s hub layout matches the reference screenshot you shared — visuals
+  still can't be verified by batchmode/simulated clicks.

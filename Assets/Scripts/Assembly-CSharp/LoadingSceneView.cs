@@ -129,8 +129,8 @@ public class LoadingSceneView : MonoBehaviour
 	}
 
 	// Self-contained default so opening LoadingScene.unity directly (e.g.
-	// for testing) still boots into TitleScene, not just when reached via
-	// GameInitController's real flow.
+	// for testing) still boots into Main, not just when reached via the
+	// real Title -> Loading -> Main flow.
 	private void OnEnable()
 	{
 		Active(LoadingSceneType.NoneDisplay, LoadingModeType.Normal);
@@ -193,8 +193,29 @@ public class LoadingSceneView : MonoBehaviour
 	// purely so the loading screen doesn't just flash and vanish.
 	private const float BootDurationSeconds = 1.5f;
 
+	// Real tip content pulled from Resources/config/LoadingTipConfig.json ->
+	// I2Languages.asset (LOADING_TIP_1..30). Most of those 30 terms have no
+	// actual text in any language (looks unfinished/unused on the original
+	// devs' end) - these 4 are the ones that do. Full I2 Localization
+	// wiring (LocalizationManager, language selection, etc.) is its own
+	// separate task and not reimplemented; these are just the English
+	// strings, hardcoded.
+	private static readonly string[] Tips =
+	{
+		"Tips: Unlocking Dash Attack combo enables you to immediately perform a swift attack after dashing.",
+		"Tips: Unlocking Strike Down combo enables you to perform a powerful slam finisher after executing aerial attack.",
+		"Tips: You can save and load data in the settings menu.",
+		"Tips: Quinn can perform Raven Wings in mid-air."
+	};
+
 	private IEnumerator BootSequence()
 	{
+		if (lb_tip != null)
+		{
+			lb_tip.text = Tips[UnityEngine.Random.Range(0, Tips.Length)];
+		}
+		EnableTip();
+
 		yield return Countdown(BootDurationSeconds, delegate(float elapsed)
 		{
 			UpdateProgressBar(Mathf.Clamp01(elapsed / BootDurationSeconds));
@@ -202,10 +223,9 @@ public class LoadingSceneView : MonoBehaviour
 
 		UpdateProgressBar(1f);
 
-		if (GameInitController.instance != null)
-		{
-			GameInitController.instance.GoToTitleScene();
-		}
+		// LoadingScene's real place in the flow is between Title (after
+		// login) and Main - see GameInitController.LoadSceneStart's comment.
+		UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
 	}
 
 	[IteratorStateMachine(typeof(_003CCountdown_003Ed__35))]

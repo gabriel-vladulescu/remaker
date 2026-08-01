@@ -174,9 +174,12 @@ public class TitleSceneView : BasePopup
 	{
 	}
 
+	// Goes through LoadingScene rather than straight to Main - see
+	// GameInitController.LoadSceneStart's comment for why LoadingScene
+	// belongs here, not between Entry and Title.
 	private void GoToMain(GameObject o)
 	{
-		UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+		UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingScene");
 	}
 
 	private void FinishInit()
@@ -201,6 +204,25 @@ public class TitleSceneView : BasePopup
 		if (lb_text != null)
 		{
 			NGUITools.SetActive(lb_text.gameObject, enable);
+		}
+
+		if (TweenAlpha != null)
+		{
+			if (enable)
+			{
+				TweenAlpha.style = UITweener.Style.PingPong;
+				TweenAlpha.method = UITweener.Method.EaseInOut;
+				TweenAlpha.from = 0.3f;
+				TweenAlpha.to = 1f;
+				TweenAlpha.duration = 1f;
+				TweenAlpha.enabled = true;
+				TweenAlpha.ResetToBeginning();
+				TweenAlpha.PlayForward();
+			}
+			else
+			{
+				TweenAlpha.enabled = false;
+			}
 		}
 	}
 

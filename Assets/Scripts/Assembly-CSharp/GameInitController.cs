@@ -24,7 +24,7 @@ public class GameInitController : MonoBehaviour
 		instance = this;
 		DontDestroyOnLoad(gameObject);
 		gameObject.AddComponent<MainSceneBootstrap>();
-		Init(FinishInit);
+		gameObject.AddComponent<ZonMobSplash>().Show(delegate { Init(FinishInit); });
 	}
 
 	// gameInitPrefab (Resources/guiprefabs/GameInit.prefab) holds the
@@ -68,9 +68,18 @@ public class GameInitController : MonoBehaviour
 		LoadSceneStart();
 	}
 
+	// Real game likely uses this to skip Title and jump straight into
+	// Loading -> Main for players with a cached login session (persisted
+	// Firebase auth between launches). No persisted-auth system is
+	// reimplemented here, so this always routes through Title first -
+	// LoadingScene's real place in the flow is between Title (after
+	// login) and Main, not between Entry and Title (confirmed by
+	// CheckAndLoadMainSceneCmd's asset-preload list: main character
+	// model, daily-login/equipment/skill popups - all Main-scene
+	// concerns, not Title-scene ones).
 	private void LoadSceneStart()
 	{
-		SceneManager.LoadScene("LoadingScene");
+		GoToTitleScene();
 	}
 
 	private void GoToDevScene()
