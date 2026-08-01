@@ -9,6 +9,7 @@ using Artemis.Manager;
 using Artemis.System;
 using Assets.Scripts.Ssar.Common.System.Resources;
 using Assets.Scripts.Ssar.Common.System.RoutineRunner;
+using Assets.Scripts.Ssar.Dungeon;
 using Assets.Scripts.Ssar.Dungeon.Configs;
 using Assets.Scripts.Ssar.Dungeon.Environment;
 using Assets.Scripts.Ssar.Dungeon.Environment.Character;
@@ -372,10 +373,10 @@ namespace Assets.Scripts.Ssar.Dungeon.Command
 		// scene via StrangeIoC instead of a standalone test scene.
 		public override void Execute()
 		{
-			GameObject prefab = UnityEngine.Resources.Load<GameObject>("characters/group_1/1/1_1_Prefab");
+			GameObject prefab = UnityEngine.Resources.Load<GameObject>(DungeonSelection.HeroPrefabResourcePath);
 			if (prefab == null)
 			{
-				UnityEngine.Debug.LogError("[InitDungeonSystemCmd] Could not load prefab at Resources/characters/group_1/1/1_1_Prefab");
+				UnityEngine.Debug.LogError("[InitDungeonSystemCmd] Could not load prefab at Resources/" + DungeonSelection.HeroPrefabResourcePath);
 				return;
 			}
 
@@ -396,7 +397,7 @@ namespace Assets.Scripts.Ssar.Dungeon.Command
 			EntityTemplateManager templateManager = new EntityTemplateManager();
 			templateManager.Init(entityWorld);
 
-			MinimalHeroData heroData = new MinimalHeroData(1, 1, 1);
+			MinimalHeroData heroData = new MinimalHeroData(DungeonSelection.HeroGroupId, DungeonSelection.HeroSubId, DungeonSelection.HeroLevel);
 			BaseHeroTemplateArgs args = new BaseHeroTemplateArgs(heroData, new EntityAbilities(), instance.transform.position, instance);
 
 			Entity mainCharacter = templateManager.CreateMainCharacter(args);
@@ -476,8 +477,19 @@ namespace Assets.Scripts.Ssar.Dungeon.Command
 		// EntryScene/LoadingScene boot flow and kept alive via
 		// DontDestroyOnLoad - not present here since this simplified boot
 		// opens Dungeon.unity directly. Not part of the original game.
+		//
+		// If a real UICamera already exists (e.g. carried into this scene by
+		// the real boot chain via DontDestroyOnLoad), this steps aside
+		// entirely and reuses its transform instead of creating a competing
+		// second one.
 		private Transform SpawnPlaceholderUIRoot()
 		{
+			if (UICamera.list.size > 0)
+			{
+				Transform existingCamTransform = UICamera.list.buffer[0].transform;
+				return existingCamTransform.parent != null ? existingCamTransform.parent : existingCamTransform;
+			}
+
 			GameObject rootGo = new GameObject("PlaceholderUIRoot");
 			UIRoot uiRoot = rootGo.AddComponent<UIRoot>();
 			uiRoot.scalingStyle = UIRoot.Scaling.FixedSize;
