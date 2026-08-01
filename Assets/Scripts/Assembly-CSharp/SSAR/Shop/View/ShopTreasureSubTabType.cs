@@ -1,0 +1,19 @@
+namespace SSAR.Shop.View
+{
+	public enum ShopTreasureSubTabType
+	{
+		WEAPON = 0,
+		ARMOR = 1,
+		ACCESSORY = 2,
+		ANCIENT = 3,
+		PET = 4,
+		RUNE = 5,
+		ORE_RUNE = 6,
+		COSMETIC_SET = 7,
+		COSMETIC_WEAPON = 8,
+		COSMETIC_WING = 9,
+		FREE_EQUIPMENT_WEAPON = 10,
+		FREE_EQUIPMENT_ARMOR = 11,
+		FREE_EQUIPMENT_ACCESSORY = 12
+	}
+}

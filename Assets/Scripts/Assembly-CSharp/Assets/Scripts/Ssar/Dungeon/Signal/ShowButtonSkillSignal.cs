@@ -1,0 +1,9 @@
+using System.Collections.Generic;
+using strange.extensions.signal.impl;
+
+namespace Assets.Scripts.Ssar.Dungeon.Signal
+{
+	public class ShowButtonSkillSignal : Signal<List<ButtonSkillType>>
+	{
+	}
+}

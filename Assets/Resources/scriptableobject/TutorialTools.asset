@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a3b2fde32c80fe749390d39d2c0451, type: 3}
+  m_Name: TutorialTools
+  m_EditorClassIdentifier:
+  enableCheat: 1
+  bossHpThreshold1: 95
+  bossHpThreshold2: 25
+  delayDialog: 1.5
+  delayAutoNextDialog: 2
+  dungeonStoryFadeInDuration: 1.5
+  dungeonStoryFadeInHoldDuration: 0.3
+  dungeonStoryFadeOutDuration: 0.3
+  listTutorial: 0000000001000000020000000300000004000000050000006500000066000000670000000600000007000000
+  isComplete: 0101010101010101010101
+  delaySpawnBossAfterClearStage: 0.3
+  spiderHpThreshold: 0.7
+  delayShowDialogAfterSpiderAppear: 1
+  bossHpBuff: 100
+  chacterHpBuff: 100
+  bossAppearFadeInDuration: 1.5
+  bossAppearFadeOutDuration: 0.3
+  scaleTime: 0.25
+  slowMotionDuration: 0.75
+  blaskMaskAlpha: 0.45
+  numOfMonsterRequireToSpawnBoss: 12
+  delayShowSkill23: 1
+  cosmeticSetId: 0
+  attackOverride: 200
+  wingVisualId: 0
+  treantHpBuff: -65
+  spierHpEnableUltimate: 0.95

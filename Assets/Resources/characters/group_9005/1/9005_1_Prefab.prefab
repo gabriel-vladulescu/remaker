@@ -1,0 +1,5312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4397768327470545}
+  - component: {fileID: 111571718729274231}
+  - component: {fileID: 65581786255902400}
+  - component: {fileID: 114477046003934300}
+  - component: {fileID: 114045458335737618}
+  - component: {fileID: 114722951815217645}
+  - component: {fileID: 114924050743934937}
+  - component: {fileID: 114215879266689626}
+  - component: {fileID: 114689364072382846}
+  - component: {fileID: 114043919389829319}
+  - component: {fileID: 114743393880019028}
+  - component: {fileID: 114094320201520353}
+  m_Layer: 8
+  m_Name: 9005_1_Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1730242686860875
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4026196548002408}
+  - component: {fileID: 137572839542275309}
+  m_Layer: 8
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1724804207875695
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4279359913592680}
+  m_Layer: 8
+  m_Name: Root_All
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1618682377417806
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4384403120170545}
+  m_Layer: 8
+  m_Name: Root_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1703437598541787
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4149520701623706}
+  m_Layer: 8
+  m_Name: Hip_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1884547391421755
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4292246286975720}
+  m_Layer: 8
+  m_Name: Knee_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1099118695303065
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4693062532245359}
+  m_Layer: 8
+  m_Name: Ankle_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1243736805655561
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4630643969539439}
+  m_Layer: 8
+  m_Name: Toes_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1061268324235159
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4370222726513266}
+  m_Layer: 8
+  m_Name: ToesEnd_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1587765826080250
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4574304967836189}
+  m_Layer: 8
+  m_Name: Hip_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1709867586078768
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4009931292380359}
+  m_Layer: 8
+  m_Name: Knee_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1044625135789424
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4393105877652414}
+  m_Layer: 8
+  m_Name: Ankle_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1589667821646929
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4799762105739359}
+  m_Layer: 8
+  m_Name: Toes_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1372920208702427
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4829625606037309}
+  m_Layer: 8
+  m_Name: ToesEnd_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1025901758691103
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4574190619683098}
+  m_Layer: 8
+  m_Name: Spine1_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1985305603660343
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4552309709192268}
+  m_Layer: 8
+  m_Name: Chest_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1705390221481576
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4571878917323452}
+  m_Layer: 8
+  m_Name: Chest1_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1977153420339851
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4534704304255049}
+  m_Layer: 8
+  m_Name: Neck_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1336590748365959
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4651560128206891}
+  m_Layer: 8
+  m_Name: Head_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1256069497284392
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4964469411310401}
+  m_Layer: 8
+  m_Name: HeadEnd_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1161607090078389
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4208575754630950}
+  m_Layer: 8
+  m_Name: Jaw_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1002669891404536
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4431740505123533}
+  m_Layer: 8
+  m_Name: JawEnd_M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1470112387431263
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4356319167443197}
+  m_Layer: 8
+  m_Name: Scapula_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1313026266067498
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4976365255789935}
+  m_Layer: 8
+  m_Name: Shoulder_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1621510681728303
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4699617135816954}
+  m_Layer: 8
+  m_Name: Elbow_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1632457200066912
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4264357844037074}
+  m_Layer: 8
+  m_Name: Wrist_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1634108722742392
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4499726237547504}
+  m_Layer: 8
+  m_Name: IndexFinger1_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1302127217294661
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4658330495870062}
+  m_Layer: 8
+  m_Name: IndexFinger2_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1969106005120503
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4703931505913403}
+  m_Layer: 8
+  m_Name: IndexFinger3_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1642988549198181
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4121005239445321}
+  m_Layer: 8
+  m_Name: IndexFinger4_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1946936116752871
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4806657225351454}
+  m_Layer: 8
+  m_Name: MiddleFinger1_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1711914853252429
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4704330047573733}
+  m_Layer: 8
+  m_Name: MiddleFinger2_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1918264173551851
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4085275382694935}
+  m_Layer: 8
+  m_Name: MiddleFinger3_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1587397909062814
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4231814100211528}
+  m_Layer: 8
+  m_Name: MiddleFinger4_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1875609422105747
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4194081240383615}
+  m_Layer: 8
+  m_Name: RingFinger1_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1371939378208658
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4354824845356902}
+  m_Layer: 8
+  m_Name: RingFinger2_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1694121525821480
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4770005084341472}
+  m_Layer: 8
+  m_Name: RingFinger3_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1320256170494724
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4123703392571528}
+  m_Layer: 8
+  m_Name: RingFinger4_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1017697238300914
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4855482821919830}
+  m_Layer: 8
+  m_Name: ThumbFinger1_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1733206282342372
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4492842699383957}
+  m_Layer: 8
+  m_Name: ThumbFinger2_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1217368724061974
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4150646884989824}
+  m_Layer: 8
+  m_Name: ThumbFinger3_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1089843903986396
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4880619614767448}
+  m_Layer: 8
+  m_Name: ThumbFinger4_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1672306508523268
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4167524263268962}
+  m_Layer: 8
+  m_Name: Scapula_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1808113985169905
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4641631609468814}
+  m_Layer: 8
+  m_Name: Shoulder_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1060945828524476
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4533803739292891}
+  m_Layer: 8
+  m_Name: Elbow_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1900271049623953
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4601984538237284}
+  m_Layer: 8
+  m_Name: Wrist_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1472185465350827
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4785330607447594}
+  m_Layer: 8
+  m_Name: IndexFinger1_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1518489005915545
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4007513189690300}
+  m_Layer: 8
+  m_Name: IndexFinger2_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1220653531496868
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4690175861776792}
+  m_Layer: 8
+  m_Name: IndexFinger3_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1841364053301648
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4969505138979683}
+  m_Layer: 8
+  m_Name: IndexFinger4_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1967328832014496
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4190181876552715}
+  m_Layer: 8
+  m_Name: MiddleFinger1_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1291844617409189
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4240571728440943}
+  m_Layer: 8
+  m_Name: MiddleFinger2_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1344419225485095
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4617365563186364}
+  m_Layer: 8
+  m_Name: MiddleFinger3_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1919942235722503
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4998874197659892}
+  m_Layer: 8
+  m_Name: MiddleFinger4_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1107629493147155
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4408345039935966}
+  m_Layer: 8
+  m_Name: RingFinger1_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1833703512093738
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4611579644537198}
+  m_Layer: 8
+  m_Name: RingFinger2_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1632746491512912
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4328299215684997}
+  m_Layer: 8
+  m_Name: RingFinger3_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1719342369648492
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4633296557590524}
+  m_Layer: 8
+  m_Name: RingFinger4_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1726790013014859
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4132862189046193}
+  m_Layer: 8
+  m_Name: ThumbFinger1_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1436073260064126
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4295428814336086}
+  m_Layer: 8
+  m_Name: ThumbFinger2_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1693329660128220
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4450391854282655}
+  m_Layer: 8
+  m_Name: ThumbFinger3_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1801075752484240
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4386943702330414}
+  m_Layer: 8
+  m_Name: ThumbFinger4_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000955326284023
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4066778049879928}
+  m_Layer: 0
+  m_Name: HeadPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4397768327470545
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.64, y: 0, z: -0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: -1.5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4026196548002408}
+  - {fileID: 4279359913592680}
+  - {fileID: 4066778049879928}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!111 &111571718729274231
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: b345e31dea3f2104fafc32e4f2495f79, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7abaabc32e8d7fb44a130f2b12cb7ef3, type: 2}
+  - {fileID: 7400000, guid: b3715324a972c874dabf6acbe4823628, type: 2}
+  - {fileID: 7400000, guid: 8860aa4aa49e3294d80e4553ecb5f4c1, type: 2}
+  - {fileID: 7400000, guid: b345e31dea3f2104fafc32e4f2495f79, type: 2}
+  - {fileID: 7400000, guid: a57e6aaa37515a24e81ccfa76ec8837f, type: 2}
+  - {fileID: 7400000, guid: 14a5adbd2efe7ec49b3a6cd3c5637f39, type: 2}
+  - {fileID: 7400000, guid: b3659eed39307d646bf4fc7097615ffb, type: 2}
+  - {fileID: 7400000, guid: 2c3a93e8a2c9d1d4daba71a72bb282c5, type: 2}
+  - {fileID: 7400000, guid: 47115c2f0ce8aef46a04e11c8c9db91f, type: 2}
+  - {fileID: 7400000, guid: 872468047ffccf0498ce6cc82ee62227, type: 2}
+  - {fileID: 7400000, guid: 486cb765196e7024fa96065470e3b688, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
+--- !u!65 &65581786255902400
+BoxCollider:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  m_Size: {x: 3, y: 5, z: 2}
+  m_Center: {x: 0, y: 2.5, z: 1}
+--- !u!114 &114477046003934300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ccee0e3f9dc6cf0b5c0bb1d22104724, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  moveSpeed: 1
+  maxMoveSpeed: -1
+--- !u!114 &114045458335737618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2927d65c890dbe3aa2098521145ee9e1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114722951815217645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e094e086fce9bb0bc22a3bede9b3b1e7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  debugSpheres: 0
+  spheres:
+  - offset: {x: 0, y: 0.5}
+    isFeet: 1
+    isHead: 0
+  - offset: {x: 0, y: 1}
+    isFeet: 0
+    isHead: 0
+  - offset: {x: 0, y: 1.5}
+    isFeet: 0
+    isHead: 1
+  ownCollider: {fileID: 65581786255902400}
+  radius: 0.5
+--- !u!114 &114924050743934937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403d543e09d3bbb73797486243f6f89b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name:
+  skillConfigs:
+  - foldout: 0
+    skillClassName: DefaultMeleeSkill
+    skillStatsId:
+    animationName: Skill1
+    scaleTime: 1
+    useDurationFromAnimation: 1
+    duration: 2.3333333
+    channelingDuration: 2.3333333
+    syncChannelingDurationWithDuration: 1
+    runIgnoreInputWindowStartFrame: 0
+    runIgnoreInputWindowEndFrame: 0
+    animationActiveFrame: 0
+    animationRecoveryFrame: 0
+    animationLengthInFrame: 70
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 0
+      frame: 29
+      actionFrameConfig:
+        actionType: 8
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -3.5, y: 0}
+        meleeDimension: {x: 10, y: 3.7}
+        hitboxRadius: 2.5
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 1
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 10
+            knockdownJumpHeight: 4
+            knockdownJumpDurationReachMaxHeight: 0.3
+            knockdownJumpDurationLandGround: 0.3
+            knockdownJumpDistance: 4
+            knockdownDuration: 1.2
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 9
+      frame: 29
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 1
+      frame: 27
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath: Characters/Group_9005/1/VFX/9005_skill1
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":0.0,"y":-0.5}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 15
+      frame: 0
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":-8.5,"y":2.5}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString: '{"prefabPath":"Characters/Group_9005/1/VFX/9005_skill1_handglow","timeToLiveInSeconds":2.5,"boneNames":["MiddleFinger2_L"]}'
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 15
+      frame: 0
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":-8.5,"y":2.5}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString: '{"prefabPath":"Characters/Group_9005/1/VFX/9005_skill1_handglow","timeToLiveInSeconds":2.5,"boneNames":["MiddleFinger2_R"]}'
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 0
+    modifierConfigs: []
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 010100000000000000000000000000000000000000
+  - foldout: 0
+    skillClassName: DefaultMeleeSkill
+    skillStatsId:
+    animationName: Skill2
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 2
+    channelingDuration: 1.6666666
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: 0
+    runIgnoreInputWindowEndFrame: 0
+    animationActiveFrame: 0
+    animationRecoveryFrame: 0
+    animationLengthInFrame: 67
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 0
+      frame: 32
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.13333334
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -2, y: 1}
+        meleeDimension: {x: 4, y: 2}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 2
+            knockbackDashDuration: 0.5
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 1
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 3
+      frame: 32
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.13333334
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1, y: 1}
+        meleeDimension: {x: 8, y: 2}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString: '{"spawnMonsterCount":1,"spawnMonsterId":"9007_1_1","spawnXAxisAmplitude":0.0,"spawnXAxisDensity":1,"spawnYAxisAmplitude":0.0,"spawnYAxisDensity":1,"offsetPosition":{"x":-1.0,"y":0.0},"coordinateOrigin":"CasterPosition","padding":0.0,"spawnDrawGizmos":false,"onSpawnMovementType":0,"onSpawnJumpDurationReachMaxHeight":0.0,"onSpawnJumpDurationLandGround":0.0,"onSpawnJumpHeight":0.0,"minionVfxPrefabPath":null,"interval":0.0,"spawnDelay":0.0,"suicideAfterSeconds":9999.0}'
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 3
+      frame: 40
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.13333334
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1, y: 1}
+        meleeDimension: {x: 8, y: 2}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString: '{"spawnMonsterCount":1,"spawnMonsterId":"9007_1_1","spawnXAxisAmplitude":0.0,"spawnXAxisDensity":1,"spawnYAxisAmplitude":0.0,"spawnYAxisDensity":1,"offsetPosition":{"x":-4.0,"y":0.0},"coordinateOrigin":"CasterPosition","padding":0.0,"spawnDrawGizmos":false,"onSpawnMovementType":0,"onSpawnJumpDurationReachMaxHeight":0.0,"onSpawnJumpDurationLandGround":0.0,"onSpawnJumpHeight":0.0,"minionVfxPrefabPath":null,"interval":0.0,"spawnDelay":0.0,"suicideAfterSeconds":9999.0}'
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 3
+      frame: 50
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.13333334
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1, y: 1}
+        meleeDimension: {x: 8, y: 2}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString: '{"spawnMonsterCount":1,"spawnMonsterId":"9007_1_1","spawnXAxisAmplitude":0.0,"spawnXAxisDensity":1,"spawnYAxisAmplitude":0.0,"spawnYAxisDensity":1,"offsetPosition":{"x":3.0,"y":0.0},"coordinateOrigin":"CasterPosition","padding":0.0,"spawnDrawGizmos":false,"onSpawnMovementType":0,"onSpawnJumpDurationReachMaxHeight":0.0,"onSpawnJumpDurationLandGround":0.0,"onSpawnJumpHeight":0.0,"minionVfxPrefabPath":null,"interval":0.0,"spawnDelay":0.0,"suicideAfterSeconds":9999.0}'
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 9
+      frame: 33
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.13333334
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1, y: 1}
+        meleeDimension: {x: 8, y: 2}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString: '{"spawnMonsterCount":1,"spawnMonsterId":"9007_1_1","spawnXAxisAmplitude":0.0,"spawnXAxisDensity":1,"spawnYAxisAmplitude":0.0,"spawnYAxisDensity":1,"offsetPosition":{"x":3.0,"y":0.0},"coordinateOrigin":"CasterPosition","padding":0.0,"spawnDrawGizmos":false,"onSpawnMovementType":0,"onSpawnJumpDurationReachMaxHeight":0.0,"onSpawnJumpDurationLandGround":0.0,"onSpawnJumpHeight":0.0,"minionVfxPrefabPath":null,"interval":0.0,"spawnDelay":0.0,"suicideAfterSeconds":9999.0}'
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.40000000596046448,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 1
+      frame: 33
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.13333334
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1, y: 1}
+        meleeDimension: {x: 8, y: 2}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath: Characters/Group_9005/1/VFX/9005_skill2_hitground
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":-1.0,"y":0.0}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString: '{"spawnMonsterCount":1,"spawnMonsterId":"9007_1_1","spawnXAxisAmplitude":0.0,"spawnXAxisDensity":1,"spawnYAxisAmplitude":0.0,"spawnYAxisDensity":1,"offsetPosition":{"x":3.0,"y":0.0},"coordinateOrigin":"CasterPosition","padding":0.0,"spawnDrawGizmos":false,"onSpawnMovementType":0,"onSpawnJumpDurationReachMaxHeight":0.0,"onSpawnJumpDurationLandGround":0.0,"onSpawnJumpHeight":0.0,"minionVfxPrefabPath":null,"interval":0.0,"spawnDelay":0.0,"suicideAfterSeconds":9999.0}'
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.40000000596046448,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 0
+    modifierConfigs: []
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 000100010000000000000000000000000000000000
+  - foldout: 0
+    skillClassName: DefaultMeleeSkill
+    skillStatsId:
+    animationName: Skill3
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 2.3333333
+    channelingDuration: 1.6666666
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: 0
+    runIgnoreInputWindowEndFrame: 0
+    animationActiveFrame: 0
+    animationRecoveryFrame: 0
+    animationLengthInFrame: 54
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 0
+      frame: 32
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -3.6, y: 1.5}
+        meleeDimension: {x: 3.6, y: 2.85}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 2
+            knockbackDashDuration: 0.5
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 1
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString:
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 1
+      frame: 32
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -3.6, y: 1.5}
+        meleeDimension: {x: 3.6, y: 2.85}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 2
+            knockbackDashDuration: 0.5
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 1
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString:
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath: Characters/Group_9005/1/VFX/9005_skill1_impact
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":-5.1500000953674316,"y":1.2999999523162842}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 1
+    modifierConfigs: []
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 010100000000000000000000000000000000000000
+  - foldout: 0
+    skillClassName: DefaultRangerSkill
+    skillStatsId:
+    animationName: Skill4
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 3333.3
+    channelingDuration: 1.6666666
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: 0
+    runIgnoreInputWindowEndFrame: 0
+    animationActiveFrame: 0
+    animationRecoveryFrame: 0
+    animationLengthInFrame: 75
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 0
+      frame: 47
+      actionFrameConfig:
+        actionType: 4
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 0
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 33.3
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0.5, y: 0.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString: '{"rangerProjectilePrefabPath":"Characters/Group_9005/1/VFX/9005_skill2_projectile","rangerProjectileDirectionSpread":"Single","rangerProjectileVelocity":{"x":0.0,"y":0.0},"rangerProjectileRay1":{"x":0.0,"y":0.0},"rangerProjectileRay2":{"x":0.0,"y":0.0},"rangerProjectileRayCount":0,"rangerProjectileHitboxRadius":0.5,"rangerProjectileDamageRadius":0.5,"rangerProjectileDrawGizmos":true,"destroyInCenterProjectile":false,"dontDestroyOnObstacleHit":false,"rangerProjectileDestroyVfxPrefabPath":"Characters/Group_9003/VFX/9003_Impact","rangerProjectileImpactVfxPrefabPath":null,"rangerProjectileSpawnPositionRelativeToCharacter":{"x":-6.0,"y":3.5999999046325684},"rangerProjectileSpawnPositionRelativeToFacingDirection":true,"projectileCastingDelay":0.0,"vfxPrefabPath":null,"coordinateOrigin":"CasterPosition","xAxisDensity":1,"xAxisAmplitude":0.0,"yAxisDensity":1,"yAxisAmplitude":0.0,"waitTimeFromLockToLaunch":0.0,"penetrateProjectileDamageReductionMultiplier":1.0,"speed":12.0,"angleStep":0.0,"spreadCount":1,"maxAngleFromDownVector":30.0,"waveCount":1,"waveInterval":0.0,"lockTargetPosition":true,"lockTargetOffset":{"x":0.0,"y":0.0},"lockTargetDirection":0}'
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 1
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 7
+            successRate: 0
+            knockbackLevel: 0
+            knockbackDashDistance: 0
+            knockbackDashDuration: 0
+            knockbackShouldInterruptTargetSkill: 0
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs:
+          - triggerType: 0
+            modifierType: 51
+            successRate: 0
+            knockbackLevel: 0
+            knockbackDashDistance: 0
+            knockbackDashDuration: 0
+            knockbackShouldInterruptTargetSkill: 0
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString:
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString: '{"targetId":"9001_1_1","skillOrder":2,"dontInterruptCurrentSkill":true}'
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString: '{"successRate":1.0,"rawPower":0.0,"hpPercent":0.0,"hpThreshold":0.0,"scalePower":0.0,"duration":0.0,"scalePower2":0.0,"duration2":0.0,"cooldown":0.0,"stack":1}'
+          - triggerType: 0
+            modifierType: 51
+            successRate: 0
+            knockbackLevel: 0
+            knockbackDashDistance: 0
+            knockbackDashDuration: 0
+            knockbackShouldInterruptTargetSkill: 0
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString:
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString: '{"targetId":"9008_1_1","skillOrder":3,"dontInterruptCurrentSkill":true}'
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString: '{"successRate":1.0,"rawPower":0.0,"hpPercent":0.0,"hpThreshold":0.0,"scalePower":0.0,"duration":0.0,"scalePower2":0.0,"duration2":0.0,"cooldown":0.0,"stack":1}'
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 15
+      frame: 25
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.ImmuneBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"physical":true,"magical":true,"pure":true,"playLoopVfx":false,"playFlashVfx":false,"type":"Immune","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":5.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString: '{"prefabPath":"Characters/Group_9005/1/VFX/9005_skill4_chest_mocra","timeToLiveInSeconds":0.0,"boneNames":["Chest_M"]}'
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 15
+      frame: 27
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.ImmuneBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"physical":true,"magical":true,"pure":true,"playLoopVfx":false,"playFlashVfx":false,"type":"Immune","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":5.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString: '{"prefabPath":"Characters/Group_9005/1/VFX/9005_skill2_projectile_camotay","timeToLiveInSeconds":0.699999988079071,"boneNames":["MiddleFinger1_L"]}'
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 1
+    modifierConfigs: []
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 010000010000000000000100000000010000010000
+--- !u!114 &114215879266689626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bad6a6f47cc69f7b8c6c9bd3c74f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name:
+  skillConfigs:
+  - foldout: 0
+    skillClassName: DefaultRangerSkill
+    skillStatsId:
+    animationName: Spawn
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 3333.3
+    channelingDuration: 5
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: 0
+    runIgnoreInputWindowEndFrame: 0
+    animationActiveFrame: 0
+    animationRecoveryFrame: 0
+    animationLengthInFrame: 120
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 0
+      frame: 0
+      actionFrameConfig:
+        actionType: 7
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 0
+        damageMultiplier: 0.05
+        maxEnemyHitCount: 99
+        timeToLive: 2.3333333
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 99
+        meleeIntervalBetweenHit: 0.1
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 10, y: 3.7}
+        hitboxRadius: 3
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString: '{"rangerProjectilePrefabPath":"Characters/Group_9005/1/VFX/9005_skill_thienthach","rangerProjectileDirectionSpread":"Single","rangerProjectileVelocity":{"x":3.5,"y":-8.0},"rangerProjectileRay1":{"x":0.0,"y":0.0},"rangerProjectileRay2":{"x":0.0,"y":0.0},"rangerProjectileRayCount":0,"rangerProjectileHitboxRadius":1.0,"rangerProjectileDamageRadius":1.0,"rangerProjectileDrawGizmos":true,"destroyInCenterProjectile":true,"dontDestroyOnObstacleHit":true,"rangerProjectileDestroyVfxPrefabPath":"","rangerProjectileImpactVfxPrefabPath":"","rangerProjectileSpawnPositionRelativeToCharacter":{"x":8.0,"y":18.0},"rangerProjectileSpawnPositionRelativeToFacingDirection":false,"projectileCastingDelay":0.0,"vfxPrefabPath":"","coordinateOrigin":"CasterPosition","xAxisDensity":1,"xAxisAmplitude":0.0,"yAxisDensity":1,"yAxisAmplitude":0.0,"waitTimeFromLockToLaunch":0.0,"penetrateProjectileDamageReductionMultiplier":1.0,"speed":0.0,"angleStep":0.0,"spreadCount":1,"maxAngleFromDownVector":0.0,"waveCount":1,"waveInterval":0.0,"lockTargetPosition":false,"lockTargetOffset":{"x":0.0,"y":0.0},"lockTargetDirection":0}'
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 9
+      frame: 70
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 1
+      frame: 67
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 0
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 0
+            knockdownJumpHeight: 0
+            knockdownJumpDurationReachMaxHeight: 0
+            knockdownJumpDurationLandGround: 0
+            knockdownJumpDistance: 0
+            knockdownDuration: 0
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath: Characters/Group_9005/1/VFX/9005_skill1
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":4.0,"y":0.0}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 0
+      frame: 70
+      actionFrameConfig:
+        actionType: 1
+        shouldTriggerOnHitTarget: 1
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 0.25
+        maxEnemyHitCount: 1
+        timeToLive: 0.1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0.1
+        meleeRelativePositionToCharacter: {x: -1.5, y: 2.75}
+        meleeDimension: {x: 3.5, y: 5.5}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString: '{"rangerProjectilePrefabPath":"Characters/Group_75013/VFX/75013_4_Empty","rangerProjectileDirectionSpread":"Single","rangerProjectileVelocity":{"x":0.0,"y":0.0},"rangerProjectileRay1":{"x":0.0,"y":0.0},"rangerProjectileRay2":{"x":0.0,"y":0.0},"rangerProjectileRayCount":0,"rangerProjectileHitboxRadius":3.0,"rangerProjectileDamageRadius":0.0,"rangerProjectileDrawGizmos":false,"destroyInCenterProjectile":false,"dontDestroyOnObstacleHit":false,"rangerProjectileDestroyVfxPrefabPath":"Characters/Group_75013/VFX/75013_4_Empty","rangerProjectileImpactVfxPrefabPath":null,"rangerProjectileSpawnPositionRelativeToCharacter":{"x":0.0,"y":0.0},"rangerProjectileSpawnPositionRelativeToFacingDirection":true,"projectileCastingDelay":0.0,"vfxPrefabPath":null,"coordinateOrigin":"CasterPosition","xAxisDensity":1,"xAxisAmplitude":0.0,"yAxisDensity":1,"yAxisAmplitude":0.0,"waitTimeFromLockToLaunch":0.0,"penetrateProjectileDamageReductionMultiplier":1.0,"speed":0.0,"angleStep":0.0,"spreadCount":1,"maxAngleFromDownVector":0.0,"waveCount":0,"waveInterval":0.0,"lockTargetPosition":false,"lockTargetOffset":{"x":0.0,"y":0.0},"lockTargetDirection":0}'
+        hitboxConfigString: '{"id":0,"partId":-1,"rehitRate":0,"spawnAnchor":0,"hitEnemy":true,"hitAlly":false}'
+        trajectoryConfigString: '[]'
+        hitboxModifiersConfig:
+          expanded: 1
+          allyExpanded: 0
+          modifierConfigs:
+          - triggerType: 0
+            modifierType: 1
+            successRate: 1
+            knockbackLevel: 10
+            knockbackDashDistance: 1.5
+            knockbackDashDuration: 0.15
+            knockbackShouldInterruptTargetSkill: 1
+            knockbackTowardProjectile: 0
+            useCasterPositionForKnockbackDirection: 0
+            alwaysKnockbackAccordingToCasterFacingDirection: 0
+            knockdownLevel: 10
+            knockdownJumpHeight: 2
+            knockdownJumpDurationReachMaxHeight: 0.3
+            knockdownJumpDurationLandGround: 0.3
+            knockdownJumpDistance: 6
+            knockdownDuration: 1.2
+            useCasterPositionForKnockdownDirection: 0
+            useCasterFacingDirectionForKnockdownDirection: 0
+            useProjectileVelocityForKnockdownDirection: 0
+            knockdownFloatingDuration: 0
+            shouldPerformBouncing: 0
+            stunDuration: 0
+            stunPlayVfx: 0
+            stunAnimTransitionTime: 0
+            shackleDuration: 0
+            shacklePlayVfx: 0
+            configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BurnBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.40000000596046448,"damageScale":0.0099999997764825821,"playVfx":true,"type":"Burn","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":2.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+            cameraFxConfigString:
+            soundFxConfigString:
+            castSkillConfigString:
+            castProjectileConfigString:
+            castSpawnMonsterConfigString:
+            adjustTimeFrameConfigString:
+            playVfxConfigString:
+            hpDropAttackBuffConfigString:
+            beHitBlastWaveConfigString:
+            hitTargetInstantKillConfigString:
+            hitTargetCastSkillConfigString:
+            hpDropUsePotionConfigString:
+            comboDamageFrameShockwaveConfigString:
+            soundFxRandomlyConfigString:
+            weaponPassiveSkillConfigString:
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString: '{"ignoreCasterDirection":false,"coordinateOrigin":"CasterPosition","offset":{"x":0.0,"y":0.5}}'
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString: '{"cameraFxConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.CameraShakeConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"cameraFxStrength":{"x":0.30000001192092896,"y":0.20000000298023224},"cameraFxDuration":0.5,"cameraFxVibrato":15,"cameraFxSmoothness":0.0,"cameraFxRandomness":0.0,"cameraFxUseRandomInitialAngel":false,"cameraFxRotation":{"x":0.0,"y":0.0,"z":0.0},"cameraFxType":"Shake"}}}'
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 10
+      frame: 0
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.ImmuneBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"physical":true,"magical":true,"pure":true,"playLoopVfx":false,"playFlashVfx":false,"type":"Immune","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":5.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 15
+      frame: 67
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.ImmuneBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"physical":true,"magical":true,"pure":true,"playLoopVfx":false,"playFlashVfx":false,"type":"Immune","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":5.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString: '{"prefabPath":"Characters/Group_9005/1/VFX/9005_skill_chest","timeToLiveInSeconds":999999.0,"boneNames":["Chest_M"]}'
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 0
+    modifierConfigs: []
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 010100000000000000000100000000010000010001
+--- !u!114 &114689364072382846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86486a8db11dcc67212a44af96be4c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mode: 1
+  initialDirection: -1
+  baseAngleY: 0
+  controlType: 0
+  forcedDirection: -1
+--- !u!114 &114043919389829319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09597c9d8446519032223f365e8cb871, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  vfxBehit: 1
+  offsetPosition: {x: 0, y: 2.5, z: 0}
+--- !u!114 &114743393880019028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28327fd8c46314c5a437795e1704bfe0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  animMode: 1
+  animationConfigs:
+  - animationName: Die
+    effectConfigs:
+    - frame: 19
+      vfxPrefabPath: Characters/Group_9005/1/VFX/9005_die_fx
+      vfxOffset: {x: 0, y: 2.7, z: 0}
+      playOnGround: 0
+      deathFacingBackwardAttacker: 0
+    - frame: 0
+      vfxPrefabPath: Characters/Group_9005/1/VFX/9005_die_fx_start
+      vfxOffset: {x: 0, y: 2.7, z: 0}
+      playOnGround: 0
+      deathFacingBackwardAttacker: 0
+    soundConfigs: []
+  soundAnimationConfigs: []
+  cameraAnimationConfigs: []
+--- !u!114 &114094320201520353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5816d785f1098928e542cf198871aa55, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  deathDuration: 2
+--- !u!4 &4026196548002408
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4397768327470545}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+--- !u!137 &137572839542275309
+SkinnedMeshRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 06197b3f9599ad845a1d1a2d0577af46, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: f1fb366afc403c2439e1107b0ecf72eb, type: 2}
+  m_Bones:
+  - {fileID: 4384403120170545}
+  - {fileID: 4574304967836189}
+  - {fileID: 4009931292380359}
+  - {fileID: 4393105877652414}
+  - {fileID: 4799762105739359}
+  - {fileID: 4829625606037309}
+  - {fileID: 4574190619683098}
+  - {fileID: 4552309709192268}
+  - {fileID: 4167524263268962}
+  - {fileID: 4641631609468814}
+  - {fileID: 4533803739292891}
+  - {fileID: 4601984538237284}
+  - {fileID: 4190181876552715}
+  - {fileID: 4240571728440943}
+  - {fileID: 4617365563186364}
+  - {fileID: 4998874197659892}
+  - {fileID: 4132862189046193}
+  - {fileID: 4295428814336086}
+  - {fileID: 4450391854282655}
+  - {fileID: 4386943702330414}
+  - {fileID: 4785330607447594}
+  - {fileID: 4007513189690300}
+  - {fileID: 4690175861776792}
+  - {fileID: 4969505138979683}
+  - {fileID: 4408345039935966}
+  - {fileID: 4611579644537198}
+  - {fileID: 4328299215684997}
+  - {fileID: 4633296557590524}
+  - {fileID: 4571878917323452}
+  - {fileID: 4534704304255049}
+  - {fileID: 4651560128206891}
+  - {fileID: 4964469411310401}
+  - {fileID: 4208575754630950}
+  - {fileID: 4431740505123533}
+  - {fileID: 4356319167443197}
+  - {fileID: 4976365255789935}
+  - {fileID: 4699617135816954}
+  - {fileID: 4264357844037074}
+  - {fileID: 4806657225351454}
+  - {fileID: 4704330047573733}
+  - {fileID: 4085275382694935}
+  - {fileID: 4231814100211528}
+  - {fileID: 4855482821919830}
+  - {fileID: 4492842699383957}
+  - {fileID: 4150646884989824}
+  - {fileID: 4880619614767448}
+  - {fileID: 4499726237547504}
+  - {fileID: 4658330495870062}
+  - {fileID: 4703931505913403}
+  - {fileID: 4121005239445321}
+  - {fileID: 4194081240383615}
+  - {fileID: 4354824845356902}
+  - {fileID: 4770005084341472}
+  - {fileID: 4123703392571528}
+  - {fileID: 4149520701623706}
+  - {fileID: 4292246286975720}
+  - {fileID: 4693062532245359}
+  - {fileID: 4630643969539439}
+  - {fileID: 4370222726513266}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 4384403120170545}
+  m_AABB:
+    m_Center: {x: -0.08117533, y: 0.020768642, z: 0}
+    m_Extent: {x: 2.7260704, y: 1.4994602, z: 3.0341449}
+  m_DirtyAABB: 0
+--- !u!4 &4279359913592680
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724804207875695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4384403120170545}
+  m_Father: {fileID: 4397768327470545}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4384403120170545
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618682377417806}
+  m_LocalRotation: {x: -0.4778255, y: 0.37280574, z: 0.65511584, w: -0.45113406}
+  m_LocalPosition: {x: -0.10504533, y: 2.0412095, z: 0.0014498389}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4149520701623706}
+  - {fileID: 4574304967836189}
+  - {fileID: 4574190619683098}
+  m_Father: {fileID: 4279359913592680}
+  m_LocalEulerAnglesHint: {x: 73.90162, y: -16.83948, z: 98.18842}
+--- !u!4 &4149520701623706
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703437598541787}
+  m_LocalRotation: {x: 0.8704063, y: 0.45901027, z: 0.16576324, w: 0.06500007}
+  m_LocalPosition: {x: 0.09595557, y: 0.015758688, z: 0.37312335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4292246286975720}
+  m_Father: {fileID: 4384403120170545}
+  m_LocalEulerAnglesHint: {x: 164.18317, y: 13.23181, z: -57.456104}
+--- !u!4 &4292246286975720
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884547391421755}
+  m_LocalRotation: {x: 0, y: 0, z: 0.63148415, w: 0.77538884}
+  m_LocalPosition: {x: 1.0646353, y: -1.4210854E-15, z: 1.2789769E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4693062532245359}
+  m_Father: {fileID: 4149520701623706}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -78.31941}
+--- !u!4 &4693062532245359
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099118695303065}
+  m_LocalRotation: {x: -0.2560488, y: -0.01872219, z: -0.39587444, w: 0.881687}
+  m_LocalPosition: {x: 1.2063124, y: -2.0250468E-15, z: -1.1368684E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4630643969539439}
+  m_Father: {fileID: 4292246286975720}
+  m_LocalEulerAnglesHint: {x: -26.702053, y: 13.635281, z: 45.10928}
+--- !u!4 &4630643969539439
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243736805655561}
+  m_LocalRotation: {x: 0.13306314, y: 0.00023709552, z: -0.6579909, w: 0.7411762}
+  m_LocalPosition: {x: 0.28363588, y: -0.43052444, z: 3.410605E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4370222726513266}
+  m_Father: {fileID: 4693062532245359}
+  m_LocalEulerAnglesHint: {x: 11.539165, y: -10.105435, z: 82.17146}
+--- !u!4 &4370222726513266
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061268324235159}
+  m_LocalRotation: {x: 8.77082E-08, y: 1.2982732E-06, z: -1.1386921E-13, w: 1}
+  m_LocalPosition: {x: 0.15959348, y: -2.3092638E-16, z: -1.847411E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4630643969539439}
+  m_LocalEulerAnglesHint: {x: 1.00506195E-05, y: -0.00014877116, z: 5.607683E-19}
+--- !u!4 &4574304967836189
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587765826080250}
+  m_LocalRotation: {x: -0.43041715, y: 0.7030367, z: -0.44803983, w: -0.34603578}
+  m_LocalPosition: {x: 0.09595557, y: 0.015758688, z: -0.37312335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4009931292380359}
+  m_Father: {fileID: 4384403120170545}
+  m_LocalEulerAnglesHint: {x: -137.23236, y: 60.719967, z: 142.88437}
+--- !u!4 &4009931292380359
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709867586078768}
+  m_LocalRotation: {x: 0, y: 0, z: 0.64051646, w: 0.76794446}
+  m_LocalPosition: {x: -1.0646353, y: 2.8421708E-15, z: -1.4210854E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4393105877652414}
+  m_Father: {fileID: 4574304967836189}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -79.66068}
+--- !u!4 &4393105877652414
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044625135789424}
+  m_LocalRotation: {x: -0.28623602, y: -0.12579007, z: -0.23736954, w: 0.91972905}
+  m_LocalPosition: {x: -1.2063124, y: 7.105427E-16, z: -4.2632563E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4799762105739359}
+  m_Father: {fileID: 4009931292380359}
+  m_LocalEulerAnglesHint: {x: -30.124208, y: 21.547533, z: 23.08005}
+--- !u!4 &4799762105739359
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589667821646929}
+  m_LocalRotation: {x: 0.003618926, y: 0.0031608972, z: -0.65782934, w: 0.7531517}
+  m_LocalPosition: {x: -0.28363588, y: 0.43052444, z: -4.5474734E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4829625606037309}
+  m_Father: {fileID: 4393105877652414}
+  m_LocalEulerAnglesHint: {x: 0.0740604, y: -0.54560965, z: 82.269875}
+--- !u!4 &4829625606037309
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372920208702427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15959348, y: -6.895817E-14, z: 4.125006E-07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4799762105739359}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4574190619683098
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025901758691103}
+  m_LocalRotation: {x: -0.06209246, y: -0.06397351, z: -0.10734837, w: 0.99021626}
+  m_LocalPosition: {x: -0.5800541, y: -8.5265126E-16, z: 3.5527136E-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4552309709192268}
+  m_Father: {fileID: 4384403120170545}
+  m_LocalEulerAnglesHint: {x: -6.333874, y: 8.049366, z: 11.92833}
+--- !u!4 &4552309709192268
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985305603660343}
+  m_LocalRotation: {x: -0.048997797, y: -0.044969358, z: -0.17784964, w: 0.98180777}
+  m_LocalPosition: {x: -0.6719691, y: -2.842171E-16, z: -2.842171E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4571878917323452}
+  - {fileID: 4356319167443197}
+  - {fileID: 4167524263268962}
+  m_Father: {fileID: 4574190619683098}
+  m_LocalEulerAnglesHint: {x: -4.627046, y: 6.069285, z: 20.289587}
+--- !u!4 &4571878917323452
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705390221481576}
+  m_LocalRotation: {x: 0, y: 0, z: -0.47193366, w: 0.88163406}
+  m_LocalPosition: {x: -0.19401477, y: -1.4210854E-15, z: 2.1316282E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4534704304255049}
+  m_Father: {fileID: 4552309709192268}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 56.319775}
+--- !u!4 &4534704304255049
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977153420339851}
+  m_LocalRotation: {x: -0.0424852, y: 0.043881513, z: 0.21874401, w: 0.97386885}
+  m_LocalPosition: {x: -0.53850055, y: 0, z: -3.5527135E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4651560128206891}
+  m_Father: {fileID: 4571878917323452}
+  m_LocalEulerAnglesHint: {x: -3.6636548, y: -5.972807, z: -25.127403}
+--- !u!4 &4651560128206891
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336590748365959}
+  m_LocalRotation: {x: -0.07457113, y: -0.13663526, z: 0.32269624, w: 0.9336151}
+  m_LocalPosition: {x: -0.29400605, y: -1.1368684E-15, z: -1.811884E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4964469411310401}
+  - {fileID: 4208575754630950}
+  m_Father: {fileID: 4534704304255049}
+  m_LocalEulerAnglesHint: {x: -13.441933, y: 11.94671, z: -39.547462}
+--- !u!4 &4964469411310401
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256069497284392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.33975273, y: -1.4210854E-15, z: -1.8798768E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4651560128206891}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4208575754630950
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161607090078389}
+  m_LocalRotation: {x: -0.53646755, y: 0.8438686, z: 0.007694841, w: 0.0053986977}
+  m_LocalPosition: {x: 0.047806144, y: 0.03877122, z: -1.4210854E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4431740505123533}
+  m_Father: {fileID: 4651560128206891}
+  m_LocalEulerAnglesHint: {x: 179.58772, y: -0.99514294, z: 115.11338}
+--- !u!4 &4431740505123533
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002669891404536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.42762992, y: 5.684342E-16, z: 1.7045664E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4208575754630950}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4356319167443197
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470112387431263}
+  m_LocalRotation: {x: 0.77493286, y: 0.03217942, z: 0.6293933, w: -0.04803755}
+  m_LocalPosition: {x: -0.19373241, y: -0.035730414, z: 0.47822943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4976365255789935}
+  m_Father: {fileID: 4552309709192268}
+  m_LocalEulerAnglesHint: {x: -170.51227, y: 78.11606, z: 2.949213}
+--- !u!4 &4976365255789935
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313026266067498}
+  m_LocalRotation: {x: -0.12520997, y: -0.28682533, z: -0.043014966, w: 0.94879055}
+  m_LocalPosition: {x: 0.34208146, y: -1.9895197E-15, z: -2.8421708E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4699617135816954}
+  m_Father: {fileID: 4356319167443197}
+  m_LocalEulerAnglesHint: {x: -14.831043, y: 33.713886, z: 0.67487496}
+--- !u!4 &4699617135816954
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621510681728303}
+  m_LocalRotation: {x: 0, y: 0, z: -0.5957676, w: 0.80315685}
+  m_LocalPosition: {x: 0.9319102, y: 1.1368684E-15, z: -2.8421708E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4264357844037074}
+  m_Father: {fileID: 4976365255789935}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 73.13474}
+--- !u!4 &4264357844037074
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632457200066912}
+  m_LocalRotation: {x: 0.24726072, y: -0.09579209, z: 0.09921246, w: 0.9590844}
+  m_LocalPosition: {x: 1.0198873, y: 1.4210854E-16, z: -1.6171953E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4499726237547504}
+  - {fileID: 4806657225351454}
+  - {fileID: 4194081240383615}
+  - {fileID: 4855482821919830}
+  m_Father: {fileID: 4699617135816954}
+  m_LocalEulerAnglesHint: {x: 27.91386, y: 13.462452, z: -8.451573}
+--- !u!4 &4499726237547504
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634108722742392}
+  m_LocalRotation: {x: 0.0050122812, y: -0.15937677, z: -0.031107519, w: 0.9867149}
+  m_LocalPosition: {x: 0.4166042, y: -0.18241262, z: 0.036470458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4658330495870062}
+  m_Father: {fileID: 4264357844037074}
+  m_LocalEulerAnglesHint: {x: 1.1954869, y: 18.31295, z: 3.8041592}
+--- !u!4 &4658330495870062
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302127217294661}
+  m_LocalRotation: {x: -0.00029762986, y: -0.1107976, z: 0.0041748323, w: 0.9938342}
+  m_LocalPosition: {x: 0.1922663, y: 7.105427E-17, z: 8.5265126E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4703931505913403}
+  m_Father: {fileID: 4499726237547504}
+  m_LocalEulerAnglesHint: {x: -0.08908848, y: 12.722331, z: -0.49129748}
+--- !u!4 &4703931505913403
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969106005120503}
+  m_LocalRotation: {x: -0.011013146, y: -0.56938696, z: 0.00802595, w: 0.82195675}
+  m_LocalPosition: {x: 0.12906899, y: 7.81597E-16, z: -2.842171E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4121005239445321}
+  m_Father: {fileID: 4658330495870062}
+  m_LocalEulerAnglesHint: {x: -4.433903, y: 69.36526, z: -4.187877}
+--- !u!4 &4121005239445321
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642988549198181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16427952, y: 4.2632563E-16, z: -1.7053025E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4703931505913403}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4806657225351454
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946936116752871}
+  m_LocalRotation: {x: -0.03510693, y: -0.3763022, z: -0.009546136, w: 0.9257824}
+  m_LocalPosition: {x: 0.4418852, y: 2.3092638E-16, z: 5.4001247E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4704330047573733}
+  m_Father: {fileID: 4264357844037074}
+  m_LocalEulerAnglesHint: {x: -4.6274776, y: 44.22023, z: -0.6992687}
+--- !u!4 &4704330047573733
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711914853252429}
+  m_LocalRotation: {x: 0.00031584362, y: -0.117932364, z: -4.138442E-05, w: 0.9930216}
+  m_LocalPosition: {x: 0.18489422, y: 7.194245E-16, z: -1.3926637E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4085275382694935}
+  m_Father: {fileID: 4806657225351454}
+  m_LocalEulerAnglesHint: {x: 0.037544046, y: 13.545575, z: 0.009234404}
+--- !u!4 &4085275382694935
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918264173551851}
+  m_LocalRotation: {x: 0.0003904218, y: -0.5361485, z: -0.00025389902, w: 0.84412354}
+  m_LocalPosition: {x: 0.15384166, y: -1.2700951E-15, z: 9.023893E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4231814100211528}
+  m_Father: {fileID: 4704330047573733}
+  m_LocalEulerAnglesHint: {x: 0.1255366, y: 64.84362, z: 0.11420234}
+--- !u!4 &4231814100211528
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587397909062814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14299934, y: -1.2789769E-15, z: -1.762146E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4085275382694935}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4194081240383615
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875609422105747}
+  m_LocalRotation: {x: 0.010454293, y: -0.4495285, z: 0.04347795, w: 0.89214605}
+  m_LocalPosition: {x: 0.40395254, y: 0.18152502, z: 0.040261526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4354824845356902}
+  m_Father: {fileID: 4264357844037074}
+  m_LocalEulerAnglesHint: {x: -1.9650071, y: 53.417458, z: -6.568846}
+--- !u!4 &4354824845356902
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371939378208658}
+  m_LocalRotation: {x: -0.0024027044, y: -0.3529673, z: 0.00055433763, w: 0.93563247}
+  m_LocalPosition: {x: 0.17088808, y: -1.3855583E-15, z: -5.4001247E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4770005084341472}
+  m_Father: {fileID: 4194081240383615}
+  m_LocalEulerAnglesHint: {x: -0.37296015, y: 41.337452, z: -0.20859021}
+--- !u!4 &4770005084341472
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694121525821480}
+  m_LocalRotation: {x: 0.004001351, y: -0.5172653, z: -0.0028588888, w: 0.855811}
+  m_LocalPosition: {x: 0.123581275, y: 3.1974422E-16, z: 2.131628E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4123703392571528}
+  m_Father: {fileID: 4354824845356902}
+  m_LocalEulerAnglesHint: {x: 1.2085472, y: 62.293365, z: 1.1132019}
+--- !u!4 &4123703392571528
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320256170494724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15468773, y: 1.7053025E-15, z: -5.684342E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4770005084341472}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4855482821919830
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017697238300914}
+  m_LocalRotation: {x: 0.73992383, y: 0.023425218, z: 0.515806, w: -0.4311708}
+  m_LocalPosition: {x: 0.106658064, y: -0.15550505, z: 0.13768986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4492842699383957}
+  m_Father: {fileID: 4264357844037074}
+  m_LocalEulerAnglesHint: {x: -98.89432, y: 51.583527, z: 41.30343}
+--- !u!4 &4492842699383957
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733206282342372}
+  m_LocalRotation: {x: 0, y: -0.24139032, z: 0, w: 0.97042817}
+  m_LocalPosition: {x: 0.22525303, y: 2.8421708E-15, z: -2.4158453E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4150646884989824}
+  m_Father: {fileID: 4855482821919830}
+  m_LocalEulerAnglesHint: {x: 0, y: 27.937223, z: 0}
+--- !u!4 &4150646884989824
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217368724061974}
+  m_LocalRotation: {x: 2.3385711E-07, y: -0.35804963, z: 8.4280987E-07, w: 0.9337026}
+  m_LocalPosition: {x: 0.14963448, y: 7.247536E-15, z: 1.1368684E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4880619614767448}
+  m_Father: {fileID: 4492842699383957}
+  m_LocalEulerAnglesHint: {x: -1.28545125E-05, y: 41.960926, z: -0.00010836581}
+--- !u!4 &4880619614767448
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089843903986396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.19241534, y: -5.684342E-16, z: 2.1316282E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4150646884989824}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4167524263268962
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672306508523268}
+  m_LocalRotation: {x: -0.10753724, y: -0.8449064, z: 0.1690421, w: 0.49597752}
+  m_LocalPosition: {x: -0.19373241, y: -0.035730414, z: -0.49283236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4641631609468814}
+  m_Father: {fileID: 4552309709192268}
+  m_LocalEulerAnglesHint: {x: -138.97156, y: 53.297783, z: -144.22406}
+--- !u!4 &4641631609468814
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808113985169905}
+  m_LocalRotation: {x: 0.101727284, y: -0.27136633, z: -0.09808292, w: 0.95204604}
+  m_LocalPosition: {x: -0.34208146, y: -3.410605E-15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4533803739292891}
+  m_Father: {fileID: 4167524263268962}
+  m_LocalEulerAnglesHint: {x: 16.53002, y: 29.785284, z: 16.18867}
+--- !u!4 &4533803739292891
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060945828524476}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6500883, w: 0.75985867}
+  m_LocalPosition: {x: -0.9319102, y: -2.842171E-16, z: -1.4210854E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4601984538237284}
+  m_Father: {fileID: 4641631609468814}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 81.09652}
+--- !u!4 &4601984538237284
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900271049623953}
+  m_LocalRotation: {x: 0.6783973, y: 0.08874678, z: -0.005921116, w: 0.72929156}
+  m_LocalPosition: {x: -1.0198873, y: 1.1368684E-15, z: 1.5603518E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4785330607447594}
+  - {fileID: 4190181876552715}
+  - {fileID: 4408345039935966}
+  - {fileID: 4132862189046193}
+  m_Father: {fileID: 4533803739292891}
+  m_LocalEulerAnglesHint: {x: 86.30679, y: -7.901951, z: -6.4794126}
+--- !u!4 &4785330607447594
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472185465350827}
+  m_LocalRotation: {x: -0.024294332, y: -0.26492152, z: 0.046528015, w: 0.9628404}
+  m_LocalPosition: {x: -0.4166042, y: 0.18241262, z: -0.036470458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4007513189690300}
+  m_Father: {fileID: 4601984538237284}
+  m_LocalEulerAnglesHint: {x: -4.7568765, y: 30.523617, z: -6.8318014}
+--- !u!4 &4007513189690300
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518489005915545}
+  m_LocalRotation: {x: 0.00016720177, y: -0.22033195, z: 0.0041820863, w: 0.975416}
+  m_LocalPosition: {x: -0.1922663, y: -5.684342E-16, z: -1.4210854E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4690175861776792}
+  m_Father: {fileID: 4785330607447594}
+  m_LocalEulerAnglesHint: {x: -0.09624584, y: 25.456898, z: -0.5130473}
+--- !u!4 &4690175861776792
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220653531496868}
+  m_LocalRotation: {x: -0.010055126, y: -0.657031, z: 0.009197812, w: 0.75374043}
+  m_LocalPosition: {x: -0.12906899, y: -1.1368684E-15, z: -7.744916E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4969505138979683}
+  m_Father: {fileID: 4007513189690300}
+  m_LocalEulerAnglesHint: {x: -11.294067, y: 82.00352, z: -11.224431}
+--- !u!4 &4969505138979683
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841364053301648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16427952, y: -2.2026825E-15, z: 1.7053025E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4690175861776792}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4190181876552715
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967328832014496}
+  m_LocalRotation: {x: -0.05224701, y: -0.4805243, z: 0.04393848, w: 0.8743204}
+  m_LocalPosition: {x: -0.4418852, y: -1.4210854E-15, z: 1.6342482E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4240571728440943}
+  m_Father: {fileID: 4601984538237284}
+  m_LocalEulerAnglesHint: {x: -14.077223, y: 56.68598, z: -13.374504}
+--- !u!4 &4240571728440943
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291844617409189}
+  m_LocalRotation: {x: 0.0003087442, y: -0.2344022, z: -7.840206E-05, w: 0.9721397}
+  m_LocalPosition: {x: -0.18489422, y: -5.684342E-16, z: 1.3322676E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4617365563186364}
+  m_Father: {fileID: 4190181876552715}
+  m_LocalEulerAnglesHint: {x: 0.04100579, y: 27.112768, z: 0.019128999}
+--- !u!4 &4617365563186364
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344419225485095}
+  m_LocalRotation: {x: 0.0003577403, y: -0.6319939, z: -0.00029818766, w: 0.7749732}
+  m_LocalPosition: {x: -0.15384166, y: 5.684342E-16, z: -4.227729E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4998874197659892}
+  m_Father: {fileID: 4240571728440943}
+  m_LocalEulerAnglesHint: {x: 0.2652718, y: 78.39465, z: 0.26042148}
+--- !u!4 &4998874197659892
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919942235722503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.14299934, y: 1.065814E-15, z: 2.3874235E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4617365563186364}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4408345039935966
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107629493147155}
+  m_LocalRotation: {x: 0.02435377, y: -0.55522215, z: 0.038279932, w: 0.8304637}
+  m_LocalPosition: {x: -0.40395254, y: -0.18152502, z: -0.040261526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4611579644537198}
+  m_Father: {fileID: 4601984538237284}
+  m_LocalEulerAnglesHint: {x: -0.308439, y: 67.52526, z: -5.4845133}
+--- !u!4 &4611579644537198
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833703512093738}
+  m_LocalRotation: {x: -0.002316324, y: -0.4653198, z: 0.00084553, w: 0.8851392}
+  m_LocalPosition: {x: -0.17088808, y: 1.1368684E-15, z: -5.4001247E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4328299215684997}
+  m_Father: {fileID: 4408345039935966}
+  m_LocalEulerAnglesHint: {x: -0.49391398, y: 55.46112, z: -0.3691116}
+--- !u!4 &4328299215684997
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632746491512912}
+  m_LocalRotation: {x: 0.0036191987, y: -0.6186316, z: -0.0033294838, w: 0.7856658}
+  m_LocalPosition: {x: -0.123581275, y: 5.684342E-16, z: 4.476419E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4633296557590524}
+  m_Father: {fileID: 4611579644537198}
+  m_LocalEulerAnglesHint: {x: 2.3939717, y: 76.42202, z: 2.3703308}
+--- !u!4 &4633296557590524
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719342369648492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15468773, y: -2.7000624E-15, z: 2.8421708E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4328299215684997}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4132862189046193
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726790013014859}
+  m_LocalRotation: {x: 0.73992383, y: 0.023425218, z: 0.515806, w: -0.4311708}
+  m_LocalPosition: {x: -0.106658064, y: 0.15550505, z: -0.13768986}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4295428814336086}
+  m_Father: {fileID: 4601984538237284}
+  m_LocalEulerAnglesHint: {x: -98.89432, y: 51.583527, z: 41.30343}
+--- !u!4 &4295428814336086
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436073260064126}
+  m_LocalRotation: {x: 0, y: -0.19182365, z: 0, w: 0.9814294}
+  m_LocalPosition: {x: -0.22525303, y: -9.947598E-16, z: 5.684342E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4450391854282655}
+  m_Father: {fileID: 4132862189046193}
+  m_LocalEulerAnglesHint: {x: 0, y: 22.118458, z: 0}
+--- !u!4 &4450391854282655
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693329660128220}
+  m_LocalRotation: {x: 2.921973E-07, y: -0.42243946, z: 8.244018E-07, w: 0.9063912}
+  m_LocalPosition: {x: -0.14963448, y: -5.4001247E-15, z: 5.684342E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4386943702330414}
+  m_Father: {fileID: 4295428814336086}
+  m_LocalEulerAnglesHint: {x: -1.4863596E-05, y: 49.97739, z: -0.00011115339}
+--- !u!4 &4386943702330414
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801075752484240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19241534, y: -1.1368684E-15, z: -9.237055E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4450391854282655}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4066778049879928
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000955326284023}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.3333334, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4397768327470545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

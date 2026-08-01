@@ -1,0 +1,504 @@
+using UnityEngine;
+
+public class MainScenePopup : BasePopup
+{
+	public interface Condition
+	{
+		bool IsSatisfyingConditions();
+	}
+
+	public class DefaultCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class PiggyBankCondition : Condition
+	{
+		private readonly PiggyBankType piggyBankType;
+
+		public PiggyBankCondition(PiggyBankType piggyBankType)
+		{
+		}
+
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class HotDealCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class LevelUpCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class FirstTopUpCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class SubscribeCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class AncientCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class AccessoryCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class PetCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class RuneCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class DoubleExpCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class VendorCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	private class FlashSaleCondition : Condition
+	{
+		public bool IsSatisfyingConditions()
+		{
+			return false;
+		}
+	}
+
+	public GameObject modelRoot;
+
+	public GameObject btn_skill;
+
+	public GameObject btn_equipment;
+
+	public GameObject btn_adventure;
+
+	public GameObject btn_challenge;
+
+	public GameObject btn_shopResources;
+
+	public GameObject btn_shopTreasure;
+
+	public GameObject btn_shopVendor;
+
+	public GameObject resources_container;
+
+	public GameObject btn_rune;
+
+	public GameObject btn_firstTime;
+
+	public GameObject btn_hotdeal;
+
+	public GameObject btn_levelUpPackage;
+
+	public GameObject btn_subscribePackage;
+
+	public GameObject btn_cosmeticGallery;
+
+	public GameObject btn_switch;
+
+	public GameObject btn_crossPromotion;
+
+	public GameObject btn_mastery;
+
+	public GameObject btn_piggyBank;
+
+	public GameObject btn_petList;
+
+	public GameObject btn_craft;
+
+	public GameObject btn_questGroup;
+
+	public GameObject btn_runePack;
+
+	public GameObject btn_petPack;
+
+	public GameObject btn_event;
+
+	public GameObject btn_xmasOnline;
+
+	public GameObject btn_crystalPiggyBank;
+
+	public GameObject btn_doubleExp;
+
+	public GameObject btn_flashSale;
+
+	public GameObject btn_ancientPack;
+
+	public GameObject btn_accessoryPack;
+
+	public GameObject btn_7dayCampaign;
+
+	public GameObject btn_demonLogin;
+
+	public GameObject btn_demonInvasion;
+
+	public GameObject btn_dailyReward;
+
+	public GameObject btn_community;
+
+	public GameObject btn_unlockAllCharactersPackage;
+
+	public GameObject btn_flashSaleOreRuneBundle;
+
+	public GameObject btn_blackFridaySale;
+
+	public GameObject btn_eventPopup;
+
+	public UITable packContainer;
+
+	private float time;
+
+	protected override void Awake()
+	{
+	}
+
+	private void SendShopClickObject(string nameItem)
+	{
+	}
+
+	private void OnHidePopup(BasePopup obj, bool showAnotherPopup)
+	{
+	}
+
+	private void Community(GameObject go)
+	{
+	}
+
+	private void Campaign(GameObject go)
+	{
+	}
+
+	private void ShowAccessory(GameObject go)
+	{
+	}
+
+	private void ShowAncient(GameObject go)
+	{
+	}
+
+	private void EventDemonInvasion(GameObject go)
+	{
+	}
+
+	private void DailyReward(GameObject go)
+	{
+	}
+
+	private void FlashSale(GameObject go)
+	{
+	}
+
+	private void DoubleExp(GameObject go)
+	{
+	}
+
+	private void CrystalPiggyBank(GameObject go)
+	{
+	}
+
+	protected override void OnEnable()
+	{
+	}
+
+	private void Event(GameObject go)
+	{
+	}
+
+	private void XmasOnline(GameObject go)
+	{
+	}
+
+	private void PetPack(GameObject go)
+	{
+	}
+
+	private void RunePack(GameObject go)
+	{
+	}
+
+	private void ShowQuestGroup(GameObject go)
+	{
+	}
+
+	private void Craft(GameObject go)
+	{
+	}
+
+	private void AnniversaryQuet(GameObject o)
+	{
+	}
+
+	private void AnniversaryLogin(GameObject o)
+	{
+	}
+
+	private void Pet(GameObject go)
+	{
+	}
+
+	private void Piggy(GameObject go)
+	{
+	}
+
+	private void Switch(GameObject go)
+	{
+	}
+
+	private void ShowCosmeticGallery(GameObject go)
+	{
+	}
+
+	private void Subscribe(GameObject go)
+	{
+	}
+
+	private void ShowHotDeal(GameObject go)
+	{
+	}
+
+	private void SendShopAndIapClickHotDeal()
+	{
+	}
+
+	private void ShowFirstTimePopup(GameObject go)
+	{
+	}
+
+	private void SendShopAndIapClickFirstTimePurchase()
+	{
+	}
+
+	private void ShowUnlockAllCharacters(GameObject go)
+	{
+	}
+
+	private void ShowFlashSaleOreRuneBundle(GameObject go)
+	{
+	}
+
+	private void ShowShopBlackFridaySale(GameObject go)
+	{
+	}
+
+	private void ShowEventPopup(GameObject go)
+	{
+	}
+
+	protected override void OnDestroy()
+	{
+	}
+
+	protected override void OnDisable()
+	{
+	}
+
+	protected override void onEnable()
+	{
+	}
+
+	protected override void ExecuteBack()
+	{
+	}
+
+	protected override bool EnableBack()
+	{
+		return false;
+	}
+
+	public void Show()
+	{
+	}
+
+	private void SortPackages()
+	{
+	}
+
+	private void LimitPackages()
+	{
+	}
+
+	public void CheckUnLockPiggy()
+	{
+	}
+
+	private void InitResourcesBar()
+	{
+	}
+
+	private void InitModelRoot()
+	{
+	}
+
+	public void CheckEnableFirstTopUp()
+	{
+	}
+
+	private void OpenSkill(GameObject o)
+	{
+	}
+
+	private void OpenEquipment(GameObject o)
+	{
+	}
+
+	private void Adventure(GameObject o)
+	{
+	}
+
+	private void Challenge(GameObject o)
+	{
+	}
+
+	private void ShopResources(GameObject o)
+	{
+	}
+
+	private void ShopVendor(GameObject o)
+	{
+	}
+
+	private void ShopTreasure(GameObject o)
+	{
+	}
+
+	private void InitFxButtonAdventure(GameObject o)
+	{
+	}
+
+	private void InitFxButtonChallenge(GameObject o)
+	{
+	}
+
+	private void ShowMemoryShard(GameObject o)
+	{
+	}
+
+	private void ShowRune(GameObject o)
+	{
+	}
+
+	private void ClickBack()
+	{
+	}
+
+	private void LevelUp(GameObject o)
+	{
+	}
+
+	private void ClickCrossPromotion(GameObject o)
+	{
+	}
+
+	private void Mastery(GameObject o)
+	{
+	}
+
+	private void CheckUnlockFeature(GameObject btn, FeatureName featureName, Condition condition)
+	{
+	}
+
+	private void CheckUnlockQuest()
+	{
+	}
+
+	private void CheckUnlockEvent()
+	{
+	}
+
+	private void EventDemonLogin(GameObject go)
+	{
+	}
+
+	private void CheckUnlockDemonInvasion()
+	{
+	}
+
+	private void CheckUnlockXmasOnline()
+	{
+	}
+
+	public void CheckUnlockAllCharactersPackage()
+	{
+	}
+
+	public void CheckUnlockShowFlashSaleOreRuneBundle()
+	{
+	}
+
+	private void CheckUnlockFlashSale()
+	{
+	}
+
+	private void CheckUnlockVendor()
+	{
+	}
+
+	private void CheckUnlockCampaign()
+	{
+	}
+
+	private void CheckUnlockShopBlackFriday()
+	{
+	}
+
+	private void CheckUnlockEventPopup()
+	{
+	}
+
+	private void Update()
+	{
+	}
+}

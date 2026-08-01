@@ -1,0 +1,49 @@
+using CodeStage.AntiCheat.ObscuredTypes;
+
+namespace Scripts.Config
+{
+	public class EventShopTokenProductInfo : IProductInfo, WrapContentData
+	{
+		private ObscuredInt obscuredToken;
+
+		private ObscuredInt obscuredBonus;
+
+		public override int productId { get; set; }
+
+		public override double price { get; set; }
+
+		public override string currency { get; set; }
+
+		public override string icon { get; set; }
+
+		public override int sale { get; set; }
+
+		public override bool enable { get; set; }
+
+		public override string sku { get; set; }
+
+		public override string name { get; set; }
+
+		public int token
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public int bonus
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+	}
+}

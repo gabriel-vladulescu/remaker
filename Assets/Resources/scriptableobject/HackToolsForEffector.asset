@@ -1,0 +1,1226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c3b1a82b93dfb0086fb2ac51315454, type: 3}
+  m_Name: HackToolsForEffector
+  m_EditorClassIdentifier:
+  overrideDamage: 0
+  overrideCritRate: 0
+  overrideHp: 1
+  overrideDodgeChance: 0
+  overrideDmgAgainstBoss: 0
+  overrideLifeOnHit: 0
+  overrideBlockChance: 0
+  overrideBossDamageReduction: 0
+  overrideLifePerSecond: 0
+  overrideLifeSteal: 0
+  overrideMissChance: 0
+  overrideAttackSpd: 0
+  overrideBonusMovSpd: 0
+  overrideSkillCritRate: 0
+  overrideSkillCritDmg: 0
+  overrideAutoPlay: 0
+  overrideMaxPotion: 0
+  overridePotion: 0
+  damage: 1E+11
+  critRate: 1
+  maxHp: 999999
+  dodgeChance: 1
+  dmgAgainstBoss: 0
+  lifeOnHit: 0
+  blockChance: 0
+  bossDamageReduction: 0
+  lifePerSecond: 0
+  lifeSteal: 0
+  missChance: 0
+  bonusAttackSpd: 0
+  bonusMovSpd: 400
+  skillCritRate: 1
+  skillCritDMg: 1
+  maxPotion: 0
+  potion: 1000
+  skillNoCooldown: 0
+  playerCorpse: 0
+  autoPlay: 1
+  disableEenemyAI: 1
+  disableArenaRune: 0
+  disableBossCameraEffect: 1
+  disableArenaStartEffect: 0
+  EffectEditorInfos:
+  - path: Effect/Effect Common/BeHit3
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/gateEffect_Idle
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Stun
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/1001.SpiderQueen/Shackle_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Invincible
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Movement speed up
+    effectPos: 2
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/MoveSpeedDown
+    effectPos: 2
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Treasure_Damged
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Treasure_Common
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Treasure_Magic
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Treasure_Rare
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Treasure_Legendary
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Attack power up_FN1_new
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Attack power down_FN1
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Defense PowerUp_new
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Defense Power Down_FN1_new
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Burn Damaging_left (1)
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Buff Healing
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/cooldown_end
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/BeHit_immune
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Cursed
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Resurrection/Resurrection
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Soul/SoulDrop
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Soul/SoulHit/SoulHitFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/FlashQuad
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/BehitBlood
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Challenge_btn_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/NodeHighest_Circle
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/gateEffect_Idle_Boss
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/gateEffect_Break
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/gateEffect_Close
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/FlashQuad
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/FlashQuad
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/EquipmentUpgrade_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/spark
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/LvUp_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/MemoryShard/MemoryShard_Appeare
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/MemoryShard/MemoryShard
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/MemoryShard/MemoryShard_Impact
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/MemoryShard/Shard_Charge
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Anchor
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/MemoryShard/MemoryShardDisappear
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/MemoryShard/memoryShard_bgr
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/MemoryShardFlash
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Last_Stand_Hand
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Blast_Wave
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Card/Card_Effect/CombineRune1
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Card/Card_Effect/Disassemble_Rune1
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/LifeSteal_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/LifeSteal_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/LifeSteal_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/LifeSteal_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/DifficultyInsaneNodeFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/btn_bloodyTower_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Bloody Tower/Bloody_tower_playing_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Challenge_btn_fx2
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Hotdeal
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Hotdeal
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Gates/Dungeon/1/Gate0
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/btn
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/btn_2
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/btn_3
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/ColdBurn
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/PlayerCorpseTomb
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/PrayBattleFieldIndicator_Break
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Prayer
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/FlashQuad2
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/FlashQuad3
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/TrainMastery_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/ButtonAutoFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/Shock
+    effectPos: 1
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/StarLightUpFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/StarAppear
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/rankUpFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/rankUpFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/StarDisappear
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/winFX
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/LoseFX
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/LoadingFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/4.Mount/4.Skill7_Appear
+    effectPos: 0
+    durationInFrames: 10
+    startAtFrame: 10
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/4.Mount/4.Skill 7
+    effectPos: 0
+    durationInFrames: 120
+    startAtFrame: 12
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/4.Mount/4.Skill7_disappearShield
+    effectPos: 0
+    durationInFrames: 30
+    startAtFrame: 128
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/CardLightShine_Arena
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/WildHow_Start
+    effectPos: 0
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets:
+    - groupId: 1
+      subId: 1
+      offset: {x: 0, y: 2.436, z: 0}
+    - groupId: 2
+      subId: 1
+      offset: {x: 0, y: 2.436, z: 0}
+    - groupId: 3
+      subId: 1
+      offset: {x: 0, y: 2.1, z: 0}
+    - groupId: 4
+      subId: 1
+      offset: {x: 0, y: 2.716, z: 0}
+    - groupId: 5001
+      subId: 1
+      offset: {x: 0, y: 2.6, z: 1}
+    - groupId: 5001
+      subId: 2
+      offset: {x: 0, y: 3.5, z: 0}
+    jointInfos: []
+    scaleInfos:
+    - groupId: 5001
+      subId: 2
+      scale: {x: 1.2, y: 1.2, z: 1.2}
+  - path: Effect/EffectROT/warcry_Active2
+    effectPos: 0
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets:
+    - groupId: 1
+      subId: 1
+      offset: {x: 0, y: 2.436, z: 0}
+    - groupId: 2
+      subId: 1
+      offset: {x: 0, y: 2.436, z: 0}
+    - groupId: 3
+      subId: 1
+      offset: {x: 0, y: 2.1, z: 0}
+    - groupId: 4
+      subId: 1
+      offset: {x: 0, y: 2.716, z: 0}
+    - groupId: 5001
+      subId: 1
+      offset: {x: 0, y: 2.6, z: 0}
+    - groupId: 5001
+      subId: 2
+      offset: {x: 0, y: 3.5, z: 0}
+    jointInfos: []
+    scaleInfos:
+    - groupId: 5001
+      subId: 2
+      scale: {x: 1.2, y: 1.2, z: 1.2}
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/1000001.Mimic/Blessed_Start
+    effectPos: 0
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/1000001.Mimic/Blessed_Active
+    effectPos: 0
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets:
+    - groupId: 1
+      subId: 1
+      offset: {x: 0, y: 0.783, z: 0}
+    - groupId: 3
+      subId: 1
+      offset: {x: 0, y: 0.633, z: 0}
+    - groupId: 2
+      subId: 1
+      offset: {x: 0, y: 0.783, z: 0}
+    - groupId: 4
+      subId: 1
+      offset: {x: 0, y: 0.86, z: 0}
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/WildHow_Start
+    effectPos: 0
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets:
+    - groupId: 3002
+      subId: 2
+      offset: {x: 0.677, y: 1.3, z: 0}
+    - groupId: 3002
+      subId: 3
+      offset: {x: 0.677, y: 1.3, z: 0}
+    - groupId: 0
+      subId: 4
+      offset: {x: 0.677, y: 1.3, z: 0}
+    - groupId: 1
+      subId: 1
+      offset: {x: 0, y: 2.33, z: 0}
+    - groupId: 2
+      subId: 1
+      offset: {x: 0, y: 2.33, z: 0}
+    - groupId: 3
+      subId: 1
+      offset: {x: 0, y: 2.068, z: 0}
+    - groupId: 4
+      subId: 1
+      offset: {x: 0, y: 2.417, z: 0}
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/wildhow2
+    effectPos: 0
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets:
+    - groupId: 3002
+      subId: 2
+      offset: {x: 0.677, y: 1.3, z: 0}
+    - groupId: 3002
+      subId: 3
+      offset: {x: 0.677, y: 1.3, z: 0}
+    - groupId: 3002
+      subId: 4
+      offset: {x: 0.677, y: 1.3, z: 0}
+    - groupId: 1
+      subId: 1
+      offset: {x: 0, y: 2.33, z: 0}
+    - groupId: 2
+      subId: 1
+      offset: {x: 0, y: 2.33, z: 0}
+    - groupId: 3
+      subId: 1
+      offset: {x: 0, y: 2.068, z: 0}
+    - groupId: 4
+      subId: 1
+      offset: {x: 0, y: 2.417, z: 0}
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Bleed
+    effectPos: 2
+    durationInFrames: 180
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Prefabs/PetUpgrade_fx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/btn_3_xmas
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/BtnAnniversary
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/75012/Prefabs/PrayerOfLight/P_PrayerOfLight_Trigger
+    effectPos: 0
+    durationInFrames: 7777
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/btn_2_xmas
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/xmasWarFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/xmasOnlineFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/btnx2/xmasWarFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Innate Fighter
+    effectPos: 3
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos:
+    - jointName: wrist_L_joint
+    - jointName: wrist_R_joint
+    - jointName: Wrist_L
+    - jointName: Wrist_R
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/MagicArt_Start
+    effectPos: 3
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos:
+    - jointName: wrist_L_joint
+    - jointName: wrist_R_joint
+    - jointName: Wrist_L
+    - jointName: Wrist_R
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Magic Art
+    effectPos: 3
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos:
+    - jointName: wrist_L_joint
+    - jointName: wrist_R_joint
+    - jointName: Wrist_L
+    - jointName: Wrist_R
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Magic Art_Down
+    effectPos: 3
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos:
+    - jointName: wrist_L_joint
+    - jointName: wrist_R_joint
+    - jointName: Wrist_L
+    - jointName: Wrist_R
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Rage
+    effectPos: 3
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos:
+    - jointName: wrist_L_joint
+    - jointName: wrist_R_joint
+    - jointName: Wrist_L
+    - jointName: Wrist_R
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/MagicBarrier
+    effectPos: 2
+    durationInFrames: 99999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/MagicDamgeBlock_Up
+    effectPos: 2
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/MagicDamgeBlock_Down
+    effectPos: 2
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Hard Muscle
+    effectPos: 1
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Reflect Attack
+    effectPos: 1
+    durationInFrames: 150
+    startAtFrame: 1
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/Endurance
+    effectPos: 2
+    durationInFrames: 99999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/LastHope
+    effectPos: 1
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/All In Up
+    effectPos: 0
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/All In Down
+    effectPos: 0
+    durationInFrames: 999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Weapone_Skill/BestFriend1
+    effectPos: 0
+    durationInFrames: 9999999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/2000001.Broodmother_BOSS/2000001.skill8_link_test
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/SoulPiggyBgFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/SoulPiggyTopFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/CrystalPiggyBgFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/CrystalPiggyTopFx
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/2000001.Broodmother_BOSS/2000001.skill8_core_test
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/Acient_Item/7007.dodge_shadow
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/2000001.Broodmother_BOSS/2000001.skill8_core_test
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/4200/4200_silent
+    effectPos: 0
+    durationInFrames: 99999
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/TutorialNavigator
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/UI/Misc/Hotdeal 1
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Other/KillIndicator
+    effectPos: 2
+    durationInFrames: 7777
+    startAtFrame: 0
+    offsets:
+    - groupId: 5009
+      subId: 1
+      offset: {x: 0, y: -0.8, z: 0}
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/EffectROT/Poisoned
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/75012/Prefabs/PrayerOfLight/P_PrayerOfLight_Active
+    effectPos: 1
+    durationInFrames: 30
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path:
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Character/75012/Prefabs/Starshards/P_Starhards_Debuff
+    effectPos: 2
+    durationInFrames: 7777
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []
+  - path: Effect/Effect Common/BehitStone
+    effectPos: 0
+    durationInFrames: 0
+    startAtFrame: 0
+    offsets: []
+    jointInfos: []
+    scaleInfos: []

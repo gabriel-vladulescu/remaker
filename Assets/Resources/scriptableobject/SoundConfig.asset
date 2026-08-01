@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6890fc9fb62a6a5d29f6e2715469c384, type: 3}
+  m_Name: SoundConfig
+  m_EditorClassIdentifier:
+  uiSfxPath:
+  - 
+  - SoundLocal/sfx_ui_select
+  - Sounds/UISfx/sfx_ui_shop_single
+  - Sounds/UISfx/sfx_ui_shop_bundle
+  - Sounds/UISfx/sfx_ui_shop_normal_card
+  - Sounds/UISfx/sfx_ui_shop_rare_card
+  - SoundLocal/sfx_placeholder_silence
+  - SoundLocal/sfx_ui_menu_popup_back
+  - Sounds/UISfx/sfx_ui_menu_levelup
+  - Sounds/UISfx/sfx_ui_achievement
+  - SoundLocal/sfx_ui_select
+  - Sounds/UISfx/sfx_ui_game_reward
+  - Sounds/UISfx/sfx_ui_menu_equip_weapon
+  - Sounds/UISfx/sfx_ui_menu_equip_armor
+  - Sounds/UISfx/sfx_ui_menu_equip_acc
+  - Sounds/UISfx/sfx_ui_menu_unequip_weapon
+  - Sounds/UISfx/sfx_ui_menu_unequip_armor
+  - Sounds/UISfx/sfx_ui_menu_unequip_acc
+  - Sounds/UISfx/sfx_ui_upgrade
+  - Sounds/UISfx/sfx_ui_menu_sell
+  - Sounds/UISfx/sfx_ui_game_skillreject
+  - Sounds/UISfx/sfx_ui_menu_upgrade_level
+  - Sounds/UISfx/sfx_ui_game_begin
+  - Sounds/UISfx/sfx_ui_levelup
+  - Sounds/UISfx/sfx_ui_game_defeat
+  - Sounds/UISfx/sfx_ui_game_star
+  - Sounds/UISfx/sfx_ui_cancel2
+  - Sounds/UISfx/sfx_ui_menu_quest
+  - Sounds/UISfx/sfx_ui_menu_questcomplete
+  - Sounds/UISfx/sfx_game_drop
+  - Sounds/UISfx/sfx_ui_upgrade_absorb
+  - Sounds/UISfx/sfx_ui_clockTick
+  - Sounds/UISfx/sfx_game_resurrection
+  - Sounds/UISfx/sfx_ui_menu_upgrade_level
+  - Sounds/UISfx/sfx_game_drop
+  - Sounds/UISfx/sfx_game_drop
+  - Sounds/UISfx/sfx_ui_potion
+  - Sounds/UISfx/sfx_game_win
+  - Sounds/MeleeSfx/sfx_weapon_parry_block_1
+  - Sounds/UISfx/sfx_ui_menu_text
+  - 
+  - Sounds/UISfx/sfx_ev_ms_cfrag
+  - Sounds/UISfx/sfx_ui_ms_view
+  - Sounds/UISfx/sfx_ui_game_pickup
+  - 
+  - Sounds/MeleeSfx/sfx_blade_blocked
+  - 
+  - Sounds/UISfx/sfx_ui_rune_combine
+  - Sounds/UISfx/sfx_ui_menu_sell
+  - Sounds/UISfx/sfx_ui_rune_disassemble
+  - Sounds/UISfx/sfx_ui_rune_equip
+  - Sounds/UISfx/sfx_ui_rune_unequip
+  - Sounds/UISfx/sfx_ui_arena_victory2
+  - Sounds/UISfx/sfx_ui_arena_rankup3
+  - Sounds/UISfx/sfx_ui_arena_star
+  - Sounds/UISfx/sfx_ui_arena_starpop3
+  - Sounds/UISfx/sfx_ui_arena_lose2
+  - Sounds/UISfx/sfx_ui_arena_starlost
+  - Sounds/UISfx/sfx_ui_arena_rankdrop2
+  - Sounds/UISfx/sfx_ui_arena_newseason
+  - Sounds/UISfx/sfx_ui_arena_start
+  - Sounds/UISfx/sfx_ui_arena_victory_loop2
+  bgmPath:
+  - Sounds/BGM/bgm_main
+  - Sounds/BGM/bgm_map_outside
+  - Sounds/BGM/bgm_map_1
+  - Sounds/BGM/bgm_map_2
+  - Sounds/BGM/bgm_map_3
+  - Sounds/BGM/bgm_memory
+  - Sounds/BGM/bgm_ev_ms
+  - 
+  - Sounds/BGM/bgm_map_challenge
+  - Sounds/BGM/bgm_map_bloodtower
+  - Sounds/BGM/bgm_selection
+  - Sounds/BGM/bgm_arena
+  - Sounds/BGM/boss_bgm
+  - Sounds/BGM/bgm_map_2
+  - Sounds/BGM/boss_bgm
+  - Sounds/BGM/bgm_map_3
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  ambiencePath:
+  - Sounds/AmbientBg/sfx_amb_arena_tower_2
+  - Sounds/AmbientBg/sfx_amb_map_2
+  - Sounds/AmbientBg/sfx_amb_map_3
+  - Sounds/AmbientBg/sfx_amb_map_3
+  - Sounds/AmbientBg/sfx_amb_map_2
+  - 
+  volume_normalAttack: 1
+  volume_skill: 1
+  volume_impact: 1
+  volume_bgm: 0.9
+  volume_button: 1
+  volume_fx: 1
+  volume_ambience: 0.48

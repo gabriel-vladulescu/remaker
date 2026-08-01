@@ -1,0 +1,14 @@
+namespace Ssar.Shop.Model
+{
+	public enum FlashSaleRateUpConditionType
+	{
+		SOUL_LESS_THAN = 0,
+		CRYSTAL_LESS_THAN = 1,
+		LEGENDARY_EQUIPMENT_LESS_THAN = 2,
+		LEVEL_LESS_THAN = 3,
+		MASTERY_LESS_THAN = 4,
+		LEGENDARY_EQUIPMENT_MORE_THAN = 5,
+		LEVEL_MORE_THAN = 6,
+		MASTERY_MORE_THAN = 7
+	}
+}

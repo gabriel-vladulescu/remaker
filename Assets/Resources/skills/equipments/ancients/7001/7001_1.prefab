@@ -1,0 +1,568 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  m_Layer: 0
+  m_Name: 7001_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403d543e09d3bbb73797486243f6f89b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name:
+  skillConfigs:
+  - foldout: 1
+    skillClassName: Ancient7001Skill
+    skillStatsId: 0_0_7001
+    animationName: AncientSkill
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 12
+    channelingDuration: 1
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: -1
+    runIgnoreInputWindowEndFrame: -1
+    animationActiveFrame: -1
+    animationRecoveryFrame: -1
+    animationLengthInFrame: -1
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 1
+      frame: 5
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 0
+        damageMultiplier: 1
+        maxEnemyHitCount: 10
+        timeToLive: 1
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 10
+        meleeIntervalBetweenHit: 1
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath: Effect/Effect Other/Acient_Item/7001
+      vfxFollowCasterPosition: 1
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 10
+      frame: 0
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.AttackBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"bonus":1.0,"type":"Attack","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":12.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 10
+      frame: 0
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.DamageReductionBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"bonus":0.0,"rawBonus":0.0,"type":"DamageReduction","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":12.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 1
+      frame: 10
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath: Effect/Effect Other/Acient_Item/7001_Active
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.DamageReductionBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"bonus":0.0,"rawBonus":-2.0,"type":"DamageReduction","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":12.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    - foldout: 1
+      eventType: 10
+      frame: 1
+      actionFrameConfig:
+        actionType: 0
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 1
+        damageMultiplier: 1
+        maxEnemyHitCount: 1
+        timeToLive: 0
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 1
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString:
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 1
+      jumpDurationReachMaxHeight: 1
+      jumpDurationLandGround: 1
+      jumpDistance: 1
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 1
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.ImmuneBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"physical":true,"magical":true,"pure":true,"playLoopVfx":false,"playFlashVfx":false,"type":"Immune","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":1.0,"successRate":1.0,"isLifeCycleDependOnParentSkill":false}}}'
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 0
+    modifierConfigs: []
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 010100000000000000000100000000010000

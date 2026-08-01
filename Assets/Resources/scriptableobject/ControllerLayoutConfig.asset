@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79891565d2a3ff9f07e0dcd5d9e5a8cc, type: 3}
+  m_Name: ControllerLayoutConfig
+  m_EditorClassIdentifier:
+  layouts:
+  - id: 1
+    prefab: {fileID: 1709254077376921, guid: b4d3cd2589ab3f841994df51a96a7ca7, type: 2}
+    style: 0
+    form: 0
+  - id: 2
+    prefab: {fileID: 1709254077376921, guid: 31d9ceb0f00c97a4faefa6b5f1607631, type: 2}
+    style: 0
+    form: 1
+  - id: 3
+    prefab: {fileID: 1709254077376921, guid: d837e0a80ff91fb47af85887307be0a4, type: 2}
+    style: 1
+    form: 0
+  - id: 4
+    prefab: {fileID: 1709254077376921, guid: 8896068b282c9e2408a0cdab2fa19775, type: 2}
+    style: 1
+    form: 1

@@ -1,0 +1,61 @@
+Shader "kokichi/Mobile/Rim/MatCap/Textured Emission-Noise 3 Channels" {
+	Properties {
+		_basetexture ("Base (RGB)", 2D) = "white" {}
+		_color ("Main Color", Vector) = (1,1,1,1)
+		_emissionTexture ("Emission (RGB)", 2D) = "black" {}
+		_emissionColorR ("Emission Color Channel Red", Vector) = (1,1,1,1)
+		_emissionColorG ("Emission Color Channel Green", Vector) = (1,1,1,1)
+		_emissionColorB ("Emission Color Channel Blue", Vector) = (1,1,1,1)
+		_emissionScaleVector ("Emission Scale Vector", Vector) = (1,1,1,0)
+		[KeywordEnum(Multiply, Overlay, ColorDodge)] _mode ("Emission Blend Mode", Float) = 0
+		_noiseTexture ("Noise (RGB)", 2D) = "black" {}
+		_uvSpeed ("UV Scrolling Speed", Vector) = (0,0,0,0)
+		_matcap ("MatCap (RGB)", 2D) = "white" {}
+		_rimTex ("Rim Tex (RGB)", 2D) = "black" {}
+		_ambientscale ("Ambient Scale", Float) = 1
+		_diffusescale ("Diffuse Scale", Float) = 1
+		_mulscale ("Multiple Scale", Float) = 0.8
+		_addscale ("Add Scale", Float) = 0.8
+		_rimlightcolor ("Rim Light Color", Vector) = (1,1,1,1)
+		_rimlightscale ("Rim Light Scale", Float) = 1
+	}
+	//DummyShaderTextExporter
+	SubShader{
+		Tags { "RenderType" = "Opaque" }
+		LOD 200
+
+		Pass
+		{
+			HLSLPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+
+			float4x4 unity_ObjectToWorld;
+			float4x4 unity_MatrixVP;
+
+			struct Vertex_Stage_Input
+			{
+				float4 pos : POSITION;
+			};
+
+			struct Vertex_Stage_Output
+			{
+				float4 pos : SV_POSITION;
+			};
+
+			Vertex_Stage_Output vert(Vertex_Stage_Input input)
+			{
+				Vertex_Stage_Output output;
+				output.pos = mul(unity_MatrixVP, mul(unity_ObjectToWorld, input.pos));
+				return output;
+			}
+
+			float4 frag(Vertex_Stage_Output input) : SV_TARGET
+			{
+				return float4(1.0, 1.0, 1.0, 1.0); // RGBA
+			}
+
+			ENDHLSL
+		}
+	}
+}

@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40745563c0c4142c74514215392a95d3, type: 3}
+  m_Name: GameConfigPath
+  m_EditorClassIdentifier:
+  configNames:
+  - AssetsVersionConfig
+  - HeroConfig
+  - MonsterConfig
+  - DungeonConfig
+  - GameConfigConstant
+  - KeyConfig
+  - EquipmentConfig
+  - InventoryExpandConfigConstant
+  - LevelUpRewardConfig
+  - EventConfig
+  - ShopConfig
+  - DungeonDropConfig
+  - EquipmentGenerationConfig
+  - ShopVendorConfig
+  - AchievementConfig
+  - RandomEquipmentConfig
+  - FacebookRewardConfig
+  - ScenarioStarChestConfig
+  - LoadingTipConfig
+  - TutorialRewardConfig
+  - DailyQuestConfig
+  - RandomDisplayNameConfig
+  - MemoryShardConfig
+  - EquipmentVisualConfig
+  - CosmeticEquipmentGenerationConfig
+  - RuneConfig
+  - RandomRuneConfig
+  - VersionConstant
+  - BloodyTowerConfig
+  - FirstTimePurchaseConfig
+  - ShopNewLevelUpPackageConfig
+  - ShopNewSubscribePackageConfig
+  - CosmeticGalleryConfig
+  - AskForRateConfig
+  - EquipmentGenerationConfigChar3
+  - FeatureUnlockConfig
+  - EquipmentGenerationConfigChar2
+  - EquipmentGenerationConfigChar4
+  - EquipmentGenerationConfigChar5
+  - CharacterSelectionConfig
+  - AskForSaveConfig
+  - CorpseConfig
+  - DailyLoginConfig
+  - MasteryConfig
+  - PiggyBankConfig
+  - AwakenEquipmentConfig
+  - InterstitialAdsConfigConstant
+  - ArenaConfig
+  - PetConfig
+  - PetGenerationConfig
+  - RandomPetConfig
+  - PetVisualConfig
+  - CraftConfig
+  - FirstAnniversaryEventConfig
+  - RaidBossConfig
+  - XmasEventConfig
+  - DoublePackageValueEventConfig
+  - ShopDoubleExpPackageConfig
+  - FlashSaleEventConfig
+  - AncientEquipmentConfig
+  - AncientEnhancementConfig
+  - SoulLinkConfig
+  - SevenDayCampaignConfig
+  - TestLevelDesignDungeonConfig
+  - TestLevelDesignMonsterConfig
+  - DailyChallengeConfig
+  - DailyChallengeMonsterConfig
+  - DailyChallengeRewardConfig
+  - EventWarConfig
+  - EventLoginConfig
+  - EventShopConfig
+  - EventDemonInvasionConfig
+  - ShopBlackFridayConfig
+  configRunModes:
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 0
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 1
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 1
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 1
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 1
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 1
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 1
+  - initWhenRunGameEditor: 1
+    initWhenRunGameDevice: 1
+    allowDownload: 0
+  dataClass:
+  - AssetsVersionConfig
+  - HeroConfig
+  - MonsterConfig
+  - DungeonConfig
+  - GameConfigConstant
+  - KeyConfig
+  - EquipmentConfig
+  - InventoryExpandConfig
+  - LevelUpRewardConfig
+  - EventConfig
+  - ShopConfig
+  - JsonDungeonDropConfig
+  - JsonEquipmentDropConfig
+  - ShopVendorConfig
+  - JsonAchievementConfig
+  - JsonRandomEquipmentConfig
+  - FacebookRewardConfig
+  - ScenarioStarChestConfig
+  - LoadingTipConfig
+  - TutorialRewardConfig
+  - DailyQuestConfig
+  - RandomDisplayNameConfig
+  - MemoryShardConfig
+  - EquipmentVisualConfig
+  - JsonCosmeticEquipmentDropConfig
+  - RuneConfig
+  - RandomRuneConfig
+  - VersionConstant
+  - BloodyTowerConfig
+  - FirstTimePurchaseConfig
+  - ShopNewLevelUpPackageConfig
+  - ShopNewSubscribePackageConfig
+  - CosmeticGalleryConfig
+  - AskForRateConfig
+  - EquipmentGenerationConfigChar3
+  - FeatureUnlockConfig
+  - EquipmentGenerationConfigChar2
+  - EquipmentGenerationConfigChar4
+  - EquipmentGenerationConfigChar5
+  - CharacterSelectionConfig
+  - AskForSaveConfig
+  - CorpseConfig
+  - DailyLoginConfig
+  - MasteryConfig
+  - PiggyBankConfig
+  - AwakenEquipmentConfig
+  - InterstitialAdsConfig
+  - ArenaConfig
+  - PetConfig
+  - PetGenerationConfig
+  - RandomPetConfig
+  - PetVisualConfig
+  - CraftConfig
+  - FirstAnniversaryEventConfig
+  - RaidBossConfig
+  - XmasEventConfig
+  - DoublePackageValueEventConfig
+  - ShopDoubleExpPackageConfig
+  - FlashSaleEventConfig
+  - AncientEquipmentConfig
+  - AncientEnhancementConfig
+  - SoulLinkConfig
+  - CampaignConfig
+  - TestLevelDesignDungeonConfig
+  - TestLevelDesignMonsterConfig
+  - DailyChallengeConfig
+  - DailyChallengeMonsterConfig
+  - DailyChallengeRewardConfig
+  - EventWarConfig
+  - EventLoginConfig
+  - EventShopConfig
+  - EventDemonInvasionConfig
+  - ShopBlackFridayConfig

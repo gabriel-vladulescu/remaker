@@ -1,0 +1,26 @@
+public enum ItemType
+{
+	Invalid = -1,
+	Equipment = 0,
+	Crystal = 1,
+	Stamina = 2,
+	Soul = 3,
+	SkillPoint = 4,
+	CommonHpPotion = 5,
+	ExpTicket = 6,
+	SoulTicket = 7,
+	RandomEquipment = 8,
+	Rune = 9,
+	RandomRune = 10,
+	Exp = 11,
+	Character = 12,
+	AutoTicket = 13,
+	Pet = 14,
+	RandomPet = 15,
+	CraftingMaterial = 16,
+	RaidEntry = 17,
+	VideoTicket = 18,
+	WarToken = 19,
+	ArenaKey = 20,
+	BoostItems = 21
+}

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  m_Layer: 0
+  m_Name: Rage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bad6a6f47cc69f7b8c6c9bd3c74f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name:
+  skillConfigs:
+  - foldout: 1
+    skillClassName: DefaultMeleeSkill
+    skillStatsId: 4_1_508
+    animationName:
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 9999
+    channelingDuration: 0
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: -1
+    runIgnoreInputWindowEndFrame: -1
+    animationActiveFrame: -1
+    animationRecoveryFrame: -1
+    animationLengthInFrame: -1
+    eventFrameConfigs: []
+    eventTriggerConfigAreaExpand: 1
+    modifierConfigs:
+    - triggerType: 2
+      modifierType: 27
+      successRate: 0
+      knockbackLevel: 0
+      knockbackDashDistance: 0
+      knockbackDashDuration: 0
+      knockbackShouldInterruptTargetSkill: 0
+      knockbackTowardProjectile: 0
+      useCasterPositionForKnockbackDirection: 1
+      alwaysKnockbackAccordingToCasterFacingDirection: 0
+      knockdownLevel: 0
+      knockdownJumpHeight: 0
+      knockdownJumpDurationReachMaxHeight: 0
+      knockdownJumpDurationLandGround: 0
+      knockdownJumpDistance: 0
+      knockdownDuration: 0
+      useCasterPositionForKnockdownDirection: 1
+      useCasterFacingDirectionForKnockdownDirection: 0
+      useProjectileVelocityForKnockdownDirection: 0
+      knockdownFloatingDuration: 0
+      shouldPerformBouncing: 1
+      stunDuration: 0
+      stunPlayVfx: 0
+      stunAnimTransitionTime: 0.3
+      shackleDuration: 0
+      shacklePlayVfx: 0
+      configString: '{"buffConfig":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.BleedBuffConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"interval":0.0,"damageScale":0.0,"damageType":"Magical","type":"Bleed","buffTargetModeInfo":{"__type__":"Assets.Scripts.Ssar.Combat.Skills.SelfBuffTargetModeInfoConfig, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","__value__":{"targetMode":"Self"}},"duration":1.0,"successRate":0.5,"isLifeCycleDependOnParentSkill":false}}}'
+      cameraFxConfigString:
+      soundFxConfigString:
+      castSkillConfigString:
+      castProjectileConfigString:
+      castSpawnMonsterConfigString:
+      adjustTimeFrameConfigString:
+      playVfxConfigString:
+      hpDropAttackBuffConfigString:
+      beHitBlastWaveConfigString: '{"successRate":0.0,"knockbackLevel":99,"knockbackDashDistance":2.0,"knockbackDashDuration":0.20000000298023224,"size":{"x":3.0,"y":3.0},"offset":{"x":0.0,"y":1.0}}'
+      hitTargetInstantKillConfigString:
+      hitTargetCastSkillConfigString:
+      hpDropUsePotionConfigString: '{"hpLevel":0.5}'
+      comboDamageFrameShockwaveConfigString:
+      soundFxRandomlyConfigString:
+      weaponPassiveSkillConfigString: '{"successRate":1.0,"rawPower":0.0,"hpPercent":0.0,"hpThreshold":0.0,"scalePower":0.0,"duration":0.0,"scalePower2":0.0,"duration2":0.0,"cooldown":0.0,"stack":1}'
+    extras:
+    eventFrameAreaExpand: 0
+    foldoutOfTypesOfEventFrame: 01000000000000000000000000000000

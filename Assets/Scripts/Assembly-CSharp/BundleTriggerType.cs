@@ -1,0 +1,20 @@
+public enum BundleTriggerType
+{
+	DEFAULT = 0,
+	LOSE = 1,
+	OUT_OF_STOCK = 2,
+	LOGIN = 3,
+	MAIN = 4,
+	WORLDMAP = 5,
+	SHOP_RESOURCES = 6,
+	SHOP_TREASURE = 7,
+	SHOP_VENDOR = 8,
+	INTERVAL = 9,
+	INVENTORY = 10,
+	RATE = 11,
+	AVAILABLE_TIME = 12,
+	CHEST = 13,
+	LEVEL = 14,
+	GLOBAL_INTERVAL = 15,
+	PET_LIST = 16
+}

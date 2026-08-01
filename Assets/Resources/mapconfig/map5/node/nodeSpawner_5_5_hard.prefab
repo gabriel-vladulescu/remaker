@@ -1,0 +1,2319 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4302127217294661}
+  - component: {fileID: 114969106005120503}
+  m_Layer: 0
+  m_Name: nodeSpawner_5_5_hard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1730242686860875
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4642988549198181}
+  - component: {fileID: 114946936116752871}
+  m_Layer: 0
+  m_Name: CharSpawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1724804207875695
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4711914853252429}
+  m_Layer: 0
+  m_Name: Gates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1618682377417806
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4918264173551851}
+  - component: {fileID: 114587397909062814}
+  m_Layer: 0
+  m_Name: Gate0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1703437598541787
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4875609422105747}
+  - component: {fileID: 114371939378208658}
+  m_Layer: 0
+  m_Name: Gate1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1884547391421755
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4694121525821480}
+  - component: {fileID: 114320256170494724}
+  m_Layer: 0
+  m_Name: Gate2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1099118695303065
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4017697238300914}
+  m_Layer: 0
+  m_Name: Activators
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1243736805655561
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4733206282342372}
+  - component: {fileID: 114217368724061974}
+  m_Layer: 0
+  m_Name: activator0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1061268324235159
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4089843903986396}
+  - component: {fileID: 114672306508523268}
+  m_Layer: 0
+  m_Name: activator1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1587765826080250
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4808113985169905}
+  m_Layer: 0
+  m_Name: SpawnPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1709867586078768
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4060945828524476}
+  m_Layer: 0
+  m_Name: stage0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1044625135789424
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4900271049623953}
+  - component: {fileID: 114472185465350827}
+  - component: {fileID: 114518489005915545}
+  - component: {fileID: 114220653531496868}
+  m_Layer: 0
+  m_Name: W0_5003_Bogus Fruit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1589667821646929
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4841364053301648}
+  - component: {fileID: 114967328832014496}
+  - component: {fileID: 114291844617409189}
+  - component: {fileID: 114344419225485095}
+  m_Layer: 0
+  m_Name: W0_5005_Devory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1372920208702427
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4919942235722503}
+  - component: {fileID: 114107629493147155}
+  - component: {fileID: 114833703512093738}
+  - component: {fileID: 114632746491512912}
+  m_Layer: 0
+  m_Name: W0_5003_Bogus Fruit (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1025901758691103
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4719342369648492}
+  m_Layer: 0
+  m_Name: stage1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1985305603660343
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4726790013014859}
+  - component: {fileID: 114436073260064126}
+  - component: {fileID: 114693329660128220}
+  - component: {fileID: 114801075752484240}
+  m_Layer: 0
+  m_Name: W0_5005_Devory (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1705390221481576
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4000955326284023}
+  - component: {fileID: 114397768327470545}
+  - component: {fileID: 114571718729274231}
+  - component: {fileID: 114581786255902400}
+  m_Layer: 0
+  m_Name: W0_5009_Swamp Bug Move
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1977153420339851
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4477046003934300}
+  - component: {fileID: 114045458335737618}
+  - component: {fileID: 114722951815217645}
+  - component: {fileID: 114924050743934937}
+  m_Layer: 0
+  m_Name: W0_5009_Swamp Bug Move (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1336590748365959
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4215879266689626}
+  - component: {fileID: 114689364072382846}
+  - component: {fileID: 114043919389829319}
+  - component: {fileID: 114743393880019028}
+  m_Layer: 0
+  m_Name: W0_5002_Krocodile Shaman
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1256069497284392
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4094320201520353}
+  m_Layer: 0
+  m_Name: stage2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1161607090078389
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4026196548002408}
+  - component: {fileID: 114572839542275309}
+  - component: {fileID: 114279359913592680}
+  - component: {fileID: 114384403120170545}
+  m_Layer: 0
+  m_Name: W0_5100_Devourer Mini Boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1002669891404536
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4149520701623706}
+  - component: {fileID: 114292246286975720}
+  - component: {fileID: 114693062532245359}
+  - component: {fileID: 114630643969539439}
+  m_Layer: 0
+  m_Name: W0_5003_Bogus Fruit (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1470112387431263
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4370222726513266}
+  - component: {fileID: 114574304967836189}
+  - component: {fileID: 114009931292380359}
+  - component: {fileID: 114393105877652414}
+  m_Layer: 0
+  m_Name: W0_5004_Spider Bomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1313026266067498
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4799762105739359}
+  - component: {fileID: 114829625606037309}
+  - component: {fileID: 114574190619683098}
+  - component: {fileID: 114552309709192268}
+  m_Layer: 0
+  m_Name: W0_5004_Spider Bomb (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1621510681728303
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4571878917323452}
+  - component: {fileID: 114534704304255049}
+  - component: {fileID: 114651560128206891}
+  - component: {fileID: 114964469411310401}
+  m_Layer: 0
+  m_Name: W0_5004_Spider Bomb (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1632457200066912
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4208575754630950}
+  - component: {fileID: 114431740505123533}
+  - component: {fileID: 114356319167443197}
+  - component: {fileID: 114976365255789935}
+  m_Layer: 0
+  m_Name: W0_5004_Spider Bomb (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1634108722742392
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4699617135816954}
+  - component: {fileID: 114264357844037074}
+  - component: {fileID: 114499726237547504}
+  - component: {fileID: 114658330495870062}
+  m_Layer: 0
+  m_Name: W0_5004_Spider Bomb (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4302127217294661
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4642988549198181}
+  - {fileID: 4711914853252429}
+  - {fileID: 4017697238300914}
+  - {fileID: 4808113985169905}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114969106005120503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ade53ef1e1bde8eed1109d1cf3f0904, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  dungeonId: 5105
+  heroPosition: {fileID: 1730242686860875}
+  stages:
+  - challenges:
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1044625135789424}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5003_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1044625135789424}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1589667821646929}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5005_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1589667821646929}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1372920208702427}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5003_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1372920208702427}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+  - challenges:
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1985305603660343}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5005_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1985305603660343}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 5
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1705390221481576}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5009_2_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1705390221481576}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 10
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1977153420339851}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5009_2_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1977153420339851}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 15
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1336590748365959}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5002_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1336590748365959}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+  - challenges:
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1161607090078389}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5100_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1161607090078389}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 100
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1002669891404536}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5003_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1002669891404536}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1470112387431263}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5004_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1470112387431263}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1313026266067498}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5004_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1313026266067498}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1621510681728303}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5004_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1621510681728303}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1632457200066912}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5004_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1632457200066912}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+    - wave: 0
+      startTrigger:
+        triggerName: 1
+        waitTime: 0
+        waitTimeAmplitude: 0
+        waitTimeDensity: 0
+        monsterId:
+        monsterCount: 0
+        spawnLocation: {fileID: 1634108722742392}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 0
+        spawnCount: 0
+        radius: 0
+      mainTrigger:
+        triggerName: 2
+        waitTime: 0
+        waitTimeAmplitude: 0.5
+        waitTimeDensity: 5
+        monsterId: 5004_1_1
+        monsterCount: 1
+        spawnLocation: {fileID: 1634108722742392}
+        xAxisAmplitude: 0
+        xAxisDensity: 1
+        spawnInterval: 1
+        spawnCount: 1
+        radius: 0
+  gates:
+  - gateId: 0
+    gateName: 0
+    location: {fileID: 1618682377417806}
+  - gateId: 1
+    gateName: 0
+    location: {fileID: 1703437598541787}
+  stageActivators:
+  - stageActivatorId: 0
+    stageActivatorName: 0
+    location: {fileID: 1243736805655561}
+  - stageActivatorId: 1
+    stageActivatorName: 0
+    location: {fileID: 1061268324235159}
+  groupStageSpawnerByWave: 0
+--- !u!4 &4642988549198181
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.33, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4302127217294661}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114946936116752871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730242686860875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0, g: 1, b: 0, a: 1}
+  isDisplayPos: 1
+--- !u!4 &4711914853252429
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724804207875695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4918264173551851}
+  - {fileID: 4875609422105747}
+  - {fileID: 4694121525821480}
+  m_Father: {fileID: 4302127217294661}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4918264173551851
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618682377417806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20, y: 1.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4711914853252429}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114587397909062814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618682377417806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 1, g: 1, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!4 &4875609422105747
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703437598541787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 46, y: 1.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4711914853252429}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114371939378208658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703437598541787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 1, g: 1, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!4 &4694121525821480
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884547391421755}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 76, y: 1.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4711914853252429}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114320256170494724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884547391421755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 1, g: 1, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!4 &4017697238300914
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099118695303065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4733206282342372}
+  - {fileID: 4089843903986396}
+  m_Father: {fileID: 4302127217294661}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4733206282342372
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243736805655561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22, y: 1.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4017697238300914}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114217368724061974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243736805655561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0, g: 0.33793116, b: 1, a: 1}
+  isDisplayPos: 1
+--- !u!4 &4089843903986396
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061268324235159}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 48.5, y: 1.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4017697238300914}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114672306508523268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061268324235159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0, g: 0.33793116, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!4 &4808113985169905
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587765826080250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4060945828524476}
+  - {fileID: 4719342369648492}
+  - {fileID: 4094320201520353}
+  m_Father: {fileID: 4302127217294661}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4060945828524476
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709867586078768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4900271049623953}
+  - {fileID: 4841364053301648}
+  - {fileID: 4919942235722503}
+  m_Father: {fileID: 4808113985169905}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &4900271049623953
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044625135789424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.02, y: 3.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4060945828524476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114472185465350827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044625135789424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.8985728, g: 0.014705896, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114518489005915545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044625135789424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1044625135789424}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5003_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1044625135789424}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114220653531496868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044625135789424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4841364053301648
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589667821646929}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.16, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4060945828524476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114967328832014496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589667821646929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 1, g: 0, b: 0, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114291844617409189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589667821646929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1589667821646929}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5005_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1589667821646929}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114344419225485095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589667821646929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4919942235722503
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372920208702427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.44, y: 3.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4060945828524476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114107629493147155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372920208702427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.8985728, g: 0.014705896, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114833703512093738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372920208702427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1372920208702427}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5003_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1372920208702427}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114632746491512912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372920208702427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4719342369648492
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025901758691103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4726790013014859}
+  - {fileID: 4000955326284023}
+  - {fileID: 4477046003934300}
+  - {fileID: 4215879266689626}
+  m_Father: {fileID: 4808113985169905}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4726790013014859
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985305603660343}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.89, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4719342369648492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114436073260064126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985305603660343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 1, g: 0, b: 0, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114693329660128220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985305603660343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1985305603660343}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5005_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1985305603660343}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114801075752484240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985305603660343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4000955326284023
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705390221481576}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.02, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4719342369648492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114397768327470545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705390221481576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.36206895, g: 0, b: 0.0958417, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114571718729274231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705390221481576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 5
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1705390221481576}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5009_2_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1705390221481576}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114581786255902400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705390221481576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4477046003934300
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977153420339851}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40.66, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4719342369648492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114045458335737618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977153420339851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.36206895, g: 0, b: 0.0958417, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114722951815217645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977153420339851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 10
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1977153420339851}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5009_2_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1977153420339851}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114924050743934937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977153420339851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4215879266689626
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336590748365959}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 43.87, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4719342369648492}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114689364072382846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336590748365959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0, g: 0.07352925, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114043919389829319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336590748365959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 15
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1336590748365959}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5002_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1336590748365959}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114743393880019028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336590748365959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4094320201520353
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256069497284392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4026196548002408}
+  - {fileID: 4149520701623706}
+  - {fileID: 4370222726513266}
+  - {fileID: 4799762105739359}
+  - {fileID: 4571878917323452}
+  - {fileID: 4208575754630950}
+  - {fileID: 4699617135816954}
+  m_Father: {fileID: 4808113985169905}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4026196548002408
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161607090078389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 63.71, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114572839542275309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161607090078389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 1, g: 0, b: 0, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114279359913592680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161607090078389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1161607090078389}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5100_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1161607090078389}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114384403120170545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161607090078389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4149520701623706
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002669891404536}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.99, y: 3.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114292246286975720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002669891404536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.8985728, g: 0.014705896, b: 1, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114693062532245359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002669891404536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 100
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1002669891404536}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5003_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1002669891404536}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114630643969539439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002669891404536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4370222726513266
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470112387431263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 58.04, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114574304967836189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470112387431263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.051470578, g: 1, b: 0.95815307, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114009931292380359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470112387431263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1470112387431263}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5004_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1470112387431263}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114393105877652414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470112387431263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4799762105739359
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313026266067498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 61.76, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114829625606037309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313026266067498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.051470578, g: 1, b: 0.95815307, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114574190619683098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313026266067498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1313026266067498}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5004_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1313026266067498}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114552309709192268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313026266067498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4571878917323452
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621510681728303}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 69.21, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114534704304255049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621510681728303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.051470578, g: 1, b: 0.95815307, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114651560128206891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621510681728303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1621510681728303}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5004_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1621510681728303}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114964469411310401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621510681728303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4208575754630950
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632457200066912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 74.26, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114431740505123533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632457200066912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.051470578, g: 1, b: 0.95815307, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114356319167443197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632457200066912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1632457200066912}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5004_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1632457200066912}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114976365255789935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632457200066912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!4 &4699617135816954
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634108722742392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 71.51, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4094320201520353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114264357844037074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634108722742392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6464eb1553eb9912e8b0428cf5db19e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  color: {r: 0.051470578, g: 1, b: 0.95815307, a: 1}
+  isDisplayPos: 0
+--- !u!114 &114499726237547504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634108722742392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ce77c5f5e06becffcb95e2ec11868, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  wave: 0
+  startTriggerInspector:
+    triggerName: 1
+    waitTime: 0
+    waitTimeAmplitude: 0
+    waitTimeDensity: 0
+    monsterId:
+    monsterCount: 0
+    spawnLocation: {fileID: 1634108722742392}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 0
+    spawnCount: 0
+    radius: 0
+  mainTriggerInspector:
+    triggerName: 2
+    waitTime: 0
+    waitTimeAmplitude: 0.5
+    waitTimeDensity: 5
+    monsterId: 5004_1_1
+    monsterCount: 1
+    spawnLocation: {fileID: 1634108722742392}
+    xAxisAmplitude: 0
+    xAxisDensity: 1
+    spawnInterval: 1
+    spawnCount: 1
+    radius: 0
+--- !u!114 &114658330495870062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634108722742392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+  m_EditorClassIdentifier:

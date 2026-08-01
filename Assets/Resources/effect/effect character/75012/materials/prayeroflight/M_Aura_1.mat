@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Aura_1
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _FRESNELEMISSION_ON
+  - _FRESNELOPACITY_ON
+  - _GRADIENT_V
+  - _INVERTFRESNELEMISSION_ON
+  - _MULTIPLYLERPFLOW_ON
+  - _TOGGLESWITCH0_ON
+  - _UVGRADIENTOPACITY_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 28f900882a8402040b0cab61ef78917c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdjustColor: 4
+    - _BumpScale: 1
+    - _ColorLerp: 0.569
+    - _Colorness: 0
+    - _Cutoff: 0.5
+    - _Cutout: 1
+    - _DetailNormalMapScale: 1
+    - _Dissolve: 0.17
+    - _Distortion: 0.2
+    - _DstBlend: 0
+    - _EmissiveMultiply: 5
+    - _Float0: 0
+    - _Float1: 0
+    - _Float2: 0
+    - _Float5: 0
+    - _Float6: 1
+    - _Flow1Amount: 1
+    - _Flow2Amount: 3
+    - _FresnelEmission: 1
+    - _FresnelOpacity: 1
+    - _FresnelPower: 3.53
+    - _FresnelScale: 0.08
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Gradient: 1
+    - _Gradient1: 0
+    - _Gradient2: -0.4
+    - _GradientV: -3.3
+    - _InvFade: 3
+    - _InvertFresnel: 0
+    - _InvertFresnelEmission: 1
+    - _MaskAdjust: 0
+    - _MaskDissolve: 0
+    - _MaskTextureOffset: -0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _MultiplyLerpFlow: 1
+    - _Noise: 0
+    - _NoiseMapStrength: 0
+    - _Noise_1_Multiply: 0.8
+    - _Noise_2_Multiply: 1.5
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _ToggleSwitch0: 1
+    - _UVGradientAdjust: 1
+    - _UVGradientOffset: 0.34
+    - _UVGradientOpacity: 1
+    - _UVSec: 0
+    - _UseSoftParticles: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color0: {r: 0, g: 0.6348712, b: 11.984314, a: 1}
+    - _Color1: {r: 4.237095, g: 0.79861474, b: 0, a: 1}
+    - _Color2: {r: 1.9693985, g: 0, b: 2, a: 1}
+    - _Distortion_Speed: {r: 0, g: 0.05, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FlowSpeed: {r: 0, g: -0.15, b: 0, a: -0.2}
+    - _MainTilingOffset: {r: 2, g: 0.5, b: 0, a: 0}
+    - _NoiseMapPannerSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseMapSize: {r: 512, g: 512, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: -0.5, b: 0, a: -0.4}
+    - _RingPannerSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Speed: {r: 0, g: -0.4, b: 0, a: -0.2}
+    - _Tiling: {r: 1.3, g: 1.2, b: 0.8, a: 0.8}
+    - _Tint: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Vector0: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

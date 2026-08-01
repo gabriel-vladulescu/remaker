@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1709254077376921
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4730242686860875}
+  - component: {fileID: 114724804207875695}
+  m_Layer: 0
+  m_Name: Shockwave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4730242686860875
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114724804207875695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709254077376921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632bad6a6f47cc69f7b8c6c9bd3c74f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  name:
+  skillConfigs:
+  - foldout: 1
+    skillClassName: DefaultRangerSkill
+    skillStatsId: 3_1_500
+    animationName:
+    scaleTime: 1
+    useDurationFromAnimation: 0
+    duration: 9999
+    channelingDuration: 0
+    syncChannelingDurationWithDuration: 0
+    runIgnoreInputWindowStartFrame: -1
+    runIgnoreInputWindowEndFrame: -1
+    animationActiveFrame: -1
+    animationRecoveryFrame: -1
+    animationLengthInFrame: -1
+    eventFrameConfigs:
+    - foldout: 1
+      eventType: 0
+      frame: 9999
+      actionFrameConfig:
+        actionType: 1
+        shouldTriggerOnHitTarget: 0
+        shouldTriggerOnHitTargetWithFirstHitOnly: 0
+        damageMultiplier: 0
+        maxEnemyHitCount: 1
+        timeToLive: 999
+        delayHandleObstacleCollision: 0
+        delayHandleObjectCollision: 0
+        hitboxRotation: 0
+        isWindbox: 0
+        meleeNumberOfHit: 0
+        meleeIntervalBetweenHit: 0
+        meleeRelativePositionToCharacter: {x: 0, y: 0}
+        meleeDimension: {x: 0, y: 0}
+        hitboxRadius: 0
+        meleeDrawGizmos: 0
+        meleeIgnoreWhileSkillIdsAreUsing:
+        meleeNotificationVfxPrefabPath:
+        meleeImpactVfxPrefabPath:
+        meleeDefIgnoreChance: 0
+        meleeIgnoreHeroPosOnYAxis: 0
+        meleeStandstillAfterCreation: 0
+        findTargetInFront: 0
+        rangerProjectileConfigString: '{"rangerProjectilePrefabPath":"Effect/Effect Character/1004.Cannon Plant/1004.Bullet","rangerProjectileDirectionSpread":"Single","rangerProjectileVelocity":{"x":3.0,"y":0.0},"rangerProjectileRay1":{"x":0.0,"y":0.0},"rangerProjectileRay2":{"x":0.0,"y":0.0},"rangerProjectileRayCount":0,"rangerProjectileHitboxRadius":1.0,"rangerProjectileDrawGizmos":true,"rangerProjectileDestroyVfxPrefabPath":"Effect/Effect Character/1004.Cannon Plant/1004.Explosion","rangerProjectileSpawnPositionRelativeToCharacter":{"x":1.0,"y":1.5},"projectileCastingDelay":0.0,"vfxPrefabPath":null,"coordinateOrigin":"CasterPosition","xAxisDensity":1,"xAxisAmplitude":0.0,"yAxisDensity":1,"yAxisAmplitude":0.0,"waitTimeFromLockToLaunch":0.0,"speed":0.0,"angleStep":0.0,"spreadCount":1,"maxAngleFromDownVector":0.0,"waveCount":0,"waveInterval":0.0}'
+        hitboxConfigString:
+        trajectoryConfigString:
+        hitboxModifiersConfig:
+          expanded: 0
+          allyExpanded: 0
+          modifierConfigs: []
+          allyModifierConfigs: []
+      vfxPrefabPath:
+      vfxFollowCasterPosition: 0
+      vfxIgnoreCasterPositionOnYAxis: 0
+      vfxConfigString:
+      sfxPath:
+      sfxVolume: 0
+      sfxSpeed: 0
+      spawnMonsterConfigString:
+      moveDistance: 0
+      moveEndFrame: 0
+      moveBlendTime: 0
+      moveAdjustCollider: 0
+      moveColliderCenter: {x: 0, y: 0}
+      moveColliderSize: {x: 0, y: 0}
+      moveExtras:
+      moveBackward: 0
+      moveTowardTarget: 0
+      ignoreMoveDirection: 0
+      moveConfigString:
+      jumpCount: 0
+      jumpHeight: 0
+      jumpDurationReachMaxHeight: 0
+      jumpDurationLandGround: 0
+      jumpDistance: 0
+      jumpDisableOnGround: 0
+      floatingDuration: 0
+      jumpBackward: 0
+      moveTowardDirectionSpeed: 0
+      moveTowardDirectionDuration: 0
+      moveTowardDirectionSpeed2: 0
+      moveTowardDirectionDuration2: 0
+      moveTowardDirectionSpeed3: 0
+      moveTowardDirectionDuration3: 0
+      moveTowardDirectionDistance: 0
+      moveTowardDirectionDistance2: 0
+      moveTowardDirectionDistance3: 0
+      moveTowardDirectionReachTargetPosition: 0
+      moveTowardDirectionReachBySpeed: 0
+      moveTowardDirectionReachTargetPositionIgnoreY: 0
+      moveTowardDirectionPlayAnimationName:
+      moveTowardDirectionSkipAnimationName:
+      appearAtFrame: 0
+      teleportMode: 0
+      teleportNotificationFrame: 0
+      teleportNotificationPrefabPath:
+      teleportDestinationRelativePosition: {x: 0, y: 0}
+      teleportFrameToTrackTargetPosition: 0
+      teleportDestinationPadding: 0
+      isIgnoreTargetY: 0
+      teleportString:
+      disableColliderEndFrame: 0
+      cameraFxConfigString:
+      buffString:
+      cornerJumpString:
+      moveUsingSpeedString:
+      flyUpwardString:
+      dragString:
+      vfxFollowBoneString:
+      sfxRandomlyString:
+      forceStopMoveConfigString:
+      playAnimConfigString:
+      suicideConfigString:
+      materialPath:
+      objectName:
+      materialEndFrame: 0
+    eventTriggerConfigAreaExpand: 1
+    modifierConfigs:
+    - triggerType: 4
+      modifierType: 20
+      successRate: 0
+      knockbackLevel: 0
+      knockbackDashDistance: 0
+      knockbackDashDuration: 0
+      knockbackShouldInterruptTargetSkill: 0
+      knockbackTowardProjectile: 0
+      useCasterPositionForKnockbackDirection: 1
+      alwaysKnockbackAccordingToCasterFacingDirection: 0
+      knockdownLevel: 0
+      knockdownJumpHeight: 0
+      knockdownJumpDurationReachMaxHeight: 0
+      knockdownJumpDurationLandGround: 0
+      knockdownJumpDistance: 0
+      knockdownDuration: 0
+      useCasterPositionForKnockdownDirection: 1
+      useCasterFacingDirectionForKnockdownDirection: 0
+      useProjectileVelocityForKnockdownDirection: 0
+      knockdownFloatingDuration: 0
+      shouldPerformBouncing: 1
+      stunDuration: 0
+      stunPlayVfx: 0
+      stunAnimTransitionTime: 0.3
+      shackleDuration: 0
+      shacklePlayVfx: 0
+      configString:
+      cameraFxConfigString:
+      soundFxConfigString:
+      castSkillConfigString:
+      castProjectileConfigString:
+      castSpawnMonsterConfigString:
+      adjustTimeFrameConfigString:
+      playVfxConfigString:
+      hpDropAttackBuffConfigString:
+      beHitBlastWaveConfigString:
+      hitTargetInstantKillConfigString:
+      hitTargetCastSkillConfigString:
+      hpDropUsePotionConfigString:
+      comboDamageFrameShockwaveConfigString: '{"successRate":1.0,"sfxPath":null}'
+      soundFxRandomlyConfigString:
+      weaponPassiveSkillConfigString:
+    extras:
+    eventFrameAreaExpand: 1
+    foldoutOfTypesOfEventFrame: 000000000000000000000000000000000000
