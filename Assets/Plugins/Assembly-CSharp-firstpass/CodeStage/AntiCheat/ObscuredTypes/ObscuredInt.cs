@@ -27,131 +27,148 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 
 		private ObscuredInt(int value)
 		{
-			currentCryptoKey = 0;
-			hiddenValue = 0;
-			fakeValue = 0;
-			inited = false;
+			currentCryptoKey = cryptoKey;
+			hiddenValue = value ^ currentCryptoKey;
+			fakeValue = value;
+			inited = true;
 		}
 
 		public static void SetNewCryptoKey(int newKey)
 		{
+			cryptoKey = newKey;
 		}
 
 		public static int Encrypt(int value)
 		{
-			return 0;
+			return Encrypt(value, cryptoKey);
 		}
 
 		public static int Encrypt(int value, int key)
 		{
-			return 0;
+			return value ^ key;
 		}
 
 		public static int Decrypt(int value)
 		{
-			return 0;
+			return Decrypt(value, cryptoKey);
 		}
 
 		public static int Decrypt(int value, int key)
 		{
-			return 0;
+			return value ^ key;
 		}
 
 		public void ApplyNewCryptoKey()
 		{
+			if (inited)
+			{
+				int decrypted = InternalDecrypt();
+				currentCryptoKey = cryptoKey;
+				hiddenValue = decrypted ^ currentCryptoKey;
+			}
 		}
 
 		public void RandomizeCryptoKey()
 		{
+			SetNewCryptoKey(UnityEngine.Random.Range(int.MinValue, int.MaxValue));
+			ApplyNewCryptoKey();
 		}
 
 		public int GetEncrypted()
 		{
-			return 0;
+			return hiddenValue;
 		}
 
 		public void SetEncrypted(int encrypted)
 		{
+			currentCryptoKey = cryptoKey;
+			hiddenValue = encrypted;
+			fakeValue = InternalDecrypt();
+			inited = true;
 		}
 
 		public int GetDecrypted()
 		{
-			return 0;
+			return InternalDecrypt();
 		}
 
 		private int InternalDecrypt()
 		{
-			return 0;
+			if (!inited)
+			{
+				return 0;
+			}
+			return hiddenValue ^ currentCryptoKey;
 		}
 
 		public static implicit operator ObscuredInt(int value)
 		{
-			return default(ObscuredInt);
+			return new ObscuredInt(value);
 		}
 
 		public static implicit operator int(ObscuredInt value)
 		{
-			return 0;
+			return value.InternalDecrypt();
 		}
 
 		public static implicit operator ObscuredFloat(ObscuredInt value)
 		{
-			return default(ObscuredFloat);
+			return value.InternalDecrypt();
 		}
 
 		public static implicit operator ObscuredDouble(ObscuredInt value)
 		{
-			return default(ObscuredDouble);
+			return value.InternalDecrypt();
 		}
 
 		public static explicit operator ObscuredUInt(ObscuredInt value)
 		{
-			return default(ObscuredUInt);
+			return (uint)value.InternalDecrypt();
 		}
 
 		public static ObscuredInt operator ++(ObscuredInt input)
 		{
-			return default(ObscuredInt);
+			return new ObscuredInt(input.InternalDecrypt() + 1);
 		}
 
 		public static ObscuredInt operator --(ObscuredInt input)
 		{
-			return default(ObscuredInt);
+			return new ObscuredInt(input.InternalDecrypt() - 1);
 		}
 
 		public override bool Equals(object obj)
 		{
-			return false;
+			return obj is ObscuredInt other && Equals(other);
 		}
 
 		public bool Equals(ObscuredInt obj)
 		{
-			return false;
+			return InternalDecrypt() == obj.InternalDecrypt();
 		}
 
 		public override int GetHashCode()
 		{
-			return 0;
+			return InternalDecrypt().GetHashCode();
 		}
 
 		public override string ToString()
 		{
-			return null;
+			return InternalDecrypt().ToString();
 		}
 
 		public string ToString(string format)
 		{
-			return null;
+			return InternalDecrypt().ToString(format);
 		}
 
 		public string ToString(IFormatProvider provider)
 		{
-			return null;
+			return InternalDecrypt().ToString(provider);
 		}
 
 		public string ToString(string format, IFormatProvider provider)
 		{
-			return null;
+			return InternalDecrypt().ToString(format, provider);
 		}
 	}
 }

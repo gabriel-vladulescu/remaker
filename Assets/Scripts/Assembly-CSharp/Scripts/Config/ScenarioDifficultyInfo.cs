@@ -10,7 +10,11 @@ namespace Scripts.Config
 
 		public ScenarioDifficulty GetDifficulty()
 		{
-			return default(ScenarioDifficulty);
+			if (string.IsNullOrEmpty(difficulty) || !System.Enum.TryParse<ScenarioDifficulty>(difficulty, out var result))
+			{
+				return ScenarioDifficulty.NORMAL;
+			}
+			return result;
 		}
 	}
 }

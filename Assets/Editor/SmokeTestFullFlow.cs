@@ -128,6 +128,59 @@ public class SmokeTestFullFlowDriver : MonoBehaviour
 			}
 			yield return null;
 		}
-		Debug.Log("[SmokeTestFullFlow] SUCCESS: reached SelectionScene via full click-through flow.");
+		Debug.Log("[SmokeTestFullFlow] Reached SelectionScene.");
+		yield return null;
+		yield return null;
+		yield return null;
+
+		Assets.Scripts.Ssar.CharacterSelection.View.SelectCharacterWidget selectWidget =
+			Object.FindObjectOfType<Assets.Scripts.Ssar.CharacterSelection.View.SelectCharacterWidget>();
+		if (selectWidget == null || selectWidget.btn_start == null)
+		{
+			Debug.LogError("[SmokeTestFullFlow] Could not find SelectCharacterWidget / btn_start.");
+			yield break;
+		}
+		UICamera.Notify(selectWidget.btn_start, "OnClick", null);
+		Debug.Log("[SmokeTestFullFlow] Clicked SelectCharacterWidget.btn_start.");
+		yield return null;
+		yield return null;
+
+		Assets.Scripts.Ssar.Worldmap.View.SimpleDungeonSelectView dungeonSelect =
+			Object.FindObjectOfType<Assets.Scripts.Ssar.Worldmap.View.SimpleDungeonSelectView>();
+		if (dungeonSelect == null)
+		{
+			Debug.LogError("[SmokeTestFullFlow] SimpleDungeonSelectView did not appear after btn_start.");
+			yield break;
+		}
+		Debug.Log("[SmokeTestFullFlow] SimpleDungeonSelectView appeared with real DungeonConfig data.");
+
+		GameObject dungeonRow = null;
+		foreach (Transform child in dungeonSelect.transform)
+		{
+			if (child.name.StartsWith("DungeonRow_"))
+			{
+				dungeonRow = child.gameObject;
+				break;
+			}
+		}
+		if (dungeonRow == null)
+		{
+			Debug.LogError("[SmokeTestFullFlow] No dungeon row buttons were spawned - check DungeonConfig.json load / GetListDungeons.");
+			yield break;
+		}
+		UICamera.Notify(dungeonRow, "OnClick", null);
+		Debug.Log("[SmokeTestFullFlow] Clicked a real dungeon row.");
+
+		timeout = Time.realtimeSinceStartup + 15f;
+		while (SceneManager.GetActiveScene().name != "Dungeon")
+		{
+			if (Time.realtimeSinceStartup > timeout)
+			{
+				Debug.LogError("[SmokeTestFullFlow] Timed out waiting for Dungeon scene after picking a dungeon.");
+				yield break;
+			}
+			yield return null;
+		}
+		Debug.Log("[SmokeTestFullFlow] SUCCESS: reached Dungeon scene via the full click-through flow, including real dungeon selection.");
 	}
 }

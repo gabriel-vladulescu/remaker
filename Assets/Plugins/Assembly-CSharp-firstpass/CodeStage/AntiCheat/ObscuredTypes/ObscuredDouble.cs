@@ -40,7 +40,7 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 		[SerializeField]
 		private bool inited;
 
-		private ObscuredDouble(ACTkByte8 value)
+		private ObscuredDouble(long dummy)
 		{
 			currentCryptoKey = 0L;
 			hiddenValue = default(ACTkByte8);
@@ -51,16 +51,17 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 
 		public static void SetNewCryptoKey(long newKey)
 		{
+			cryptoKey = newKey;
 		}
 
 		public static long Encrypt(double value)
 		{
-			return 0L;
+			return Encrypt(value, cryptoKey);
 		}
 
 		public static long Encrypt(double value, long key)
 		{
-			return 0L;
+			return BitConverter.DoubleToInt64Bits(value) ^ key;
 		}
 
 		private static ACTkByte8 InternalEncrypt(double value)
@@ -75,94 +76,114 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 
 		public static double Decrypt(long value)
 		{
-			return 0.0;
+			return Decrypt(value, cryptoKey);
 		}
 
 		public static double Decrypt(long value, long key)
 		{
-			return 0.0;
+			return BitConverter.Int64BitsToDouble(value ^ key);
 		}
 
 		public void ApplyNewCryptoKey()
 		{
+			if (inited)
+			{
+				double decrypted = InternalDecrypt();
+				currentCryptoKey = cryptoKey;
+				SetEncrypted(Encrypt(decrypted, currentCryptoKey));
+			}
 		}
 
 		public void RandomizeCryptoKey()
 		{
+			SetNewCryptoKey(((long)UnityEngine.Random.Range(int.MinValue, int.MaxValue) << 32) | (uint)UnityEngine.Random.Range(int.MinValue, int.MaxValue));
+			ApplyNewCryptoKey();
 		}
 
 		public long GetEncrypted()
 		{
-			return 0L;
+			byte[] bytes = new byte[8] { hiddenValue.b1, hiddenValue.b2, hiddenValue.b3, hiddenValue.b4, hiddenValue.b5, hiddenValue.b6, hiddenValue.b7, hiddenValue.b8 };
+			return BitConverter.ToInt64(bytes, 0);
 		}
 
 		public void SetEncrypted(long encrypted)
 		{
+			currentCryptoKey = cryptoKey;
+			byte[] bytes = BitConverter.GetBytes(encrypted);
+			hiddenValue = new ACTkByte8 { b1 = bytes[0], b2 = bytes[1], b3 = bytes[2], b4 = bytes[3], b5 = bytes[4], b6 = bytes[5], b7 = bytes[6], b8 = bytes[7] };
+			inited = true;
+			fakeValue = InternalDecrypt();
 		}
 
 		public double GetDecrypted()
 		{
-			return 0.0;
+			return InternalDecrypt();
 		}
 
 		private double InternalDecrypt()
 		{
-			return 0.0;
+			if (!inited)
+			{
+				return 0.0;
+			}
+			return Decrypt(GetEncrypted(), currentCryptoKey);
 		}
 
 		public static implicit operator ObscuredDouble(double value)
 		{
-			return default(ObscuredDouble);
+			ObscuredDouble result = default(ObscuredDouble);
+			result.SetEncrypted(Encrypt(value, cryptoKey));
+			return result;
 		}
 
 		public static implicit operator double(ObscuredDouble value)
 		{
-			return 0.0;
+			return value.InternalDecrypt();
 		}
 
 		public static ObscuredDouble operator ++(ObscuredDouble input)
 		{
-			return default(ObscuredDouble);
+			return (double)input + 1.0;
 		}
 
 		public static ObscuredDouble operator --(ObscuredDouble input)
 		{
-			return default(ObscuredDouble);
+			return (double)input - 1.0;
 		}
 
 		public override string ToString()
 		{
-			return null;
+			return InternalDecrypt().ToString();
 		}
 
 		public string ToString(string format)
 		{
-			return null;
+			return InternalDecrypt().ToString(format);
 		}
 
 		public string ToString(IFormatProvider provider)
 		{
-			return null;
+			return InternalDecrypt().ToString(provider);
 		}
 
 		public string ToString(string format, IFormatProvider provider)
 		{
-			return null;
+			return InternalDecrypt().ToString(format, provider);
 		}
 
 		public override bool Equals(object obj)
 		{
-			return false;
+			return obj is ObscuredDouble other && Equals(other);
 		}
 
 		public bool Equals(ObscuredDouble obj)
 		{
-			return false;
+			return InternalDecrypt().Equals(obj.InternalDecrypt());
 		}
 
 		public override int GetHashCode()
 		{
-			return 0;
+			return InternalDecrypt().GetHashCode();
 		}
 	}
 }

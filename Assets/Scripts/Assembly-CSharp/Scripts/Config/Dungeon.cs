@@ -39,10 +39,11 @@ namespace Scripts.Config
 		{
 			get
 			{
-				return 0;
+				return mMaxExp;
 			}
 			set
 			{
+				mMaxExp = value;
 			}
 		}
 
@@ -50,10 +51,11 @@ namespace Scripts.Config
 		{
 			get
 			{
-				return 0;
+				return mMaxSoul;
 			}
 			set
 			{
+				mMaxSoul = value;
 			}
 		}
 
@@ -61,10 +63,11 @@ namespace Scripts.Config
 		{
 			get
 			{
-				return 0;
+				return mStamina;
 			}
 			set
 			{
+				mStamina = value;
 			}
 		}
 
@@ -94,36 +97,54 @@ namespace Scripts.Config
 
 		public void ParseMimicValue()
 		{
+			mimicMayAppear = mimic != null && mimic.Length > 0;
+			if (mimicMayAppear)
+			{
+				mimicId = mimic[0];
+				mimicAppearRate = mimic.Length > 1 && float.TryParse(mimic[1], out var rate) ? rate : 0f;
+			}
 		}
 
 		public bool MayMimicAppear()
 		{
-			return false;
+			return mimicMayAppear;
 		}
 
 		public string MimicId()
 		{
-			return null;
+			return mimicId;
 		}
 
 		public float MimicAppearRate()
 		{
-			return 0f;
+			return mimicAppearRate;
 		}
 
 		public NodeBonusRewardType GetNodeBonusRewardType()
 		{
-			return default(NodeBonusRewardType);
+			if (string.IsNullOrEmpty(bonusType) || !System.Enum.TryParse<NodeBonusRewardType>(bonusType, out var result))
+			{
+				return NodeBonusRewardType.None;
+			}
+			return result;
 		}
 
 		public ScenarioDifficulty GetDifficulty()
 		{
-			return default(ScenarioDifficulty);
+			if (string.IsNullOrEmpty(difficulty) || !System.Enum.TryParse<ScenarioDifficulty>(difficulty, out var result))
+			{
+				return ScenarioDifficulty.NORMAL;
+			}
+			return result;
 		}
 
 		public DungeonMode GetMode()
 		{
-			return default(DungeonMode);
+			if (string.IsNullOrEmpty(mode) || !System.Enum.TryParse<DungeonMode>(mode, out var result))
+			{
+				return DungeonMode.SCENARIO;
+			}
+			return result;
 		}
 	}
 }

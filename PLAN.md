@@ -1179,8 +1179,13 @@ see **`docs/extraction-audit.md`** for the full method and findings. Summary:
 - **Shader question answered definitively**: `Decompilation` mode is explicitly
   "Not available in the free edition" per AssetRipper's own Settings page and source code.
   `Dummy Shader` (what we used, since remapped to Standard shader) is the genuine ceiling
-  for free tooling — not a setting we missed. Real recovery needs a paid AssetRipper
-  license or a separate tool (`Ruri.ShaderDecompiler`, unevaluated).
+  for free tooling — not a setting we missed. **Follow-up**: checked whether the game
+  actually used Standard (it doesn't — all 232 shaders keep real names, e.g.
+  `Custom/Character_Base`, 128/232 from a `kokichi/...` mobile toon pack) and whether
+  `Ruri.ShaderDecompiler` applies (it doesn't — that tool decompiles DXBC/Direct3D
+  bytecode, but this Android build ships GLSL ES 3.0, confirmed by grepping the raw asset
+  bundles). No free path recovers original shader source; see
+  `docs/extraction-audit.md`'s follow-up section for the full options list.
 - Ran the previously-skipped `ilspycmd` decompile step (organized per-class reference
   source, not just `dump.cs`) for every assembly with plausible relevance. One real
   finding: `DOTween`'s core tweening engine is missing entirely from the exported project
@@ -1188,3 +1193,79 @@ see **`docs/extraction-audit.md`** for the full method and findings. Summary:
   restoration candidate (like NGUI/StrangeIoC) whenever tween/audio-fade polish becomes
   relevant, not currently blocking anything. Everything else checked (`Checking`,
   `BigInteger`, `Logger`) is small and fully characterized, nothing to restore.
+
+## 11. Dungeon/level-select screen (`SelectionScene`) — real, data-driven, working end to end
+
+Item #2's stated order was loading → lobby → dungeon page with levels → dungeon
+style/spawning → damage/effects → level completion. Loading (`LoadingScene`) and lobby
+(`Main`) were already done (§7). This picks up the next piece: **`SelectionScene`**, which
+was Part B's territory in the retired 3-way split (§8) and never got any commits.
+
+**Scope decision, matching this project's established pattern of scoping down to the
+validated path**: `SelectionScene`'s real `CharacterSelectionPopup` is built around a full
+multi-character roster (`MainCharacterData` — 957 lines, save/load via BayatGames
+SaveGameFree, itself still stub, plus ~40 monetization/event subsystems it touches).
+Reimplementing that roster for real was judged out of scope, the same way `MainScenePopup`
+only wired 1 of ~40 buttons. Since `RealCharacterValidationHarness` already proved the
+`group_1/1_1` character spawns/moves/animates correctly through the real production spawn
+path, `CharacterSelectionPopup` now uses that known-good character directly — real screen,
+real widgets, but always the one validated character rather than a real roster.
+
+- [x] **`CodeStage.AntiCheat.ObscuredTypes`** (`ObscuredInt`/`ObscuredFloat`/`ObscuredDouble`
+  — the ones actually referenced by the dungeon config data model) implemented for real:
+  simple XOR-obfuscated wrappers, not CodeStage's exact byte-layout algorithm, but
+  behaviorally transparent. Unblocks any code using these types project-wide, not just this
+  screen.
+- [x] **`Scripts.Config.DungeonConfig` implemented for real** — parses the actual
+  `Resources/config/DungeonConfig.json` (201 real dungeon entries across 5 maps × 4
+  difficulties, real terrain/camera/spawn IDs, real exp/soul/stamina values) via LitJson
+  (`JsonMapper.ToObject<Dictionary<string,T>>`, confirmed genuinely restored — 995-line real
+  `JsonMapper.cs`, one of the 9/29 LitJson files kept from the earlier restoration pass, not
+  stub). `Scripts.Config.Dungeon`'s property bodies (`maxExp`/`maxSoul`/`staminaRequire`/
+  `GetDifficulty`/`GetMode`/mimic handling) implemented too — this is real, reusable game
+  data infrastructure, not a one-off parser.
+- [x] **`CharacterSelectionPopup`/`SelectCharacterWidget` implemented** (minimally, per the
+  scope decision above): shows the real screen, hides the create/buy tabs, populates the
+  select-character widget with the validated default character, wires `btn_back` → `Main`
+  and `btn_start` → the new dungeon-select screen.
+- [x] **New `SimpleDungeonSelectView`** (not part of the original game — the real
+  `WorldmapPopup`/`WorldmapRegionView`/`WorldmapNodeView`, Resources/guiprefabs/worldmap/,
+  are entangled with star rewards/lost souls/death-location markers/hell-mode fx/CodeStage-
+  obscured save data well beyond what a level-select screen needs, same "placeholder instead
+  of the full real system" call as `DungeonSimulationDriver` standing in for
+  `DungeonFactory`'s real terrain generation). Built by cloning real, already-styled NGUI
+  widgets out of `SelectionScene` itself (`btn_try` as a button template, `lb_title` as a
+  label template — real atlas/font/collider setup, not guessed) rather than constructing raw
+  NGUI elements blind. Shows a map name, 4 real difficulty tabs (`ScenarioDifficulty`), and
+  one row per real dungeon in `DungeonConfig.GetListDungeons(mapId, difficulty)`. Picking a
+  dungeon sets `DungeonSelection.DungeonId` (previously reserved but unused, see §8's
+  contract) and loads `Dungeon.unity`.
+- **Known limitation, expected**: picking different dungeons doesn't yet change what
+  `Dungeon.unity` looks like — `DungeonFactory`/`DefaultStage`/`DefaultEnvironment` (real
+  terrain/monster-spawn generation from a dungeon's `terrainId`/`nodeSpawner`) is still
+  unimplemented, a separate and larger task. This screen only proves real dungeon selection
+  reaches the dungeon boot chain; visual dungeon variety is next.
+- [x] **Verified via the same click-driven smoke test approach**, extended one step further:
+  `SmokeTestFullFlow.cs` now continues past `SelectionScene` — clicks
+  `SelectCharacterWidget.btn_start`, confirms `SimpleDungeonSelectView` appeared with real
+  spawned dungeon rows, clicks one, confirms `Dungeon.unity` loads. **Result: reaches
+  `Dungeon.unity` with zero exceptions, via the full real click path from `EntryScene` all
+  the way through real dungeon selection.**
+  - Real gotcha hit: all cloned buttons initially shared the same GameObject name
+    (`DungeonRowButtonTemplate(Clone)`, since they're all instantiated from one template),
+    so the first smoke-test pass found and clicked a difficulty tab instead of a dungeon row
+    (harmless in-game, just re-filtered the list — but meant the test never reached
+    `Dungeon.unity`). Fixed by giving spawned buttons distinct names
+    (`DungeonRow_{id}`/`DifficultyTab_{difficulty}`/`BackButton`) — useful for real debugging
+    too, not just the test.
+  - Real gotcha hit running this: a previous smoke-test Unity process left running (by
+    design — no `-quit`, so its log could be tailed live) held the project lock for the next
+    compile check, surfacing as `HandleProjectAlreadyOpenInAnotherInstance` rather than an
+    actual compile error. Fixed by killing the leftover process by PID before retrying — worth
+    checking for this specifically if a batchmode run fails with a crash-handler stack trace
+    instead of normal compiler output.
+- **Next**: item #2's remaining steps — dungeon style/terrain generation
+  (`DungeonFactory`), character and enemy spawning, damage/effects, level completion — in
+  that order. Also still open: visual/interactive confirmation of this screen (batchmode
+  can't render), and eventually the real multi-character roster if that's ever wanted over
+  the single-validated-character shortcut.

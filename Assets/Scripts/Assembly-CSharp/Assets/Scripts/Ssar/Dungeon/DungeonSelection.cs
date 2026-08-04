@@ -21,10 +21,12 @@ namespace Assets.Scripts.Ssar.Dungeon
 		// Matches Resources/characters/{HeroGroupId}/{HeroSubId}/ folder layout.
 		public static string HeroPrefabResourcePath = "characters/group_1/1/1_1_Prefab";
 
-		// Currently unused by InitDungeonSystemCmd (no real level-generation
-		// exists yet - see DungeonFactory/DefaultStage/DefaultEnvironment),
-		// but reserved here so the lobby's dungeon-select UI has somewhere
-		// to record its choice once that system exists.
+		// Set for real now by SimpleDungeonSelectView (SelectionScene's
+		// dungeon-page-with-levels screen). Still unread by
+		// InitDungeonSystemCmd though - no real level-generation exists yet
+		// (see DungeonFactory/DefaultStage/DefaultEnvironment), so picking
+		// different dungeons doesn't yet change what Dungeon.unity looks
+		// like. That's the next piece once DungeonFactory is implemented.
 		public static int DungeonId = 1;
 	}
 }

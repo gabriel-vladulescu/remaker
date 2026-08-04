@@ -40,7 +40,7 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 		[SerializeField]
 		private bool inited;
 
-		private ObscuredFloat(ACTkByte4 value)
+		private ObscuredFloat(int dummy)
 		{
 			currentCryptoKey = 0;
 			hiddenValue = default(ACTkByte4);
@@ -51,16 +51,17 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 
 		public static void SetNewCryptoKey(int newKey)
 		{
+			cryptoKey = newKey;
 		}
 
 		public static int Encrypt(float value)
 		{
-			return 0;
+			return Encrypt(value, cryptoKey);
 		}
 
 		public static int Encrypt(float value, int key)
 		{
-			return 0;
+			return BitConverter.ToInt32(BitConverter.GetBytes(value), 0) ^ key;
 		}
 
 		private static ACTkByte4 InternalEncrypt(float value)
@@ -75,94 +76,113 @@ namespace CodeStage.AntiCheat.ObscuredTypes
 
 		public static float Decrypt(int value)
 		{
-			return 0f;
+			return Decrypt(value, cryptoKey);
 		}
 
 		public static float Decrypt(int value, int key)
 		{
-			return 0f;
+			return BitConverter.ToSingle(BitConverter.GetBytes(value ^ key), 0);
 		}
 
 		public void ApplyNewCryptoKey()
 		{
+			if (inited)
+			{
+				float decrypted = InternalDecrypt();
+				currentCryptoKey = cryptoKey;
+				SetEncrypted(Encrypt(decrypted, currentCryptoKey));
+			}
 		}
 
 		public void RandomizeCryptoKey()
 		{
+			SetNewCryptoKey(UnityEngine.Random.Range(int.MinValue, int.MaxValue));
+			ApplyNewCryptoKey();
 		}
 
 		public int GetEncrypted()
 		{
-			return 0;
+			return BitConverter.ToInt32(new byte[] { hiddenValue.b1, hiddenValue.b2, hiddenValue.b3, hiddenValue.b4 }, 0);
 		}
 
 		public void SetEncrypted(int encrypted)
 		{
+			currentCryptoKey = cryptoKey;
+			byte[] bytes = BitConverter.GetBytes(encrypted);
+			hiddenValue = new ACTkByte4 { b1 = bytes[0], b2 = bytes[1], b3 = bytes[2], b4 = bytes[3] };
+			inited = true;
+			fakeValue = InternalDecrypt();
 		}
 
 		public float GetDecrypted()
 		{
-			return 0f;
+			return InternalDecrypt();
 		}
 
 		private float InternalDecrypt()
 		{
-			return 0f;
+			if (!inited)
+			{
+				return 0f;
+			}
+			return Decrypt(GetEncrypted(), currentCryptoKey);
 		}
 
 		public static implicit operator ObscuredFloat(float value)
 		{
-			return default(ObscuredFloat);
+			ObscuredFloat result = default(ObscuredFloat);
+			result.SetEncrypted(Encrypt(value, cryptoKey));
+			return result;
 		}
 
 		public static implicit operator float(ObscuredFloat value)
 		{
-			return 0f;
+			return value.InternalDecrypt();
 		}
 
 		public static ObscuredFloat operator ++(ObscuredFloat input)
 		{
-			return default(ObscuredFloat);
+			return (float)input + 1f;
 		}
 
 		public static ObscuredFloat operator --(ObscuredFloat input)
 		{
-			return default(ObscuredFloat);
+			return (float)input - 1f;
 		}
 
 		public override bool Equals(object obj)
 		{
-			return false;
+			return obj is ObscuredFloat other && Equals(other);
 		}
 
 		public bool Equals(ObscuredFloat obj)
 		{
-			return false;
+			return InternalDecrypt().Equals(obj.InternalDecrypt());
 		}
 
 		public override int GetHashCode()
 		{
-			return 0;
+			return InternalDecrypt().GetHashCode();
 		}
 
 		public override string ToString()
 		{
-			return null;
+			return InternalDecrypt().ToString();
 		}
 
 		public string ToString(string format)
 		{
-			return null;
+			return InternalDecrypt().ToString(format);
 		}
 
 		public string ToString(IFormatProvider provider)
 		{
-			return null;
+			return InternalDecrypt().ToString(provider);
 		}
 
 		public string ToString(string format, IFormatProvider provider)
 		{
-			return null;
+			return InternalDecrypt().ToString(format, provider);
 		}
 	}
 }
