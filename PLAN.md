@@ -964,3 +964,27 @@ blocked several `git push` attempts unpredictably (not content-based —
 identical commands succeeded on retry after the user added a Bash permission
 rule). If you hit this, retry once or twice before assuming something is
 actually wrong.
+
+## 8. `docs/` folder and Ghidra (Phase 9, now actually done)
+
+After comparing this project's approach against a battle-tested general-purpose playbook
+(`C:\Users\user\Desktop\ApkExtraction.md`, written from a separate Fruit Ninja RE session),
+two things came out of it, both now in `docs/`:
+
+- **`docs/lessons-learned.md`** — distilled techniques and gotchas from this session,
+  written for reuse on this project and future ones. The standout: restoring known
+  open-source libraries (Artemis, Spine, StrangeIoC, NGUI) wholesale from GitHub mirrors
+  instead of hand-reimplementing from stub signatures — this is *not* covered by the
+  general playbook and was the single highest-leverage technique used here.
+- **`docs/ghidra-setup.md` + `docs/ghidra_scripts/`** — Phase 9 (targeted binary RE,
+  previously listed as "only if needed" and skipped) is now actually done. Full IL2CPP
+  symbol labeling of `libil2cpp.so`: 165,038/192,439 functions recovered with real C#
+  names, every class this project touched confirmed findable, including
+  `DungeonFactory$$CreateDungeon`/`CreateStages`/`CreateGates`/etc. — the real
+  level-generation system behind `Dungeon.unity`'s near-empty scene, previously pure
+  guesswork. Ghidra project lives at
+  `C:\Users\user\Desktop\ShadowOfDeath_GhidraProject\ShadowOfDeathIL2CPP.gpr` (kept outside
+  this repo/the `.development` tree — see `docs/ghidra-setup.md` for why). Use this before
+  guessing at any remaining stub's behavior — `docs/ghidra-setup.md` has the exact commands
+  for both querying the existing project and re-running the import from scratch if ever
+  needed.
