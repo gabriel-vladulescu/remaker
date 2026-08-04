@@ -71,13 +71,47 @@ tooling) are present in the free build's dependencies but power the gated premiu
 something callable directly.
 
 **What this means for the "reverse the shaders" question**: not achievable by re-running
-AssetRipper differently. The two real options are (a) an AssetRipper premium license, or
-(b) a separate standalone tool — `Ruri.ShaderDecompiler`
-(github.com/ShiyumeMeguri/Ruri.ShaderDecompiler, DXBC/DXIL → SPIR-V with symbol recovery) —
-applied to the raw compiled shader bytecode, unverified for this project, would need its
-own investigation/setup if pursued. `Dummy` (now remapped to Standard shader project-wide,
-see `PLAN.md`) is the accurate ceiling for what we did, not a mistake in how we ran the
-tool.
+AssetRipper differently. `Dummy` (now remapped to Standard shader project-wide, see
+`PLAN.md`) is the accurate ceiling for what we did, not a mistake in how we ran the tool.
+
+**Follow-up (2026-08-05): confirmed the game does NOT use Unity's Standard shader, and
+`Ruri.ShaderDecompiler` doesn't apply either.** Checked directly:
+- Every one of the 232 exported `.shader` files preserves its real original name (the
+  `Dummy` exporter keeps this even though the code body is a placeholder). Zero are named
+  `Standard`. The character/weapon shader is `Custom/Character_Base`, hand-authored with
+  Shader Forge (`CustomEditor "ShaderForgeMaterialInspector"`, properties like `_HitColor`,
+  `_HitPower`, `_EmissivePower`, `_OutlineWidth`). 128 of 232 come from a `kokichi/...`
+  mobile toon/rim/matcap shader pack (not identifiable as a known public open-source
+  project via web search — likely a since-delisted or obscure Asset Store pack, not a
+  mirror candidate the way NGUI/StrangeIoC/Artemis/Spine were). The rest are
+  `Custom/`, `SOD`, `ERB`, `Hovl`, `Cartoon FX`, `MADFINGER`, etc. So the "use Standard"
+  branch is ruled out — these are all bespoke/third-party authored shaders.
+- `Ruri.ShaderDecompiler` decompiles **DXBC/DXIL** (Direct3D bytecode). This is an Android
+  build; grepping the raw asset bundles (`shadow-of-death_extracted/assets/bin/Data/
+  data.unity3d` and `datapack.unity3d`) for shader signatures found zero `DXBC` occurrences
+  but confirmed `#version 300 es` (GLSL ES 3.0) and `hlslcc_mtx4x4` (Unity's HLSL→GLSL
+  cross-compiler marker) throughout — this game shipped OpenGL ES 3.0 shaders, not
+  DirectX. Ruri is the wrong tool for this platform entirely; feeding it GLES binaries
+  wouldn't work.
+- The natural next idea — since GLSL is text, maybe it's sitting there as literal readable
+  source — doesn't pan out either: the embedded program blobs interleave real GLSL
+  keywords/identifiers with Unity's own compact binary token/length-prefix encoding (e.g.
+  `layout(locat` is followed by raw binary bytes, then `x)`), not clean ASCII. Turning that
+  into real compilable GLSL requires the same structural blob parser AssetRipper's paid
+  Decompile tier implements — there's no free shortcut via raw byte scanning.
+
+**Where this leaves us**: no free/open path recovers the original shader source. Options,
+in order of practicality: (a) AssetRipper premium license (cleanest — get real GLSL/HLSL
+per shader, official pretty-printer); (b) hand-author replacement shaders per-name using
+the property blocks we *do* have (preserved by the `Dummy` exporter) — e.g.
+`Custom/Character_Base` already tells us exactly which properties it needs
+(`_MainTexture`, `_Color`, `_HitColor`/`_HitPower` for hit-flash, `_EmissiveTexture` for
+glow, `_OutlineWidth` for an outline pass) so a property-informed hand-written replacement
+would at least render textured/lit/hit-flash-capable instead of a flat color box, without
+being bit-exact original code; (c) write a custom Unity shader-program-blob parser from
+scratch (substantial side-project, real prior art would be AssetRipper's own source or
+tools like AssetStudio/UnityPy, not a quick job). Not blocking the UI-first rebuild (see
+`PLAN.md` section 10) — revisit when character/effect visual polish becomes the focus.
 
 ### Il2CppDumper / metadata: already complete
 `il2cpp_dump/` (`dump.cs`, `il2cpp.h`, `script.json`, `stringliteral.json`, `DummyDll/`)
