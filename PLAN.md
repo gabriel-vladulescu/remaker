@@ -1164,3 +1164,27 @@ two things came out of it, both now in `docs/`:
   guessing at any remaining stub's behavior — `docs/ghidra-setup.md` has the exact commands
   for both querying the existing project and re-running the import from scratch if ever
   needed.
+
+## 10. Extraction completeness audit — confirmed nothing was missed
+
+Before committing to the UI-first rebuild (loading → lobby → dungeon selection → gameplay,
+in that order), did a full re-verification against `ApkExtraction.md`'s checklist —
+see **`docs/extraction-audit.md`** for the full method and findings. Summary:
+
+- Fresh AssetRipper re-run (clean instance, same source) reproduces the same result:
+  12,854/12,854 assets exported, one trivial warning. The 133 files present in the working
+  project but not the fresh export are 100% accounted for by this session's own mega-file
+  consolidation/intentional deletions (project compiles clean either way — proof, not just
+  explanation).
+- **Shader question answered definitively**: `Decompilation` mode is explicitly
+  "Not available in the free edition" per AssetRipper's own Settings page and source code.
+  `Dummy Shader` (what we used, since remapped to Standard shader) is the genuine ceiling
+  for free tooling — not a setting we missed. Real recovery needs a paid AssetRipper
+  license or a separate tool (`Ruri.ShaderDecompiler`, unevaluated).
+- Ran the previously-skipped `ilspycmd` decompile step (organized per-class reference
+  source, not just `dump.cs`) for every assembly with plausible relevance. One real
+  finding: `DOTween`'s core tweening engine is missing entirely from the exported project
+  (IL2CPP-linker-stripped, only 4 peripheral module files survived) — a same-technique
+  restoration candidate (like NGUI/StrangeIoC) whenever tween/audio-fade polish becomes
+  relevant, not currently blocking anything. Everything else checked (`Checking`,
+  `BigInteger`, `Logger`) is small and fully characterized, nothing to restore.
