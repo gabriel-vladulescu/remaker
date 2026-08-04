@@ -55,8 +55,16 @@ namespace Assets.Scripts.Ssar.Dungeon.Environment
 			}
 		}
 
+		// Steps aside if a real 3D-world camera already exists (e.g. carried
+		// into this scene by the real boot chain via DontDestroyOnLoad, or
+		// provided by a real CameraComponent/DungeonFactory once that system
+		// exists), rather than fighting it for the MainCamera tag.
 		private void SpawnPlaceholderCamera()
 		{
+			if (Camera.main != null)
+			{
+				return;
+			}
 			GameObject camGo = new GameObject("PlaceholderMainCamera");
 			camGo.tag = "MainCamera";
 			placeholderCamera = camGo.AddComponent<Camera>();
@@ -72,6 +80,11 @@ namespace Assets.Scripts.Ssar.Dungeon.Environment
 			// Glossiness/Metallic/rim-light properties) render as a flat
 			// white silhouette under ambient-only lighting with no
 			// directional key light - this fixes that for testing purposes.
+			// Steps aside if a real light already exists in the scene.
+			if (UnityEngine.Object.FindObjectOfType<Light>() != null)
+			{
+				return;
+			}
 			GameObject lightGo = new GameObject("PlaceholderDirectionalLight");
 			Light light = lightGo.AddComponent<Light>();
 			light.type = LightType.Directional;

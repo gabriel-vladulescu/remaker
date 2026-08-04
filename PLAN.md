@@ -1058,7 +1058,90 @@ mistake, not just a polish gap:
   `Main`'s hub layout matches the reference screenshot you shared — visuals
   still can't be verified by batchmode/simulated clicks.
 
-## 8. `docs/` folder and Ghidra (Phase 9, now actually done)
+## 8. Parallel work split (3-way, git-based) — retired
+
+After the Dungeon.unity boot chain worked, the user tested it interactively
+and pointed out something important: the joystick/HUD/health-bar UI only
+shows up in the real game once you go through the actual flow (title → lobby
+→ select a dungeon), and asked to stop building isolated placeholder test
+scaffolding and start building the *real* game flow — loading, title,
+character/dungeon selection, equipment, costumes — end to end. Given the size
+of that remaining work, it's split 3 ways across parallel Claude Code
+instances, coordinated via git instead of a shared live folder (this project
+had no git repo until this point; Unity also only allows one Editor instance
+per project at a time, so concurrent edits to one folder would both silently
+clobber each other *and* fight over `Temp/UnityLockfile`).
+
+**Repo:** https://github.com/gabriel-vladulescu/remaker (was empty; now holds
+this Unity project as of the "Baseline" commit, which is everything done in
+this session up through the Dungeon.unity placeholder-scaffolding fixes).
+`.gitignore` excludes `Library/`, `Temp/`, `Logs/`, `UserSettings/`, etc. (all
+regenerable by Unity) and one AssetRipper export glitch (a self-duplicated
+filename that exceeded NTFS's 255-char path-component limit).
+
+**Branches** (each instance works on its own, commits/pushes there — merge
+back via GitHub PRs once ready):
+
+- `part-a-boot-chain` — **EntryScene → LoadingScene → TitleScene.** The real
+  bootstrap is `GameInitController.cs` (Assets/Scripts/Assembly-CSharp/), a
+  GameObject in EntryScene.unity with a `gameInitPrefab` reference (fileID
+  1709254077376921, guid `3cf541c064515df4f92de74ad294bcd3` — not yet
+  inspected, likely persistent manager singletons). All its methods
+  (Awake/Init/FinishInit/LoadSceneStart/GoToDevScene/GoToTitleScene) are
+  still stub. Note: `EntryContext.cs`/`EntryContextView.cs`
+  (Assets/Scripts/Assembly-CSharp/Assets/Scripts/Ssar/Entry/) exist but are
+  **not referenced in any scene** (confirmed by grepping their script GUID
+  against every `.unity` file) — looks like dead/abandoned code, probably
+  don't need it. Also found: LoadingScene.unity/SelectionScene.unity/
+  TitleScene.unity each already have their own local `UICamera` GameObject
+  placed statically (1/2/1 respectively) — unlike Dungeon.unity, which has
+  none — suggesting each scene may set up its own UI camera rather than one
+  persistent `DontDestroyOnLoad` one; worth confirming.
+- `part-b-lobby-selection` — **SelectionScene: character/dungeon selection,
+  equipment, costumes.** SelectionScene.unity already has 2 `UICamera`
+  instances placed statically, so the scene-level camera setup may already be
+  intact; the gap is the StrangeIoC Context/Mediator/Command wiring (all
+  presumably stub, same pattern as `DungeonContext` was). The real
+  cosmetic/equipment system (`AbsSpawnCharacterCmd.ReplaceWeapon/
+  ReplaceChestArmor/ReplaceHelmet/ReplaceWing`, thousands of cosmetic
+  material/texture assets under `Resources/characters/*/cosmetic/`) is a deep
+  rabbit hole — recommend scoping down to "select a character, see it in the
+  lobby" first rather than full costume-swapping visuals.
+- `part-c-dungeon-transition` (this instance) — generalized the
+  Dungeon-side entry point so Part B has something concrete to call into.
+
+**Contract between Part B and Part C:** `Assets.Scripts.Ssar.Dungeon.
+DungeonSelection` (new, not part of the original game) — a static class with
+`HeroGroupId`/`HeroSubId`/`HeroLevel`/`HeroPrefabResourcePath`/`DungeonId`
+fields, defaults matching the currently-working test character. Part B sets
+these before loading `Dungeon.unity`; `InitDungeonSystemCmd` reads them
+instead of the hardcoded values it had before. Decided against trying to
+reverse-engineer the real game's actual selection-passing mechanism — its
+`DungeonSignalManager` alone injects ~90 interconnected signals and almost
+certainly ties into the Firestore-backed cloud-save system
+(`Assets/Scripts/Ssar/DataManager/Firestore*.cs`), which is its own large,
+network-dependent subsystem well out of scope here.
+
+**Merge-friendliness:** the placeholder camera/ground/light/UIRoot that
+`InitDungeonSystemCmd`/`DungeonSimulationDriver` build (see section 4, Phase
+6 update) now check for a real one first (`Camera.main`, `Light`,
+`UICamera.list`) and step aside if Part A's real boot-chain UI/camera system
+already provided one — so merging shouldn't produce two competing cameras.
+
+**Gotcha hit setting this up:** Claude Code's auto-mode permission classifier
+blocked several `git push` attempts unpredictably (not content-based —
+identical commands succeeded on retry after the user added a Bash permission
+rule). If you hit this, retry once or twice before assuming something is
+actually wrong.
+
+**Retired:** the 3-way split served its purpose (Part A's boot chain and Part
+C's `DungeonSelection` contract are both merged into `main` above; Part B's
+branch never got any actual commits pushed to it — the other instance's
+work, if any exists, lives elsewhere). Back to a single session/branch
+(`main`) going forward; `part-a-boot-chain`, `part-b-lobby-selection`, and
+`part-c-dungeon-transition` have been deleted.
+
+## 9. `docs/` folder and Ghidra (Phase 9, now actually done)
 
 After comparing this project's approach against a battle-tested general-purpose playbook
 (`C:\Users\user\Desktop\ApkExtraction.md`, written from a separate Fruit Ninja RE session),
