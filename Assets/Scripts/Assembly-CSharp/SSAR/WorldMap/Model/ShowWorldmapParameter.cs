@@ -18,21 +18,26 @@ namespace SSAR.WorldMap.Model
 
 		public ShowWorldmapParameter(ShowWorldMapType type, bool showInfo, int specificNodeId = 0, bool enableInterstitialAds = false)
 		{
+			this.type = type;
+			this.showInfo = showInfo;
+			this.specificNodeId = specificNodeId;
+			this.enableInterstitialAds = enableInterstitialAds;
+			nodeTarget = GenerateNodeTarget();
 		}
 
 		public int GetNodeTarget()
 		{
-			return 0;
+			return nodeTarget;
 		}
 
 		public bool ShowInfo()
 		{
-			return false;
+			return showInfo;
 		}
 
 		private int GenerateNodeTarget()
 		{
-			return 0;
+			return type == ShowWorldMapType.SpecificNode ? specificNodeId : 0;
 		}
 	}
 }

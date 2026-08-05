@@ -1,3 +1,4 @@
+using System;
 using Assets.Scripts.Ssar.Worldmap.View;
 using SSAR.WorldMap.Enum;
 using SSAR.WorldMap.Model;
@@ -33,16 +34,50 @@ namespace SSAR.View
 
 		private WorldMapData WorldMapData => null;
 
+		// No real save/progression system exists (star/lock state per
+		// node), so every node shown is treated as unlocked/enterable -
+		// same "known-good default" convention used throughout this
+		// project rather than fabricating fake progress data. Real
+		// node reward/lost-soul/death-location decorations (progression
+		// polish, not needed for "pick a dungeon and play") stay unused.
+		public event Action<Scripts.Config.Dungeon> onClick;
+
 		private void Awake()
 		{
+			if (objectClick != null)
+			{
+				UIEventListener.Get(objectClick).onClick += ClickObject;
+			}
+			if (stars != null)
+			{
+				foreach (UISprite star in stars)
+				{
+					if (star != null)
+					{
+						NGUITools.SetActive(star.gameObject, false);
+					}
+				}
+			}
 		}
 
 		private void ClickObject(GameObject o)
 		{
+			if (dungeonInfo != null)
+			{
+				onClick?.Invoke(dungeonInfo);
+			}
 		}
 
 		public void Show(Scripts.Config.Dungeon config)
 		{
+			dungeonInfo = config;
+			gameObject.SetActive(config != null);
+			if (config == null)
+			{
+				return;
+			}
+			UpdateName();
+			UpdateBg();
 		}
 
 		private void UpdateNodeBonusReward()
@@ -67,10 +102,18 @@ namespace SSAR.View
 
 		private void UpdateName()
 		{
+			if (lb_name != null && dungeonInfo != null)
+			{
+				lb_name.text = "Node " + dungeonInfo.nodeOrder;
+			}
 		}
 
 		private void UpdateBg()
 		{
+			if (sp_bg != null)
+			{
+				sp_bg.color = Color.white;
+			}
 		}
 
 		private string GetIcon()

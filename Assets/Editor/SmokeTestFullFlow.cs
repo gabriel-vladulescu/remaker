@@ -145,31 +145,30 @@ public class SmokeTestFullFlowDriver : MonoBehaviour
 		yield return null;
 		yield return null;
 
-		Assets.Scripts.Ssar.Worldmap.View.SimpleDungeonSelectView dungeonSelect =
-			Object.FindObjectOfType<Assets.Scripts.Ssar.Worldmap.View.SimpleDungeonSelectView>();
-		if (dungeonSelect == null)
+		WorldmapPopup worldmap = Object.FindObjectOfType<WorldmapPopup>();
+		if (worldmap == null || worldmap.RegionView == null)
 		{
-			Debug.LogError("[SmokeTestFullFlow] SimpleDungeonSelectView did not appear after btn_start.");
+			Debug.LogError("[SmokeTestFullFlow] WorldmapPopup did not appear after btn_start.");
 			yield break;
 		}
-		Debug.Log("[SmokeTestFullFlow] SimpleDungeonSelectView appeared with real DungeonConfig data.");
+		Debug.Log("[SmokeTestFullFlow] WorldmapPopup appeared with real DungeonConfig data.");
 
-		GameObject dungeonRow = null;
-		foreach (Transform child in dungeonSelect.transform)
+		GameObject dungeonNode = null;
+		foreach (SSAR.View.WorldmapNodeView node in worldmap.RegionView.WorldmapNodeViews)
 		{
-			if (child.name.StartsWith("DungeonRow_"))
+			if (node != null && node.gameObject.activeSelf && node.objectClick != null)
 			{
-				dungeonRow = child.gameObject;
+				dungeonNode = node.objectClick;
 				break;
 			}
 		}
-		if (dungeonRow == null)
+		if (dungeonNode == null)
 		{
-			Debug.LogError("[SmokeTestFullFlow] No dungeon row buttons were spawned - check DungeonConfig.json load / GetListDungeons.");
+			Debug.LogError("[SmokeTestFullFlow] No active dungeon nodes were shown - check DungeonConfig.json load / GetListDungeons.");
 			yield break;
 		}
-		UICamera.Notify(dungeonRow, "OnClick", null);
-		Debug.Log("[SmokeTestFullFlow] Clicked a real dungeon row.");
+		UICamera.Notify(dungeonNode, "OnClick", null);
+		Debug.Log("[SmokeTestFullFlow] Clicked a real dungeon node.");
 
 		timeout = Time.realtimeSinceStartup + 15f;
 		while (SceneManager.GetActiveScene().name != "Dungeon")

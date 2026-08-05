@@ -1,8 +1,9 @@
 using Assets.Scripts.Ssar.CharacterSelection.Model;
 using Assets.Scripts.Ssar.CharacterSelection.View;
 using Assets.Scripts.Ssar.Dungeon;
-using Assets.Scripts.Ssar.Worldmap.View;
 using Assets.Scripts.Utils;
+using SSAR.WorldMap.Enum;
+using SSAR.WorldMap.Model;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -37,35 +38,10 @@ public class CharacterSelectionPopup : BasePopup
 	// that known-good character directly instead of a real roster - same
 	// "scope down to the validated path" rationale as MainSceneBootstrap
 	// only wiring btn_adventure out of Main's ~40 buttons.
-	private SimpleDungeonSelectView dungeonSelectView;
-
-	private GameObject buttonTemplate;
-
-	private GameObject labelTemplate;
+	private WorldmapPopup worldmapPopup;
 
 	protected override void Awake()
 	{
-		// Clone real, already-styled NGUI widgets from this scene (real
-		// atlas/font/collider setup, not guessed) while everything is
-		// still active/findable, and park them outside this popup's own
-		// hierarchy so hiding this popup later doesn't take them with it.
-		// SimpleDungeonSelectView uses these as building blocks for its
-		// dungeon list instead of constructing raw NGUI widgets blind.
-		GameObject btnSource = GameObject.Find("btn_try");
-		GameObject lblSource = GameObject.Find("lb_title");
-		if (btnSource != null)
-		{
-			buttonTemplate = Instantiate(btnSource, transform.parent, worldPositionStays: false);
-			buttonTemplate.name = "DungeonRowButtonTemplate";
-			buttonTemplate.SetActive(false);
-		}
-		if (lblSource != null)
-		{
-			labelTemplate = Instantiate(lblSource, transform.parent, worldPositionStays: false);
-			labelTemplate.name = "DungeonRowLabelTemplate";
-			labelTemplate.SetActive(false);
-		}
-
 		if (btn_back != null)
 		{
 			UIEventListener.Get(btn_back).onClick += BackToTitle;
@@ -116,20 +92,18 @@ public class CharacterSelectionPopup : BasePopup
 			DungeonSelection.HeroLevel = Mathf.Max(1, mainCharacterData.level);
 		}
 		gameObject.SetActive(false);
-		if (dungeonSelectView == null)
+		if (worldmapPopup == null)
 		{
-			GameObject go = new GameObject("SimpleDungeonSelectView (not part of the original game)");
-			go.transform.SetParent(transform.parent, worldPositionStays: false);
-			dungeonSelectView = go.AddComponent<SimpleDungeonSelectView>();
-			dungeonSelectView.Init(buttonTemplate, labelTemplate);
-			dungeonSelectView.OnBack += ShowAgain;
+			GameObject prefab = Resources.Load<GameObject>("guiprefabs/worldmap/WorldmapPopup");
+			if (prefab == null)
+			{
+				Debug.LogError("[CharacterSelectionPopup] Could not load prefab at Resources/guiprefabs/worldmap/WorldmapPopup");
+				return;
+			}
+			GameObject instance = Instantiate(prefab, transform.parent, worldPositionStays: false);
+			worldmapPopup = instance.GetComponent<WorldmapPopup>();
 		}
-		dungeonSelectView.Show();
-	}
-
-	private void ShowAgain()
-	{
-		Show();
+		worldmapPopup.Show(new ShowWorldmapParameter(ShowWorldMapType.CurrentNode, showInfo: false));
 	}
 
 	private void UpdateTab()

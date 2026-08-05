@@ -81,18 +81,78 @@ namespace SSAR.View
 
 		private GameObject fx;
 
-		private DungeonConfig DungeonConfig => null;
+		private DungeonConfig cachedDungeonConfig;
+
+		public event Action<Scripts.Config.Dungeon> onNodeClick;
+
+		private DungeonConfig DungeonConfig
+		{
+			get
+			{
+				if (cachedDungeonConfig == null)
+				{
+					TextAsset json = UnityEngine.Resources.Load<TextAsset>("config/DungeonConfig");
+					cachedDungeonConfig = new DungeonConfig();
+					if (json != null)
+					{
+						cachedDungeonConfig.OnMapValue(json.text);
+					}
+				}
+				return cachedDungeonConfig;
+			}
+		}
 
 		private void Awake()
 		{
+			if (WorldmapNodeViews != null)
+			{
+				foreach (WorldmapNodeView node in WorldmapNodeViews)
+				{
+					if (node != null)
+					{
+						node.onClick += OnNodeClicked;
+					}
+				}
+			}
+			if (hellModeReminder != null)
+			{
+				NGUITools.SetActive(hellModeReminder, false);
+			}
+		}
+
+		private void OnNodeClicked(Scripts.Config.Dungeon dungeon)
+		{
+			onNodeClick?.Invoke(dungeon);
 		}
 
 		public void Show(MapInfo mapInfo, ScenarioDifficulty difficulty)
 		{
+			this.mapInfo = mapInfo;
+			this.difficulty = difficulty;
+			if (lb_name != null && mapInfo != null)
+			{
+				lb_name.text = mapInfo.name;
+			}
+			UpdateNodeData();
 		}
 
 		private void UpdateNodeData()
 		{
+			if (WorldmapNodeViews == null || mapInfo == null)
+			{
+				return;
+			}
+
+			List<Scripts.Config.Dungeon> dungeons = DungeonConfig.GetListDungeons(mapInfo.id, difficulty);
+			for (int i = 0; i < WorldmapNodeViews.Length; i++)
+			{
+				WorldmapNodeView node = WorldmapNodeViews[i];
+				if (node == null)
+				{
+					continue;
+				}
+				node.Show(i < dungeons.Count ? dungeons[i] : null);
+			}
 		}
 
 		private void UpdateEffectHighestNode()
