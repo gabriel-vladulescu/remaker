@@ -2,11 +2,11 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &1709254077376921
 GameObject:
-  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4730242686860875}
   - component: {fileID: 114724804207875695}
@@ -19,12 +19,12 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &4730242686860875
 Transform:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709254077376921}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -42,8 +42,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a68422e122212f3eb86c19ce6ed442e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   mMat: {fileID: 0}
   mUVRect:
     serializedVersion: 2
@@ -56,7 +56,7 @@ MonoBehaviour:
     mBase: 0
     mWidth: 256
     mHeight: 256
-    mSpriteName:
+    mSpriteName: 
     mSaved:
     - index: 32
       x: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 9
       channel: 15
-      kerning:
+      kerning: 
     - index: 33
       x: 121
       y: 27
@@ -77,7 +77,7 @@ MonoBehaviour:
       offsetY: 4
       advance: 11
       channel: 15
-      kerning:
+      kerning: 
     - index: 34
       x: 235
       y: 89
@@ -87,7 +87,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 20
       channel: 15
-      kerning:
+      kerning: 
     - index: 35
       x: 124
       y: 189
@@ -97,7 +97,7 @@ MonoBehaviour:
       offsetY: 3
       advance: 32
       channel: 15
-      kerning:
+      kerning: 
     - index: 36
       x: 110
       y: 120
@@ -107,7 +107,7 @@ MonoBehaviour:
       offsetY: -2
       advance: 22
       channel: 15
-      kerning: 27000000ffffff/f29000000ffffff/f2d000000ffffff/f31000000ffffff/f32000000ffffff/f33000000ffffff/f34000000ffffff/f37000000ffffff/f38000000feffff/f39000000feffff/f3a000000feffff/f3c000000ffffff/f4f0000000100000059000000ffffff/f5a000000ffffff/f
+      kerning: 27000000ffffffff29000000ffffffff2d000000ffffffff31000000ffffffff32000000ffffffff33000000ffffffff34000000ffffffff37000000ffffffff38000000feffffff39000000feffffff3a000000feffffff3c000000ffffffff4f0000000100000059000000ffffffff5a000000ffffffff
     - index: 37
       x: 65
       y: 126
@@ -117,7 +117,7 @@ MonoBehaviour:
       offsetY: 7
       advance: 30
       channel: 15
-      kerning: 27000000ffffff/f34000000ffffff/f3c0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f
+      kerning: 27000000ffffffff34000000ffffffff3c0000000100000049000000ffffffff53000000ffffffff57000000ffffffff
     - index: 38
       x: 95
       y: 187
@@ -127,7 +127,7 @@ MonoBehaviour:
       offsetY: 4
       advance: 30
       channel: 15
-      kerning: 2d000000ffffff/f2e000000ffffff/f35000000ffffff/f3b000000ffffff/f
+      kerning: 2d000000ffffffff2e000000ffffffff35000000ffffffff3b000000ffffffff
     - index: 39
       x: 247
       y: 108
@@ -137,7 +137,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 11
       channel: 15
-      kerning: 34000000ffffff/f3c0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f
+      kerning: 34000000ffffffff3c0000000100000049000000ffffffff53000000ffffffff57000000ffffffff
     - index: 40
       x: 110
       y: 14
@@ -147,7 +147,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 10
       channel: 15
-      kerning: 34000000ffffff/f3c0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f59000000ffffff/f5a000000ffffff/f5c000000ffffff/f
+      kerning: 34000000ffffffff3c0000000100000049000000ffffffff53000000ffffffff57000000ffffffff59000000ffffffff5a000000ffffffff5c000000ffffffff
     - index: 41
       x: 53
       y: 54
@@ -157,7 +157,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 10
       channel: 15
-      kerning: 27000000ffffff/f34000000ffffff/f3c000000010000003e0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f59000000ffffff/f
+      kerning: 27000000ffffffff34000000ffffffff3c000000010000003e0000000100000049000000ffffffff53000000ffffffff57000000ffffffff59000000ffffffff
     - index: 42
       x: 190
       y: 106
@@ -167,7 +167,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 20
       channel: 15
-      kerning: 24000000ffffff/f2d000000ffffff/f2e000000ffffff/f31000000ffffff/f35000000ffffff/f3b000000ffffff/f
+      kerning: 24000000ffffffff2d000000ffffffff2e000000ffffffff31000000ffffffff35000000ffffffff3b000000ffffffff
     - index: 43
       x: 172
       y: 136
@@ -177,7 +177,7 @@ MonoBehaviour:
       offsetY: 7
       advance: 23
       channel: 15
-      kerning: 34000000ffffff/f3c0000000100000053000000ffffff/f
+      kerning: 34000000ffffffff3c0000000100000053000000ffffffff
     - index: 44
       x: 196
       y: 70
@@ -187,7 +187,7 @@ MonoBehaviour:
       offsetY: 25
       advance: 11
       channel: 15
-      kerning: 3c0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f59000000ffffff/f5a000000ffffff/f
+      kerning: 3c0000000100000049000000ffffffff53000000ffffffff57000000ffffffff59000000ffffffff5a000000ffffffff
     - index: 45
       x: 104
       y: 219
@@ -197,7 +197,7 @@ MonoBehaviour:
       offsetY: 18
       advance: 19
       channel: 15
-      kerning: 24000000ffffff/f25000000ffffff/f27000000ffffff/f28000000ffffff/f2f000000ffffff/f32000000ffffff/f34000000ffffff/f35000000ffffff/f3c000000010000003e0000000600000044000000ffffff/f45000000ffffff/f46000000ffffff/f47000000ffffff/f48000000ffffff/f49000000ffffff/f4a000000ffffff/f4b000000ffffff/f4c000000ffffff/f4d000000ffffff/f4e000000ffffff/f4f000000ffffff/f50000000ffffff/f51000000ffffff/f52000000ffffff/f53000000ffffff/f54000000ffffff/f55000000ffffff/f56000000ffffff/f57000000ffffff/f58000000ffffff/f59000000ffffff/f5a000000ffffff/f5b000000ffffff/f5c000000ffffff/f5d000000ffffff/f5e00000005000000
+      kerning: 24000000ffffffff25000000ffffffff27000000ffffffff28000000ffffffff2f000000ffffffff32000000ffffffff34000000ffffffff35000000ffffffff3c000000010000003e0000000600000044000000ffffffff45000000ffffffff46000000ffffffff47000000ffffffff48000000ffffffff49000000ffffffff4a000000ffffffff4b000000ffffffff4c000000ffffffff4d000000ffffffff4e000000ffffffff4f000000ffffffff50000000ffffffff51000000ffffffff52000000ffffffff53000000ffffffff54000000ffffffff55000000ffffffff56000000ffffffff57000000ffffffff58000000ffffffff59000000ffffffff5a000000ffffffff5b000000ffffffff5c000000ffffffff5d000000ffffffff5e00000005000000
     - index: 46
       x: 97
       y: 220
@@ -207,7 +207,7 @@ MonoBehaviour:
       offsetY: 24
       advance: 9
       channel: 15
-      kerning: 3c0000000100000047000000ffffff/f49000000ffffff/f4d000000ffffff/f51000000ffffff/f52000000ffffff/f53000000ffffff/f54000000ffffff/f57000000ffffff/f
+      kerning: 3c0000000100000047000000ffffffff49000000ffffffff4d000000ffffffff51000000ffffffff52000000ffffffff53000000ffffffff54000000ffffffff57000000ffffffff
     - index: 47
       x: 129
       y: 125
@@ -217,7 +217,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 14
       channel: 15
-      kerning: 27000000ffffff/f34000000ffffff/f3c0000000100000049000000ffffff/f53000000ffffff/f59000000ffffff/f5a000000ffffff/f77000000ffffff/f
+      kerning: 27000000ffffffff34000000ffffffff3c0000000100000049000000ffffffff53000000ffffffff59000000ffffffff5a000000ffffffff77000000ffffffff
     - index: 48
       x: 163
       y: 29
@@ -227,7 +227,7 @@ MonoBehaviour:
       offsetY: 14
       advance: 20
       channel: 15
-      kerning: 3c0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f58000000ffffff/f59000000ffffff/f5a000000ffffff/f5c000000ffffff/f
+      kerning: 3c0000000100000049000000ffffffff53000000ffffffff57000000ffffffff58000000ffffffff59000000ffffffff5a000000ffffffff5c000000ffffffff
     - index: 49
       x: 149
       y: 13
@@ -237,7 +237,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 15
       channel: 15
-      kerning: 27000000ffffff/f32000000ffffff/f34000000ffffff/f3c000000010000003e0000000100000047000000ffffff/f49000000ffffff/f4d000000ffffff/f52000000ffffff/f53000000ffffff/f54000000ffffff/f57000000ffffff/f58000000ffffff/f59000000ffffff/f5a000000ffffff/f5c000000ffffff/f
+      kerning: 27000000ffffffff32000000ffffffff34000000ffffffff3c000000010000003e0000000100000047000000ffffffff49000000ffffffff4d000000ffffffff52000000ffffffff53000000ffffffff54000000ffffffff57000000ffffffff58000000ffffffff59000000ffffffff5a000000ffffffff5c000000ffffffff
     - index: 50
       x: 217
       y: 88
@@ -247,7 +247,7 @@ MonoBehaviour:
       offsetY: 14
       advance: 19
       channel: 15
-      kerning: 2d000000ffffff/f2e000000ffffff/f31000000ffffff/f35000000ffffff/f3b000000ffffff/f
+      kerning: 2d000000ffffffff2e000000ffffffff31000000ffffffff35000000ffffffff3b000000ffffffff
     - index: 51
       x: 129
       y: 7
@@ -257,7 +257,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 15
       channel: 15
-      kerning: 34000000ffffff/f3c0000000100000053000000ffffff/f
+      kerning: 34000000ffffffff3c0000000100000053000000ffffffff
     - index: 52
       x: 206
       y: 188
@@ -267,7 +267,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 20
       channel: 15
-      kerning: 24000000ffffff/f2d000000ffffff/f2e000000ffffff/f31000000ffffff/f35000000ffffff/f3b000000ffffff/f
+      kerning: 24000000ffffffff2d000000ffffffff2e000000ffffffff31000000ffffffff35000000ffffffff3b000000ffffffff
     - index: 53
       x: 149
       y: 78
@@ -277,7 +277,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 15
       channel: 15
-      kerning: 27000000ffffff/f34000000ffffff/f3c0000000100000053000000ffffff/f
+      kerning: 27000000ffffffff34000000ffffffff3c0000000100000053000000ffffffff
     - index: 54
       x: 110
       y: 54
@@ -287,7 +287,7 @@ MonoBehaviour:
       offsetY: 7
       advance: 17
       channel: 15
-      kerning:
+      kerning: 
     - index: 55
       x: 220
       y: 160
@@ -297,7 +297,7 @@ MonoBehaviour:
       offsetY: 14
       advance: 19
       channel: 15
-      kerning: 24000000ffffff/f2a000000ffffff/f2f000000feffff/f330000000100000035000000ffffff/f39000000010000003a000000010000003c000000010000003e0000000100000044000000ffffff/f45000000fdffff/f46000000ffffff/f47000000fcffff/f48000000feffff/f49000000fdffff/f4a000000feffff/f4b000000fdffff/f4c000000ffffff/f4d000000fdffff/f4e000000ffffff/f4f000000feffff/f50000000ffffff/f51000000fdffff/f52000000fdffff/f53000000fcffff/f54000000fdffff/f55000000ffffff/f56000000feffff/f57000000fdffff/f58000000feffff/f59000000feffff/f5a000000ffffff/f5b000000ffffff/f5c000000fdffff/f5d000000feffff/f
+      kerning: 24000000ffffffff2a000000ffffffff2f000000feffffff330000000100000035000000ffffffff39000000010000003a000000010000003c000000010000003e0000000100000044000000ffffffff45000000fdffffff46000000ffffffff47000000fcffffff48000000feffffff49000000fdffffff4a000000feffffff4b000000fdffffff4c000000ffffffff4d000000fdffffff4e000000ffffffff4f000000feffffff50000000ffffffff51000000fdffffff52000000fdffffff53000000fcffffff54000000fdffffff55000000ffffffff56000000feffffff57000000fdffffff58000000feffffff59000000feffffff5a000000ffffffff5b000000ffffffff5c000000fdffffff5d000000feffffff
     - index: 56
       x: 149
       y: 52
@@ -307,7 +307,7 @@ MonoBehaviour:
       offsetY: 6
       advance: 16
       channel: 15
-      kerning: 24000000feffff/f25000000ffffff/f2e000000ffffff/f2f000000ffffff/f35000000ffffff/f3c000000010000003e0000000100000044000000ffffff/f45000000ffffff/f46000000ffffff/f47000000ffffff/f48000000ffffff/f4a000000ffffff/f4b000000ffffff/f4c000000ffffff/f4d000000ffffff/f4e000000ffffff/f4f000000ffffff/f50000000ffffff/f51000000ffffff/f52000000ffffff/f53000000ffffff/f54000000ffffff/f55000000ffffff/f56000000ffffff/f57000000ffffff/f5b000000ffffff/f5d000000ffffff/f
+      kerning: 24000000feffffff25000000ffffffff2e000000ffffffff2f000000ffffffff35000000ffffffff3c000000010000003e0000000100000044000000ffffffff45000000ffffffff46000000ffffffff47000000ffffffff48000000ffffffff4a000000ffffffff4b000000ffffffff4c000000ffffffff4d000000ffffffff4e000000ffffffff4f000000ffffffff50000000ffffffff51000000ffffffff52000000ffffffff53000000ffffffff54000000ffffffff55000000ffffffff56000000ffffffff57000000ffffffff5b000000ffffffff5d000000ffffffff
     - index: 57
       x: 237
       y: 163
@@ -317,7 +317,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 17
       channel: 15
-      kerning: 24000000feffff/f25000000ffffff/f2f000000ffffff/f34000000ffffff/f35000000ffffff/f37000000010000003e0000000100000044000000feffff/f45000000feffff/f46000000ffffff/f47000000feffff/f48000000ffffff/f49000000ffffff/f4a000000ffffff/f4b000000ffffff/f4c000000ffffff/f4d000000ffffff/f4e000000ffffff/f4f000000fcffff/f50000000ffffff/f51000000ffffff/f52000000feffff/f53000000ffffff/f54000000feffff/f55000000feffff/f56000000ffffff/f57000000ffffff/f58000000ffffff/f5b000000ffffff/f5c000000ffffff/f5d000000ffffff/f5e00000001000000
+      kerning: 24000000feffffff25000000ffffffff2f000000ffffffff34000000ffffffff35000000ffffffff37000000010000003e0000000100000044000000feffffff45000000feffffff46000000ffffffff47000000feffffff48000000ffffffff49000000ffffffff4a000000ffffffff4b000000ffffffff4c000000ffffffff4d000000ffffffff4e000000ffffffff4f000000fcffffff50000000ffffffff51000000ffffffff52000000feffffff53000000ffffffff54000000feffffff55000000feffffff56000000ffffffff57000000ffffffff58000000ffffffff5b000000ffffffff5c000000ffffffff5d000000ffffffff5e00000001000000
     - index: 58
       x: 206
       y: 68
@@ -327,7 +327,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 10
       channel: 15
-      kerning: 24000000feffff/f25000000ffffff/f2f000000ffffff/f34000000ffffff/f35000000ffffff/f37000000010000003e0000000100000044000000feffff/f45000000feffff/f46000000ffffff/f47000000feffff/f48000000ffffff/f49000000ffffff/f4a000000ffffff/f4b000000ffffff/f4c000000ffffff/f4d000000ffffff/f4e000000ffffff/f4f000000fcffff/f50000000ffffff/f51000000ffffff/f52000000feffff/f53000000ffffff/f54000000ffffff/f55000000feffff/f56000000ffffff/f57000000ffffff/f58000000ffffff/f5b000000ffffff/f5c000000ffffff/f5d000000ffffff/f5e00000001000000
+      kerning: 24000000feffffff25000000ffffffff2f000000ffffffff34000000ffffffff35000000ffffffff37000000010000003e0000000100000044000000feffffff45000000feffffff46000000ffffffff47000000feffffff48000000ffffffff49000000ffffffff4a000000ffffffff4b000000ffffffff4c000000ffffffff4d000000ffffffff4e000000ffffffff4f000000fcffffff50000000ffffffff51000000ffffffff52000000feffffff53000000ffffffff54000000ffffffff55000000feffffff56000000ffffffff57000000ffffffff58000000ffffffff5b000000ffffffff5c000000ffffffff5d000000ffffffff5e00000001000000
     - index: 59
       x: 247
       y: 188
@@ -337,7 +337,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 11
       channel: 15
-      kerning: 27000000ffffff/f32000000ffffff/f34000000ffffff/f3c0000000100000049000000ffffff/f53000000ffffff/f57000000ffffff/f58000000ffffff/f59000000ffffff/f5a000000ffffff/f5c000000ffffff/f
+      kerning: 27000000ffffffff32000000ffffffff34000000ffffffff3c0000000100000049000000ffffffff53000000ffffffff57000000ffffffff58000000ffffffff59000000ffffffff5a000000ffffffff5c000000ffffffff
     - index: 60
       x: 137
       y: 160
@@ -347,7 +347,7 @@ MonoBehaviour:
       offsetY: 3
       advance: 22
       channel: 15
-      kerning: 24000000ffffff/f25000000ffffff/f27000000ffffff/f2a000000ffffff/f2f000000ffffff/f32000000ffffff/f34000000ffffff/f380000000100000039000000010000003a000000010000003e0000000100000044000000ffffff/f45000000ffffff/f46000000ffffff/f47000000feffff/f48000000ffffff/f49000000ffffff/f4a000000ffffff/f4b000000ffffff/f4c000000ffffff/f4d000000feffff/f4e000000ffffff/f4f000000ffffff/f50000000ffffff/f51000000ffffff/f52000000feffff/f53000000fdffff/f54000000feffff/f55000000ffffff/f56000000ffffff/f57000000ffffff/f58000000ffffff/f59000000ffffff/f5a000000ffffff/f5b000000ffffff/f5c000000ffffff/f5d000000ffffff/f
+      kerning: 24000000ffffffff25000000ffffffff27000000ffffffff2a000000ffffffff2f000000ffffffff32000000ffffffff34000000ffffffff380000000100000039000000010000003a000000010000003e0000000100000044000000ffffffff45000000ffffffff46000000ffffffff47000000feffffff48000000ffffffff49000000ffffffff4a000000ffffffff4b000000ffffffff4c000000ffffffff4d000000feffffff4e000000ffffffff4f000000ffffffff50000000ffffffff51000000ffffffff52000000feffffff53000000fdffffff54000000feffffff55000000ffffffff56000000ffffffff57000000ffffffff58000000ffffffff59000000ffffffff5a000000ffffffff5b000000ffffffff5c000000ffffffff5d000000ffffffff
     - index: 61
       x: 110
       y: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 18
       channel: 15
-      kerning:
+      kerning: 
     - index: 62
       x: 227
       y: 188
@@ -367,7 +367,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 22
       channel: 15
-      kerning:
+      kerning: 
     - index: 63
       x: 129
       y: 35
@@ -377,7 +377,7 @@ MonoBehaviour:
       offsetY: 4
       advance: 14
       channel: 15
-      kerning:
+      kerning: 
     - index: 64
       x: 0
       y: 92
@@ -397,7 +397,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 27
       channel: 15
-      kerning:
+      kerning: 
     - index: 66
       x: 93
       y: 157
@@ -407,7 +407,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 26
       channel: 15
-      kerning:
+      kerning: 
     - index: 67
       x: 65
       y: 156
@@ -417,7 +417,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 29
       channel: 15
-      kerning:
+      kerning: 
     - index: 68
       x: 0
       y: 30
@@ -427,7 +427,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 32
       channel: 15
-      kerning: 29000000ffffff/f2d000000ffffff/f31000000ffffff/f33000000ffffff/f37000000ffffff/f38000000feffff/f39000000fdffff/f3a000000fdffff/f3c000000ffffff/f49000000ffffff/f53000000ffffff/f57000000ffffff/f58000000ffffff/f59000000ffffff/f5a000000ffffff/f5c000000ffffff/f
+      kerning: 29000000ffffffff2d000000ffffffff31000000ffffffff33000000ffffffff37000000ffffffff38000000feffffff39000000fdffffff3a000000fdffffff3c000000ffffffff49000000ffffffff53000000ffffffff57000000ffffffff58000000ffffffff59000000ffffffff5a000000ffffffff5c000000ffffffff
     - index: 69
       x: 65
       y: 96
@@ -437,7 +437,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 28
       channel: 15
-      kerning: 29000000ffffff/f2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000ffffff/f
+      kerning: 29000000ffffffff2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000ffffffff
     - index: 70
       x: 65
       y: 66
@@ -447,7 +447,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 25
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000feffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000feffffff
     - index: 71
       x: 0
       y: 124
@@ -457,7 +457,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 32
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 72
       x: 32
       y: 186
@@ -467,7 +467,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 34
       channel: 15
-      kerning: 29000000ffffff/f2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000ffffff/f
+      kerning: 29000000ffffffff2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000ffffffff
     - index: 73
       x: 156
       y: 158
@@ -477,7 +477,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 17
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 74
       x: 32
       y: 52
@@ -487,7 +487,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 16
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f33000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000feffff/f
+      kerning: 2d000000ffffffff31000000ffffffff33000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000feffffff
     - index: 75
       x: 65
       y: 187
@@ -497,7 +497,7 @@ MonoBehaviour:
       offsetY: 3
       advance: 29
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 76
       x: 0
       y: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 28
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000feffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000feffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 77
       x: 180
       y: 228
@@ -517,7 +517,7 @@ MonoBehaviour:
       offsetY: 3
       advance: 38
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fcffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f3e000000060000005e00000003000000
+      kerning: 2d000000ffffffff31000000ffffffff37000000fcffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff3e000000060000005e00000003000000
     - index: 78
       x: 145
       y: 226
@@ -527,7 +527,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 35
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 79
       x: 0
       y: 185
@@ -537,7 +537,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 33
       channel: 15
-      kerning: 29000000ffffff/f2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000ffffff/f
+      kerning: 29000000ffffffff2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000ffffffff
     - index: 80
       x: 183
       y: 187
@@ -547,7 +547,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 23
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000ffffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000ffffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 81
       x: 0
       y: 216
@@ -557,7 +557,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 33
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000feffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000feffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 82
       x: 0
       y: 154
@@ -567,7 +567,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 30
       channel: 15
-      kerning: 2d000000ffffff/f2f0000000100000031000000ffffff/f33000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000feffff/f
+      kerning: 2d000000ffffffff2f0000000100000031000000ffffffff33000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000feffffff
     - index: 83
       x: 118
       y: 157
@@ -577,7 +577,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 21
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000feffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000feffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 84
       x: 32
       y: 94
@@ -587,7 +587,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 29
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000feffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000feffffff
     - index: 85
       x: 217
       y: 227
@@ -597,7 +597,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 34
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000feffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000feffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 86
       x: 0
       y: 60
@@ -607,7 +607,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 26
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000feffff/f38000000ffffff/f39000000feffff/f3a000000feffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000feffffff38000000ffffffff39000000feffffff3a000000feffffff3c000000ffffffff
     - index: 87
       x: 104
       y: 226
@@ -617,7 +617,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 38
       channel: 15
-      kerning: 26000000ffffff/f28000000ffffff/f2c000000ffffff/f2d000000ffffff/f2e000000ffffff/f2f000000ffffff/f31000000ffffff/f37000000fcffff/f39000000ffffff/f3a000000ffffff/f3b000000ffffff/f3c000000ffffff/f3d000000ffffff/f44000000ffffff/f4f000000ffffff/f530000000100000059000000010000005c00000001000000
+      kerning: 26000000ffffffff28000000ffffffff2c000000ffffffff2d000000ffffffff2e000000ffffffff2f000000ffffffff31000000ffffffff37000000fcffffff39000000ffffffff3a000000ffffffff3b000000ffffffff3c000000ffffffff3d000000ffffffff44000000ffffffff4f000000ffffffff530000000100000059000000010000005c00000001000000
     - index: 88
       x: 32
       y: 156
@@ -627,7 +627,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 32
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3b000000ffffff/f3c000000ffffff/f44000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000ffffffff3a000000ffffffff3b000000ffffffff3c000000ffffffff44000000ffffffff
     - index: 89
       x: 32
       y: 22
@@ -637,7 +637,7 @@ MonoBehaviour:
       offsetY: 2
       advance: 27
       channel: 15
-      kerning: 2c000000ffffff/f2d000000ffffff/f2e000000ffffff/f30000000ffffff/f35000000ffffff/f37000000fdffff/f39000000ffffff/f3a000000ffffff/f3b000000ffffff/f3c000000ffffff/f44000000ffffff/f4f000000ffffff/f55000000ffffff/f5c00000001000000
+      kerning: 2c000000ffffffff2d000000ffffffff2e000000ffffffff30000000ffffffff35000000ffffffff37000000fdffffff39000000ffffffff3a000000ffffffff3b000000ffffffff3c000000ffffffff44000000ffffffff4f000000ffffffff55000000ffffffff5c00000001000000
     - index: 90
       x: 155
       y: 187
@@ -647,7 +647,7 @@ MonoBehaviour:
       offsetY: 3
       advance: 28
       channel: 15
-      kerning: 2b000000ffffff/f2c000000ffffff/f2d000000ffffff/f2e000000ffffff/f30000000ffffff/f31000000ffffff/f35000000ffffff/f37000000fcffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3b000000ffffff/f3c000000ffffff/f44000000ffffff/f4f000000ffffff/f55000000ffffff/f5c00000001000000
+      kerning: 2b000000ffffffff2c000000ffffffff2d000000ffffffff2e000000ffffffff30000000ffffffff31000000ffffffff35000000ffffffff37000000fcffffff38000000ffffffff39000000ffffffff3a000000ffffffff3b000000ffffffff3c000000ffffffff44000000ffffffff4f000000ffffffff55000000ffffffff5c00000001000000
     - index: 91
       x: 93
       y: 75
@@ -657,7 +657,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 17
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000feffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000feffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 92
       x: 65
       y: 25
@@ -667,7 +667,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 12
       channel: 15
-      kerning: 2d000000ffffff/f330000000100000037000000fdffff/f39000000ffffff/f3b000000ffffff/f3c000000ffffff/f44000000ffffff/f49000000010000004f000000ffffff/f57000000010000005800000001000000
+      kerning: 2d000000ffffffff330000000100000037000000fdffffff39000000ffffffff3b000000ffffffff3c000000ffffffff44000000ffffffff49000000010000004f000000ffffffff57000000010000005800000001000000
     - index: 93
       x: 93
       y: 35
@@ -677,7 +677,7 @@ MonoBehaviour:
       offsetY: 1
       advance: 18
       channel: 15
-      kerning: 2d000000ffffff/f31000000ffffff/f37000000fdffff/f38000000ffffff/f39000000ffffff/f3a000000ffffff/f3c000000ffffff/f
+      kerning: 2d000000ffffffff31000000ffffffff37000000fdffffff38000000ffffffff39000000ffffffff3a000000ffffffff3c000000ffffffff
     - index: 94
       x: 180
       y: 216
@@ -687,7 +687,7 @@ MonoBehaviour:
       offsetY: 6
       advance: 19
       channel: 15
-      kerning:
+      kerning: 
     - index: 95
       x: 61
       y: 220
@@ -697,7 +697,7 @@ MonoBehaviour:
       offsetY: 30
       advance: 19
       channel: 15
-      kerning:
+      kerning: 
     - index: 96
       x: 191
       y: 217
@@ -717,7 +717,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 17
       channel: 15
-      kerning:
+      kerning: 
     - index: 98
       x: 180
       y: 67
@@ -727,7 +727,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 17
       channel: 15
-      kerning:
+      kerning: 
     - index: 99
       x: 129
       y: 84
@@ -737,7 +737,7 @@ MonoBehaviour:
       offsetY: 11
       advance: 20
       channel: 15
-      kerning:
+      kerning: 
     - index: 100
       x: 209
       y: 107
@@ -747,7 +747,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 21
       channel: 15
-      kerning:
+      kerning: 
     - index: 101
       x: 182
       y: 86
@@ -757,7 +757,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 18
       channel: 15
-      kerning:
+      kerning: 
     - index: 102
       x: 163
       y: 47
@@ -767,7 +767,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 17
       channel: 15
-      kerning:
+      kerning: 
     - index: 103
       x: 129
       y: 63
@@ -777,7 +777,7 @@ MonoBehaviour:
       offsetY: 11
       advance: 20
       channel: 15
-      kerning:
+      kerning: 
     - index: 104
       x: 150
       y: 137
@@ -787,7 +787,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 23
       channel: 15
-      kerning:
+      kerning: 
     - index: 105
       x: 180
       y: 47
@@ -797,7 +797,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 12
       channel: 15
-      kerning:
+      kerning: 
     - index: 106
       x: 93
       y: 4
@@ -807,7 +807,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 12
       channel: 15
-      kerning:
+      kerning: 
     - index: 107
       x: 149
       y: 106
@@ -817,7 +817,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 20
       channel: 15
-      kerning:
+      kerning: 
     - index: 108
       x: 163
       y: 11
@@ -827,7 +827,7 @@ MonoBehaviour:
       offsetY: 13
       advance: 17
       channel: 15
-      kerning:
+      kerning: 
     - index: 109
       x: 32
       y: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
       offsetY: 11
       advance: 28
       channel: 15
-      kerning:
+      kerning: 
     - index: 110
       x: 197
       y: 167
@@ -847,7 +847,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 22
       channel: 15
-      kerning:
+      kerning: 
     - index: 111
       x: 213
       y: 137
@@ -857,7 +857,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 22
       channel: 15
-      kerning:
+      kerning: 
     - index: 112
       x: 200
       y: 86
@@ -867,7 +867,7 @@ MonoBehaviour:
       offsetY: 11
       advance: 17
       channel: 15
-      kerning:
+      kerning: 
     - index: 113
       x: 61
       y: 227
@@ -877,7 +877,7 @@ MonoBehaviour:
       offsetY: 11
       advance: 22
       channel: 15
-      kerning:
+      kerning: 
     - index: 114
       x: 170
       y: 106
@@ -887,7 +887,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 19
       channel: 15
-      kerning:
+      kerning: 
     - index: 115
       x: 149
       y: 32
@@ -897,7 +897,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 14
       channel: 15
-      kerning:
+      kerning: 
     - index: 116
       x: 192
       y: 137
@@ -907,7 +907,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 20
       channel: 15
-      kerning:
+      kerning: 
     - index: 117
       x: 173
       y: 167
@@ -917,7 +917,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 22
       channel: 15
-      kerning:
+      kerning: 
     - index: 118
       x: 233
       y: 137
@@ -927,7 +927,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 18
       channel: 15
-      kerning:
+      kerning: 
     - index: 119
       x: 65
       y: 6
@@ -937,7 +937,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 25
       channel: 15
-      kerning: 2f000000faffff/f4f000000fcffff/f
+      kerning: 2f000000faffffff4f000000fcffffff
     - index: 120
       x: 229
       y: 106
@@ -947,7 +947,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 19
       channel: 15
-      kerning:
+      kerning: 
     - index: 121
       x: 129
       y: 105
@@ -957,7 +957,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 18
       channel: 15
-      kerning:
+      kerning: 
     - index: 122
       x: 163
       y: 67
@@ -967,7 +967,7 @@ MonoBehaviour:
       offsetY: 12
       advance: 18
       channel: 15
-      kerning:
+      kerning: 
     - index: 123
       x: 110
       y: 78
@@ -977,7 +977,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 16
       channel: 15
-      kerning:
+      kerning: 
     - index: 124
       x: 84
       y: 26
@@ -987,7 +987,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 10
       channel: 15
-      kerning:
+      kerning: 
     - index: 125
       x: 93
       y: 115
@@ -997,7 +997,7 @@ MonoBehaviour:
       offsetY: 0
       advance: 16
       channel: 15
-      kerning:
+      kerning: 
     - index: 126
       x: 81
       y: 219
@@ -1007,10 +1007,10 @@ MonoBehaviour:
       offsetY: 15
       advance: 22
       channel: 15
-      kerning:
+      kerning: 
   mAtlas: {fileID: 0}
   mReplacement: {fileID: 0}
   mSymbols: []
-  mDynamicFont: {fileID: 12800000, guid: 461cbbcc1838b6f4f9c806c12ed56d7a, type: 3}
+  mDynamicFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mDynamicFontSize: 60
   mDynamicFontStyle: 0
