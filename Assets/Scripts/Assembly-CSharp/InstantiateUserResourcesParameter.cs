@@ -22,25 +22,35 @@ public class InstantiateUserResourcesParameter
 
 	public InstantiateUserResourcesParameter(GameObject parent, UserResourcesLeftCornerType leftCornerType, Action onBack, string title)
 	{
+		this.parent = parent;
+		CornerType = leftCornerType;
+		this.onBack = onBack;
+		this.title = title;
+		enableResources = true;
+		enableSetting = true;
 	}
 
 	public InstantiateUserResourcesParameter SetEnableBorder()
 	{
-		return null;
+		enableBorder = true;
+		return this;
 	}
 
 	public InstantiateUserResourcesParameter DisableResources()
 	{
-		return null;
+		enableResources = false;
+		return this;
 	}
 
 	public InstantiateUserResourcesParameter DisableSetting()
 	{
-		return null;
+		enableSetting = false;
+		return this;
 	}
 
 	public InstantiateUserResourcesParameter SetResourcesType(List<ResourceType> types)
 	{
-		return null;
+		ResourceTypes = types;
+		return this;
 	}
 }

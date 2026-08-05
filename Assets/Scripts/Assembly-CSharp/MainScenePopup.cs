@@ -211,6 +211,9 @@ public class MainScenePopup : BasePopup
 	protected override void Awake()
 	{
 		base.Awake();
+		InitResourcesBar();
+		InitFxButtonAdventure(btn_adventure);
+		InitFxButtonChallenge(btn_challenge);
 	}
 
 	private void SendShopClickObject(string nameItem)
@@ -391,8 +394,33 @@ public class MainScenePopup : BasePopup
 	{
 	}
 
+	// resources_container is a real field wired to a real (but empty -
+	// built at runtime, not baked into the prefab) Container GameObject.
+	// The real widget is UserResourceBar.prefab (Resources/guiprefabs/),
+	// carrying the level/name/exp display plus the stamina/video/
+	// crystal/soul currency row.
 	private void InitResourcesBar()
 	{
+		if (resources_container == null)
+		{
+			return;
+		}
+
+		GameObject prefab = Resources.Load<GameObject>("guiprefabs/UserResourceBar");
+		if (prefab == null)
+		{
+			Debug.LogError("[MainScenePopup] Could not load prefab at Resources/guiprefabs/UserResourceBar");
+			return;
+		}
+
+		GameObject instance = Object.Instantiate(prefab, resources_container.transform, worldPositionStays: false);
+		SSAR.View.UserResourcesView view = instance.GetComponent<SSAR.View.UserResourcesView>();
+		if (view != null)
+		{
+			InstantiateUserResourcesParameter parameter = new InstantiateUserResourcesParameter(
+				resources_container, UserResourcesLeftCornerType.User, null, null);
+			view.Init(parameter);
+		}
 	}
 
 	private void InitModelRoot()
@@ -437,12 +465,35 @@ public class MainScenePopup : BasePopup
 	{
 	}
 
+	// Real flame+spark decoration prefabs (fragment/smoke/fire/buttonLight
+	// particle children) - IL2CPP metadata confirms these two methods were
+	// already empty in the original compiled game too (no logic to
+	// recover), so which exact prefab maps to which button is inferred
+	// rather than known - two real variants exist (fx/fx2), assigned one
+	// per button.
 	private void InitFxButtonAdventure(GameObject o)
 	{
+		InstantiateButtonFx(o, "effect/ui/misc/Challenge_btn_fx");
 	}
 
 	private void InitFxButtonChallenge(GameObject o)
 	{
+		InstantiateButtonFx(o, "effect/ui/misc/Challenge_btn_fx2");
+	}
+
+	private void InstantiateButtonFx(GameObject button, string resourcePath)
+	{
+		if (button == null)
+		{
+			return;
+		}
+		GameObject prefab = Resources.Load<GameObject>(resourcePath);
+		if (prefab == null)
+		{
+			Debug.LogError("[MainScenePopup] Could not load prefab at Resources/" + resourcePath);
+			return;
+		}
+		Object.Instantiate(prefab, button.transform, worldPositionStays: false);
 	}
 
 	private void ShowMemoryShard(GameObject o)

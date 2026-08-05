@@ -155,24 +155,54 @@ namespace SSAR.View
 
 		public Preset preset;
 
+		// No real save/economy system exists (MainCharacterData is stub) -
+		// shows fresh-character defaults (full stamina/video points, 0
+		// crystal/soul, matching the same "known-good default character"
+		// used by CharacterSelectionPopup/DungeonSelection) rather than
+		// fabricating leveled-up save data. arenaKey/skillPoint aren't
+		// part of the real Main hub's resource bar (only stamina/video/
+		// crystal/soul are), so those two sub-widgets stay hidden.
+		private const int DefaultStaminaMax = 10;
+
+		private const int DefaultVideoPointMax = 10;
+
 		protected override void Awake()
 		{
 		}
 
 		protected override void OnEnable()
 		{
+			CheckShowTittleOrPlayerData();
+			UpdateResources();
 		}
 
 		public void Init(InstantiateUserResourcesParameter parameter)
 		{
+			this.parameter = parameter;
+			CheckShowTittleOrPlayerData();
+			EnableResouces(parameter == null || parameter.enableResources);
+			EnableSetting(parameter == null || parameter.enableSetting);
+			if (sp_border != null)
+			{
+				NGUITools.SetActive(sp_border.gameObject, parameter != null && parameter.enableBorder);
+			}
+			UpdateResources();
 		}
 
 		public void EnableResouces(bool enable)
 		{
+			if (resourcesContainer != null)
+			{
+				NGUITools.SetActive(resourcesContainer.gameObject, enable);
+			}
 		}
 
 		public void EnableSetting(bool enable)
 		{
+			if (btn_setting != null)
+			{
+				NGUITools.SetActive(btn_setting, enable);
+			}
 		}
 
 		public void OnSave()
@@ -181,10 +211,27 @@ namespace SSAR.View
 
 		private void UpdateResources()
 		{
+			if (wg_arenaKey != null)
+			{
+				NGUITools.SetActive(wg_arenaKey, false);
+			}
+			if (wg_skillPoint != null)
+			{
+				NGUITools.SetActive(wg_skillPoint, false);
+			}
+
+			UpdateStamina();
+			UpdateVideoPoint();
+			UpdateCrystal(0);
+			UpdateSoul(0);
 		}
 
 		private void UpdateCrystal(int crystal)
 		{
+			if (lb_crystal != null)
+			{
+				lb_crystal.text = crystal.ToString();
+			}
 		}
 
 		private void UpdateExp(int exp)
@@ -193,10 +240,18 @@ namespace SSAR.View
 
 		private void UpdateSoul(int soul)
 		{
+			if (lb_soul != null)
+			{
+				lb_soul.text = soul.ToString();
+			}
 		}
 
 		private void UpdateStamina()
 		{
+			if (lb_stamina != null)
+			{
+				lb_stamina.text = DefaultStaminaMax + "/" + DefaultStaminaMax;
+			}
 		}
 
 		private void UpdateArenaKey()
@@ -205,6 +260,10 @@ namespace SSAR.View
 
 		private void UpdateVideoPoint()
 		{
+			if (lb_videoPoint != null)
+			{
+				lb_videoPoint.text = DefaultVideoPointMax + "/" + DefaultVideoPointMax;
+			}
 		}
 
 		private void UpdateSkillPoint()
@@ -213,6 +272,23 @@ namespace SSAR.View
 
 		private void CheckShowTittleOrPlayerData()
 		{
+			bool showUserData = parameter == null || parameter.CornerType == UserResourcesLeftCornerType.User;
+			if (userDataContainer != null)
+			{
+				NGUITools.SetActive(userDataContainer, showUserData);
+			}
+			if (titleContainer != null)
+			{
+				NGUITools.SetActive(titleContainer, !showUserData);
+			}
+			if (showUserData && UserDataView != null)
+			{
+				UserDataView.Show();
+			}
+			else if (lb_title != null && parameter != null)
+			{
+				lb_title.text = parameter.title;
+			}
 		}
 
 		private void SetTableAnchor(GameObject leftTarget)
@@ -221,6 +297,7 @@ namespace SSAR.View
 
 		private void Back(GameObject o)
 		{
+			parameter?.onBack?.Invoke();
 		}
 
 		private void Update()

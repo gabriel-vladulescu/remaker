@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Fire 3
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 545f3b8c9a75896409ea175a5fd80168, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _EMISSION
-  m_InvalidKeywords: []
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -110,6 +110,7 @@ Material:
     - _OuterStep: 0.716
     - _Parallax: 0.02
     - _Power: 1.28
+    - _Scale: 1
     - _SmokeCutoff: 0.526
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -153,6 +154,7 @@ Material:
     - _InnerColour: {r: 1, g: 1, b: 1, a: 1}
     - _InnerColourBase: {r: 0.6985294, g: 0.101166345, b: 0, a: 1}
     - _InnerColourTop: {r: 0.9862069, g: 1, b: 0, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _OuterColour: {r: 0.9852941, g: 0.47725806, b: 0.08693774, a: 1}
     - _OuterColourBase: {r: 0.38235295, g: 0, b: 0, a: 1}
     - _OuterColourTop: {r: 1, g: 0, b: 0, a: 1}
