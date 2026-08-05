@@ -1381,3 +1381,44 @@ but the "25%" text stayed frozen, and "nothing happens after load."
   `SKILLS`/`PET`/`MASTERY`/`RUNE`/`CRAFT`, and the wired `ADVENTURE` button, all with real
   icons and labels. Background art/character preview isn't there (separate, lower-priority
   visual gap, not this bug). Compile clean, full click-driven smoke test still passes.
+
+## 14. Main hub polish round + a second systemic shader bug (particle materials)
+
+You compared a live screenshot against the real game and flagged 5 gaps. Worked through the
+"polish" ones (background/character preview deferred, see below); real `WorldmapPopup` is
+next.
+
+- **Currency bar** (`stamina`/`video`/`crystal`/`soul` + level/name/exp): the real widget,
+  `Resources/guiprefabs/UserResourceBar.prefab`, was never being instantiated —
+  `MainScenePopup.resources_container` pointed at a real but permanently-empty runtime
+  container, and `InitResourcesBar()` was stub. Implemented `UserResourcesView`/
+  `UserDataView`/`InstantiateUserResourcesParameter` (all stub) to show real values — full
+  stamina/video points, 0 crystal/soul, Lv.1 "Hero" — same known-good-default convention as
+  `CharacterSelectionPopup`/`DungeonSelection`, since there's no real save/economy system to
+  read from. Also found and hid a stray always-active `EquipmentSkillInfoPopup` tooltip
+  sub-object showing its placeholder "New Label" text.
+- **Second systemic shader bug, much bigger than the icons that surfaced it**: the "shine"
+  effect materials were on the wrong shader — same root cause category as the NGUI text/
+  sprite shader bug (§12), but a different mechanism. `SwapDummyShaders.cs`'s original
+  blanket remap to Standard shader was a reasonable fallback for opaque 3D character
+  meshes, but wrong for *particle* materials, which need additive blending to look like
+  glowing VFX instead of solid opaque shapes. New `Assets/Editor/FixParticleShaders.cs`
+  scopes the fix to materials actually used by a `ParticleSystem`'s renderer (not a blind
+  sweep) and reassigns them to Unity's built-in `Mobile/Particles/Additive` shader (`Legacy
+  Shaders/Particles/Additive` isn't available in this Unity install). **Fixed 962
+  materials in one pass** — every character combat VFX, cosmetic effect, dungeon
+  environmental effect (rain/fire/smoke), and UI glow/shine effect in the game, not just
+  the 4 hub icons that prompted the investigation.
+- **Challenge/Adventure flame+spark buttons**: `InitFxButtonAdventure`/
+  `InitFxButtonChallenge` were stub (confirmed empty in the original IL2CPP metadata too —
+  no logic to recover, so which prefab maps to which button is inferred, not known). Wired
+  them to instantiate the two real fx prefabs (`Resources/effect/ui/misc/
+  Challenge_btn_fx.prefab` / `_fx2.prefab`) onto their respective buttons.
+- **Deferred**: the real hub background + animated character preview.
+  `MainScenePopup.modelRoot` + stub `InitModelRoot()` point to this being a real 3D preview
+  scene — same "not implemented, visual nicety" category already documented for
+  `LoadingScene`'s own character preview (§7), a separate, larger task rather than a quick
+  fix folded into this round.
+- Verified: 0 compile errors, full click-driven smoke test still passes, confirmed
+  visually via screenshot capture that the currency bar shows real values and particle
+  effects (e.g. the top-right icon glow) now render with correct additive blending.
