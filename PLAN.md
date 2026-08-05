@@ -1349,3 +1349,35 @@ problem — `grep -rl "DummyShaderTextExporter" Assets --include="*.shader"` lis
 candidates project-wide. This one hid particularly well because it's looked up by shader
 *name* at runtime (`Shader.Find`), not through any serialized reference that would show up
 in a scene/prefab diff.
+
+## 13. Loading percentage label + Main scene never actually rendering
+
+Two more bugs your interactive testing caught after the shader fix: the loading bar filled
+but the "25%" text stayed frozen, and "nothing happens after load."
+
+- **Percentage label**: `LoadingSceneView.text` was correctly wired via the Inspector to
+  the real "25%" `UILabel` but `UpdateProgressBar()` never actually set its `.text` —
+  fixed, now shows the real rounded percentage.
+- **"Nothing happens after load" — the real bug**: `Main.unity`'s own camera had
+  `ClearFlags=Depth only` (never redraws the color buffer) and a culling mask that excluded
+  the UI layer `MainScenePopup`'s content lives on. With no other camera underneath to
+  clear color, the screen just kept showing `LoadingScene`'s last rendered frame forever —
+  confirmed via `SceneManager` that `Main` genuinely was the active scene the whole time,
+  it just never got (re)drawn. `Assets/Editor/CaptureMainScreenshot.cs` (new) was the tool
+  that made this diagnosable at all: batchmode doesn't reliably render even without
+  `-nographics`, but running the same Editor **without** `-batchmode` does, so an automated
+  screenshot could actually be inspected.
+  - Reconfiguring the camera (`SolidColor` clear, correct culling mask, added `UICamera`)
+    wasn't enough by itself: `MainSceneBootstrap` instantiated `MainScenePopup` at the
+    scene root instead of parented under the scene's `UIRoot`, so it never inherited the
+    `~2/Screen.height` scale-down NGUI applies to pixel-authored UI so it fits inside an
+    `orthographicSize=1` camera. Un-scaled, the popup's geometry was roughly 350x too large
+    for the camera's field of view — a screen full of black wasn't "nothing rendering," it
+    was the camera looking at a deeply-zoomed-in, empty fragment of correctly-configured
+    content. Fixed by parenting the instantiate under the found `UIRoot`, matching how
+    `InitDungeonSystemCmd` already does this correctly for the dungeon's button layout.
+- **Verified visually**: the real Main hub screen now renders — `CHARACTERS`/`GALLERY`/
+  `STORE`/`CARD SHOP`/`STREET VENDOR`, the event/mission/shop icon grid, `INVENTORY`/
+  `SKILLS`/`PET`/`MASTERY`/`RUNE`/`CRAFT`, and the wired `ADVENTURE` button, all with real
+  icons and labels. Background art/character preview isn't there (separate, lower-priority
+  visual gap, not this bug). Compile clean, full click-driven smoke test still passes.
