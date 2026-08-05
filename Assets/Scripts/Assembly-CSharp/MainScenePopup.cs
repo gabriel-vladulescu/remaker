@@ -212,8 +212,20 @@ public class MainScenePopup : BasePopup
 	{
 		base.Awake();
 		InitResourcesBar();
-		InitFxButtonAdventure(btn_adventure);
-		InitFxButtonChallenge(btn_challenge);
+		// InitFxButtonAdventure(btn_adventure)/InitFxButtonChallenge(btn_challenge)
+		// deliberately NOT called: the two candidate fx prefabs
+		// (Challenge_btn_fx/fx2) render broken in-game - some of their
+		// particle sub-systems (e.g. the "fragment" sparks, a pure-white-
+		// RGB + alpha-only texture meant to be additively tinted) show up
+		// as solid white blocks instead of small sparks, and the smoke
+        // layer renders with a wrong blue/purple tint instead of a fire
+        // color, even though their materials now use the correct
+        // Mobile/Particles/Additive shader (see FixParticleShaders.cs).
+		// Root cause not yet isolated - needs per-particle-system
+		// debugging (likely a Color/Color-over-Lifetime module or a
+		// vertex-color-related issue specific to these prefabs), not a
+		// broad fix like the shader swap. Left un-wired rather than
+		// shipping a visibly broken effect.
 	}
 
 	private void SendShopClickObject(string nameItem)
