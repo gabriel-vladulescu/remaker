@@ -258,6 +258,10 @@ public class LoadingSceneView : MonoBehaviour
 		{
 			ProgressBar.value = progress;
 		}
+		if (text != null)
+		{
+			text.text = Mathf.RoundToInt(progress * 100f) + "%";
+		}
 	}
 
 	private void OnGUI()

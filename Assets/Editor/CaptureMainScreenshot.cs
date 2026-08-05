@@ -84,12 +84,18 @@ public class CaptureMainScreenshotDriver : MonoBehaviour
 			}
 			yield return null;
 		}
+		Debug.Log("[CaptureMainScreenshot] SceneManager reports active scene = " + SceneManager.GetActiveScene().name);
 
-		// Give MainSceneBootstrap time to instantiate MainScenePopup and
-		// NGUI a few frames to actually build/render the label meshes.
-		for (int i = 0; i < 10; i++)
+		// Give MainSceneBootstrap plenty of time to instantiate MainScenePopup
+		// and NGUI several frames to actually build/render the label meshes -
+		// generous on purpose to rule out a timing race.
+		yield return new WaitForSeconds(2f);
+
+		Debug.Log("[CaptureMainScreenshot] About to capture. Active scene = " + SceneManager.GetActiveScene().name
+			+ ", loaded scene count = " + SceneManager.sceneCount);
+		for (int s = 0; s < SceneManager.sceneCount; s++)
 		{
-			yield return null;
+			Debug.Log("[CaptureMainScreenshot] Loaded scene[" + s + "] = " + SceneManager.GetSceneAt(s).name);
 		}
 
 		string path = System.IO.Path.Combine(Application.dataPath, "../../main_screenshot.png");
