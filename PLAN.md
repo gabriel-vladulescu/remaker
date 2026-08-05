@@ -1269,3 +1269,83 @@ real widgets, but always the one validated character rather than a real roster.
   that order. Also still open: visual/interactive confirmation of this screen (batchmode
   can't render), and eventually the real multi-character roster if that's ever wanted over
   the single-validated-character shortcut.
+
+## 12. Systemic NGUI text/UI rendering bug — real root cause found and fixed
+
+Your interactive testing caught something the click-driven smoke tests structurally
+couldn't: batchmode has no rendering, so a screen could reach the right state and dispatch
+the right signals with zero exceptions while still looking completely broken. This section
+is the record of that debugging chain, kept in full because the wrong turns are as
+instructive as the right one.
+
+**Symptom**: every NGUI text label, on every screen (loading, title, login variant buttons,
+main hub), rendered as a solid black rectangle sized to the text's own bounding box.
+Sprites/icons/borders rendered fine.
+
+**What turned out NOT to be the cause** (all real, legitimate bugs, fixed along the way,
+but none of them explain the actual symptom — kept fixed since they're correct regardless):
+- `UIAtlas`/`UIFont` material references were null project-wide (33 assets) — real gap, real
+  fix (`Assets/Editor/FixAtlasFontMaterials.cs`), needed regardless.
+- Those same 33 materials' shader was `Standard` (a leftover from `SwapDummyShaders.cs`'s
+  character-material sweep) instead of NGUI's real `Unlit/Transparent Colored` — real gap,
+  real fix.
+- `FontIMFell`/`FontTahoma`'s `_MainTex` pointed at their (empty) dynamic-font fallback
+  texture instead of their real bitmap atlas PNG — real gap, though superseded by the next
+  fix.
+- `DYNAMIC_FONT` was missing from `ProjectSettings.asset`'s `scriptingDefineSymbols` (same
+  category of gap as the `UNITY5` define needed for Artemis) — NGUI's entire dynamic-font
+  code path was compiled out. Real gap, real fix, still needed.
+- Even after all of the above — plus forcing both fonts onto Unity's own guaranteed-good
+  built-in font (`Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf")`,
+  `Assets/Editor/ForceSimpleFont.cs`) — text was still solid black. This was the signal that
+  no font/material/asset-linking fix was ever going to solve it, because the problem wasn't
+  there.
+
+**Actual root cause**: `Unlit/Text` and `Unlit/Transparent Colored` — the two shaders
+NGUI's `UIDrawCall` looks up **by name** (`Shader.Find`) for, respectively, all dynamic-font
+text rendering and all atlas-sprite rendering — were themselves still AssetRipper `Dummy`
+placeholders (`Assets/Resources/shaders/unlit - text*.shader` and
+`unlit - transparent colored*.shader`, 11 files total including the numbered clip-count and
+`(TextureClip)` variants), same category as the 232 3D character/effect dummy shaders found
+in the extraction audit. Their dummy fragment shader just returned the raw texture sample
+with **no vertex-color multiplication at all**:
+```hlsl
+float4 frag(Fragment_Stage_Input input) : SV_TARGET
+{
+    return _MainTex.Sample(sampler_MainTex, input.uv.xy);
+}
+```
+For sprites with real RGB art this looks approximately right by coincidence, which is
+exactly why the atlas fixes earlier seemed to partially work. But Unity's dynamic-font
+texture stores glyphs as black RGB + alpha coverage — skipping the tint step meant every
+label rendered solid black wherever a glyph existed, **regardless of which font backed it**.
+That's the tell in hindsight: switching fonts (FontIMFell → FontTahoma → Unity's own
+built-in) never changed anything, because the shader was the one constant across every
+attempt.
+
+**Fix**: replaced all 11 files with NGUI's real, standard shader source (`col = tex *
+vertexColor` for sprites, `col.a *= tex.a` combined with vertex color for text) — same
+"restore real code instead of guessing" approach used for the earlier C# plugin
+restorations. The numbered clip-count/`(TextureClip)` variants use the same correct color
+logic but without full clip-rect math (a documented simplification — they were
+non-functional placeholders before this fix too, so this is strictly an improvement, not a
+regression).
+
+**Verified visually, not just via logs** — batchmode's lack of rendering was exactly what
+let this bug hide from every automated check so far, so this needed a different kind of
+verification:
+- `Assets/Editor/CaptureMainScreenshot.cs` (new) drives the same click-through flow as
+  `SmokeTestFullFlow` and calls `ScreenCapture.CaptureScreenshot`. Batchmode (even without
+  `-nographics`) doesn't reliably produce a file; running the same Editor **without**
+  `-batchmode` (a real, if headless-driven, interactive process) does. Confirmed real,
+  correctly-colored, readable text on the loading screen ("LUNAE / HIGH BATTLE SORCERESS",
+  the tip text, "25%") before reporting the fix back.
+- 0 shader compile errors across all 11 files; the full click-driven smoke test still
+  reaches `Dungeon.unity` with zero exceptions.
+
+**Lesson for next time a "shouldn't this already work" bug shows up**: check whether the
+*shader itself* is a live AssetRipper `Dummy` placeholder before assuming a data/reference
+problem — `grep -rl "DummyShaderTextExporter" Assets --include="*.shader"` lists all 232+
+candidates project-wide. This one hid particularly well because it's looked up by shader
+*name* at runtime (`Shader.Find`), not through any serialized reference that would show up
+in a scene/prefab diff.
