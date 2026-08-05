@@ -1422,3 +1422,37 @@ next.
 - Verified: 0 compile errors, full click-driven smoke test still passes, confirmed
   visually via screenshot capture that the currency bar shows real values and particle
   effects (e.g. the top-right icon glow) now render with correct additive blending.
+- **Follow-up**: tried wiring Challenge/Adventure's real flame+spark fx prefabs
+  (`Challenge_btn_fx`/`fx2`) too - reverted. Shader was correctly additive, but individual
+  particle sub-systems still rendered wrong (solid white blocks for the "fragment" sparks
+  layer, wrong blue/purple tint on "smoke") despite valid source textures - a per-effect
+  color/tint configuration issue, not another blanket shader bug. Left un-called rather
+  than ship something worse-looking than no effect.
+
+## 15. Real `WorldmapPopup` screen — item #2's "dungeon page with levels", for real this time
+
+Replaced `SimpleDungeonSelectView` (§11's placeholder, built before the shader pipeline was
+confirmed working) with the actual `Resources/guiprefabs/worldmap/WorldmapPopup.prefab`.
+
+- Real structure confirmed by inspection: **10 pre-placed node slots** (`node1`..`node10`)
+  per map+difficulty view — matches the ~10 dungeons/map average across the real 201-entry
+  `DungeonConfig.json` (5 maps × 4 difficulties). Real map background art, real `WorldMapDifficulty`
+  (4 real difficulty buttons), real `btn_left`/`btn_right` map navigation, real `btn_QuickGoTo`.
+- Implemented `DifficultySelectionView`/`CurrentDifficultyView` (the 4 difficulty tabs, shared
+  selection callback, tint+mask for selected state), `WorldmapNodeView` (populates a slot from
+  real dungeon data, click enters directly - same "skip the interstitial popup" scoping as
+  before), `WorldmapRegionView` (fills the 10 slots via the already-implemented
+  `DungeonConfig.GetListDungeons()`), `WorldmapPopup` (navigation, difficulty switching,
+  quickplay, the real `DungeonSelection` → `Dungeon.unity` handoff). skill/equipment/rune/
+  mastery buttons and the star/chest progress bar stay inert - same monetization/progression
+  convention as everywhere else, no real save data to drive them either.
+- `CharacterSelectionPopup` now shows this instead of the placeholder; `SimpleDungeonSelectView`
+  deleted.
+- Verified: 0 compile errors on the first pass, full smoke test reaches `Dungeon.unity` through
+  the real screen, and `Assets/Editor/CaptureWorldMapScreenshot.cs` (new, same non-batchmode
+  screenshot technique as §13/§14) confirmed real background art, correct map name ("MAP_1"),
+  and correct difficulty-tab selection highlighting visually.
+- **Known follow-up**: node icons peek out from behind the background art at the screen
+  edges - a clipping/depth-order issue (the popup's `mask` object isn't fully constraining
+  content), not a data/logic problem. Core functionality (real data, real navigation, real
+  dungeon entry) all confirmed working regardless.
