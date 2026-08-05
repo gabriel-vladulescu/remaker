@@ -1,56 +1,57 @@
 Shader "Unlit/Text" {
-	Properties {
-		_MainTex ("Alpha (A)", 2D) = "white" {}
-	}
-	//DummyShaderTextExporter
-	SubShader{
-		Tags { "RenderType"="Opaque" }
-		LOD 200
+Properties {
+	_MainTex ("Alpha (A)", 2D) = "white" {}
+}
 
-		Pass
+SubShader {
+	LOD 200
+	Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
+	Pass {
+		Cull Off
+		Lighting Off
+		ZWrite Off
+		Fog { Mode Off }
+		ColorMask RGB
+		Blend SrcAlpha OneMinusSrcAlpha
+
+		CGPROGRAM
+		#pragma vertex vert
+		#pragma fragment frag
+		#pragma fragmentoption ARB_precision_hint_fastest
+		#include "UnityCG.cginc"
+
+		sampler2D _MainTex;
+
+		struct appdata_t
 		{
-			HLSLPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
+			float4 vertex : POSITION;
+			fixed4 color : COLOR;
+			float2 texcoord : TEXCOORD0;
+		};
 
-			float4x4 unity_ObjectToWorld;
-			float4x4 unity_MatrixVP;
-			float4 _MainTex_ST;
+		struct v2f
+		{
+			float4 vertex : SV_POSITION;
+			fixed4 color : COLOR;
+			half2 texcoord : TEXCOORD0;
+		};
 
-			struct Vertex_Stage_Input
-			{
-				float4 pos : POSITION;
-				float2 uv : TEXCOORD0;
-			};
-
-			struct Vertex_Stage_Output
-			{
-				float2 uv : TEXCOORD0;
-				float4 pos : SV_POSITION;
-			};
-
-			Vertex_Stage_Output vert(Vertex_Stage_Input input)
-			{
-				Vertex_Stage_Output output;
-				output.uv = (input.uv.xy * _MainTex_ST.xy) + _MainTex_ST.zw;
-				output.pos = mul(unity_MatrixVP, mul(unity_ObjectToWorld, input.pos));
-				return output;
-			}
-
-			Texture2D<float4> _MainTex;
-			SamplerState sampler_MainTex;
-
-			struct Fragment_Stage_Input
-			{
-				float2 uv : TEXCOORD0;
-			};
-
-			float4 frag(Fragment_Stage_Input input) : SV_TARGET
-			{
-				return _MainTex.Sample(sampler_MainTex, input.uv.xy);
-			}
-
-			ENDHLSL
+		v2f vert (appdata_t v)
+		{
+			v2f o;
+			o.vertex = UnityObjectToClipPos(v.vertex);
+			o.color = v.color;
+			o.texcoord = v.texcoord;
+			return o;
 		}
+
+		fixed4 frag (v2f i) : SV_Target
+		{
+			fixed4 col = i.color;
+			col.a *= tex2D(_MainTex, i.texcoord).a;
+			return col;
+		}
+		ENDCG
 	}
+}
 }
